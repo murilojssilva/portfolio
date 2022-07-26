@@ -6,6 +6,7 @@ import { GlobalStyle } from "./styles/global";
 import { Sidebar } from "./components/Sidebar";
 import { Wrapper } from "./styles";
 import { InfoCards } from "./components/InfoCards";
+import ReactTooltip from "react-tooltip";
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
       </Wrapper>
 
       <GlobalStyle />
+      <ReactTooltip />
     </ThemeProvider>
   );
 }

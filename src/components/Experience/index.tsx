@@ -30,19 +30,22 @@ export function Experience() {
         </p>
         <UsedTechs>
           <TechLogo>
-            <SiReact color={"#5CCFEE"} />
+            <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
           </TechLogo>
           <TechLogo>
-            <SiTypescript color={"#2F72BC"} />
+            <SiTypescript color={"#2F72BC"} data-tip="TypeScript" />
           </TechLogo>
           <TechLogo>
-            <SiStyledcomponents color={"#EBAC9D"} />
+            <SiStyledcomponents
+              color={"#EBAC9D"}
+              data-tip="Styled Components"
+            />
           </TechLogo>
           <TechLogo>
-            <SiGraphql color={"#D932A2"} />
+            <SiGraphql color={"#D932A2"} data-tip="GraphQL" />
           </TechLogo>
           <TechLogo>
-            <SiJest color={"#BC3A14"} />
+            <SiJest color={"#BC3A14"} data-tip="Jest" />
           </TechLogo>
         </UsedTechs>
       </ExperienceContent>
@@ -57,13 +60,16 @@ export function Experience() {
         </p>
         <UsedTechs>
           <TechLogo>
-            <SiReact color={"#5CCFEE"} />
+            <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
           </TechLogo>
           <TechLogo>
-            <SiStyledcomponents color={"#EBAC9D"} />
+            <SiStyledcomponents
+              color={"#EBAC9D"}
+              data-tip="Styled Components"
+            />
           </TechLogo>
           <TechLogo>
-            <SiNodedotjs color={"#529F41"} />
+            <SiNodedotjs color={"#529F41"} data-tip="NodeJS" />
           </TechLogo>
         </UsedTechs>
       </ExperienceContent>
@@ -78,10 +84,10 @@ export function Experience() {
         </p>
         <UsedTechs>
           <TechLogo>
-            <SiRubyonrails color={"#C20000"} />
+            <SiRubyonrails color={"#C20000"} data-tip="Ruby on Rails" />
           </TechLogo>
           <TechLogo>
-            <SiBootstrap color={"#7011EB"} />
+            <SiBootstrap color={"#7011EB"} data-tip="BootStrap" />
           </TechLogo>
         </UsedTechs>
       </ExperienceContent>

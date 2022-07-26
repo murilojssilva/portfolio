@@ -72,7 +72,7 @@ export function Sidebar() {
         <Button
           target="_blank"
           href="#"
-          icon={<FaDownload />}
+          icon={<FaDownload data-tip="Download" />}
           content="Baixar Currículo"
         />
       </SidebarFooter>

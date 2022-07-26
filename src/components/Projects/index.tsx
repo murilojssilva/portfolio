@@ -8,6 +8,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { Button } from "../Button";
+
 import { ProjectsContainer, ProjectTitle, TechLogo, UsedTechs } from "./styles";
 
 export function Projects() {
@@ -29,14 +30,17 @@ export function Projects() {
           </p>
 
           <UsedTechs>
-            <TechLogo>
-              <SiReact color={"#5CCFEE"} />
+            <TechLogo data-tip="hello world">
+              <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
             </TechLogo>
             <TechLogo>
-              <SiStyledcomponents color={"#EBAC9D"} />
+              <SiStyledcomponents
+                color={"#EBAC9D"}
+                data-tip="Styled Components"
+              />
             </TechLogo>
             <TechLogo>
-              <SiRedux color={"#7248B7"} />
+              <SiRedux color={"#7248B7"} data-tip="Redux" />
             </TechLogo>
           </UsedTechs>
 
@@ -62,10 +66,10 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiNodedotjs color={"#529F41"} />
+              <SiNodedotjs color={"#529F41"} data-tip="NodeJS" />
             </TechLogo>
             <TechLogo>
-              <SiExpress color={"#7B7B7B"} />
+              <SiExpress color={"#7B7B7B"} data-tip="Express" />
             </TechLogo>
           </UsedTechs>
 
@@ -91,13 +95,16 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact color={"#5CCFEE"} />
+              <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
             </TechLogo>
             <TechLogo>
-              <SiStyledcomponents color={"#EBAC9D"} />
+              <SiStyledcomponents
+                color={"#EBAC9D"}
+                data-tip="Styled Components"
+              />
             </TechLogo>
             <TechLogo>
-              <SiTypescript color={"#2F72BC"} />
+              <SiTypescript color={"#2F72BC"} data-tip="TypeScript" />
             </TechLogo>
           </UsedTechs>
 
@@ -123,13 +130,16 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact color={"#5CCFEE"} />
+              <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
             </TechLogo>
             <TechLogo>
-              <SiStyledcomponents color={"#EBAC9D"} />
+              <SiStyledcomponents
+                color={"#EBAC9D"}
+                data-tip="Styled Components"
+              />
             </TechLogo>
             <TechLogo>
-              <SiTypescript color={"#2F72BC"} />
+              <SiTypescript color={"#2F72BC"} data-tip="Typescript" />
             </TechLogo>
           </UsedTechs>
 
@@ -155,7 +165,7 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact color={"#5CCFEE"} />
+              <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
             </TechLogo>
           </UsedTechs>
 
@@ -181,7 +191,7 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact color={"#5CCFEE"} />
+              <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
             </TechLogo>
           </UsedTechs>
 

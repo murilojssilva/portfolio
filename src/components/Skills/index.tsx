@@ -10,7 +10,6 @@ import {
   SiJavascript,
   SiRubyonrails,
   SiStyledcomponents,
-  SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 import { SkillCard, SkillsContainer, SkillsContent } from "./styles";
@@ -18,12 +17,12 @@ import { SkillCard, SkillsContainer, SkillsContent } from "./styles";
 export function Skills() {
   return (
     <SkillsContainer>
-      <h1>Skills</h1>
+      <h1>{"<Skills />"}</h1>
       <SkillsContent>
         <SkillCard>
           <FaReact size={64} />
           <div>
-            <h1>ReactJS</h1>
+            <h2>ReactJS</h2>
             <p>
               Biblioteca criada para construir aplicações web de forma
               declarativa, que podem ser executadas em navegadores, sejam eles
@@ -34,7 +33,7 @@ export function Skills() {
         <SkillCard>
           <TbBrandReactNative size={64} color="" />
           <div>
-            <h1>React Native</h1>
+            <h2>React Native</h2>
             <p>
               Biblioteca baseada no ReactJS que possibilita o desenvolvimento de
               aplicações mobile, tanto para iOS como para Android, utilizando
@@ -45,7 +44,7 @@ export function Skills() {
         <SkillCard>
           <SiTypescript size={64} color="" />
           <div>
-            <h1>TypeScript</h1>
+            <h2>TypeScript</h2>
             <p>
               Biblioteca baseada no ReactJS que possibilita o desenvolvimento de
               aplicações mobile, tanto para iOS como para Android, utilizando
@@ -56,7 +55,7 @@ export function Skills() {
         <SkillCard>
           <SiGraphql size={64} color="" />
           <div>
-            <h1>Graphql</h1>
+            <h2>Graphql</h2>
             <p>
               Biblioteca baseada no ReactJS que possibilita o desenvolvimento de
               aplicações mobile, tanto para iOS como para Android, utilizando
@@ -67,7 +66,7 @@ export function Skills() {
         <SkillCard>
           <FaNodeJs size={64} />
           <div>
-            <h1>NodeJS</h1>
+            <h2>NodeJS</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -79,7 +78,7 @@ export function Skills() {
         <SkillCard>
           <SiJavascript size={64} />
           <div>
-            <h1>Javascript</h1>
+            <h2>Javascript</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -91,7 +90,7 @@ export function Skills() {
         <SkillCard>
           <SiDocker size={64} />
           <div>
-            <h1>Docker</h1>
+            <h2>Docker</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -103,7 +102,7 @@ export function Skills() {
         <SkillCard>
           <FaPython size={64} />
           <div>
-            <h1>Python</h1>
+            <h2>Python</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -115,7 +114,7 @@ export function Skills() {
         <SkillCard>
           <FaHtml5 size={64} />
           <div>
-            <h1>HTML5</h1>
+            <h2>HTML5</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -127,7 +126,7 @@ export function Skills() {
         <SkillCard>
           <FaCss3 size={64} />
           <div>
-            <h1>CSS3</h1>
+            <h2>CSS3</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -139,7 +138,7 @@ export function Skills() {
         <SkillCard>
           <SiBootstrap size={64} />
           <div>
-            <h1>Bootstrap</h1>
+            <h2>Bootstrap</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -151,7 +150,7 @@ export function Skills() {
         <SkillCard>
           <SiStyledcomponents size={64} />
           <div>
-            <h1>Styled Components</h1>
+            <h2>Styled Components</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -163,7 +162,7 @@ export function Skills() {
         <SkillCard>
           <SiJava size={64} />
           <div>
-            <h1>Java</h1>
+            <h2>Java</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -175,7 +174,7 @@ export function Skills() {
         <SkillCard>
           <SiRubyonrails size={64} />
           <div>
-            <h1>Ruby On Rails</h1>
+            <h2>Ruby On Rails</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -187,7 +186,7 @@ export function Skills() {
         <SkillCard>
           <SiC size={64} />
           <div>
-            <h1>C</h1>
+            <h2>C</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis
@@ -199,7 +198,7 @@ export function Skills() {
         <SkillCard>
           <SiCplusplus size={64} />
           <div>
-            <h1>C++</h1>
+            <h2>C++</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
               possimus a impedit incidunt hic recusandae molestiae eius debitis

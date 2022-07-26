@@ -7,6 +7,7 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Button } from "../Button";
 import {
   SidebarContacts,
   SidebarContainer,
@@ -40,7 +41,7 @@ export function Sidebar() {
           <div>
             <h3>Telefone</h3>
             <a target="_blank" href="https://wa.me/+5521992687311">
-              (21)99268-7311
+              (21) 99268-7311
             </a>
           </div>
         </div>
@@ -68,10 +69,12 @@ export function Sidebar() {
       </SidebarContacts>
 
       <SidebarFooter>
-        <a>
-          <FaDownload size={20} />
-          Baixar currículo
-        </a>
+        <Button
+          target="_blank"
+          href="#"
+          icon={FaDownload}
+          content="Baixar Currículo"
+        />
       </SidebarFooter>
     </SidebarContainer>
   );

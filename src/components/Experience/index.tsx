@@ -3,7 +3,7 @@ import { ExperienceContainer } from "./styles";
 export function Experience() {
   return (
     <ExperienceContainer>
-      <h1>Experiências</h1>
+      <h1>{"<Experiências />"}</h1>
       <ul>
         <li>
           Desenvolvedor Front End na Upnid Pagamentos, utilizando as tecnologias

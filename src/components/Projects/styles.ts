@@ -25,7 +25,7 @@ export const ProjectsContainer = styled.main`
     list-style: none;
 
     p {
-      font-size: 1rem;
+      font-size: 0.875rem;
       color: ${(props) => props.theme.colors.text};
     }
     a {

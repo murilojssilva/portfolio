@@ -1,7 +1,6 @@
 import { About } from "../About";
 import { Experience } from "../Experience";
 import { Projects } from "../Projects";
-import { Skills } from "../Skills";
 import { InfoCardsContainer } from "./styles";
 
 export function InfoCards() {
@@ -10,7 +9,6 @@ export function InfoCards() {
       <About />
       <Experience />
       <Projects />
-      <Skills />
     </InfoCardsContainer>
   );
 }

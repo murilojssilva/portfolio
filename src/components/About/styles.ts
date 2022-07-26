@@ -12,7 +12,7 @@ export const AboutContainer = styled.main`
   }
   p {
     color: ${(props) => props.theme.colors.text};
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     font-style: unset;
   }
 `;

@@ -30,20 +30,20 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact color="##5CCFEE" />
+              <SiReact color={"#5CCFEE"} />
             </TechLogo>
             <TechLogo>
-              <SiStyledcomponents />
+              <SiStyledcomponents color={"#EBAC9D"} />
             </TechLogo>
             <TechLogo>
-              <SiRedux />
+              <SiRedux color={"#7248B7"} />
             </TechLogo>
           </UsedTechs>
 
           <Button
             target="_blank"
             href="https://github.com/murilojssilva/resolvelogofrontend"
-            icon={FaGithub}
+            icon={<FaGithub />}
             content="Visualizar projeto"
           />
         </li>
@@ -62,17 +62,17 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiNodedotjs />
+              <SiNodedotjs color={"#529F41"} />
             </TechLogo>
             <TechLogo>
-              <SiExpress />
+              <SiExpress color={"#7B7B7B"} />
             </TechLogo>
           </UsedTechs>
 
           <Button
             target="_blank"
             href="https://github.com/murilojssilva/resolvelogobackend"
-            icon={FaGithub}
+            icon={<FaGithub />}
             content="Visualizar projeto"
           />
         </li>
@@ -91,20 +91,20 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact />
+              <SiReact color={"#5CCFEE"} />
             </TechLogo>
             <TechLogo>
-              <SiStyledcomponents />
+              <SiStyledcomponents color={"#EBAC9D"} />
             </TechLogo>
             <TechLogo>
-              <SiTypescript />
+              <SiTypescript color={"#2F72BC"} />
             </TechLogo>
           </UsedTechs>
 
           <Button
             target="_blank"
             href="https://github.com/murilojssilva/desafio-truckpag"
-            icon={FaGithub}
+            icon={<FaGithub />}
             content="Visualizar projeto"
           />
         </li>
@@ -123,20 +123,20 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact />
+              <SiReact color={"#5CCFEE"} />
             </TechLogo>
             <TechLogo>
-              <SiStyledcomponents />
+              <SiStyledcomponents color={"#EBAC9D"} />
             </TechLogo>
             <TechLogo>
-              <SiTypescript />
+              <SiTypescript color={"#2F72BC"} />
             </TechLogo>
           </UsedTechs>
 
           <Button
             target="_blank"
             href="https://github.com/murilojssilva/desafio-vizir"
-            icon={FaGithub}
+            icon={<FaGithub />}
             content="Visualizar projeto"
           />
         </li>
@@ -155,14 +155,14 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact />
+              <SiReact color={"#5CCFEE"} />
             </TechLogo>
           </UsedTechs>
 
           <Button
             target="_blank"
             href="https://github.com/murilojssilva/intelie-chart"
-            icon={FaGithub}
+            icon={<FaGithub />}
             content="Visualizar projeto"
           />
         </li>
@@ -181,14 +181,14 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact />
+              <SiReact color={"#5CCFEE"} />
             </TechLogo>
           </UsedTechs>
 
           <Button
             target="_blank"
             href="https://github.com/murilojssilva/pokemon-intelie"
-            icon={FaGithub}
+            icon={<FaGithub />}
             content="Visualizar projeto"
           />
         </li>

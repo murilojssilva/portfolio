@@ -3,7 +3,7 @@ import { ButtonContainer } from "./styles";
 
 interface ButtonProps extends React.HTMLAttributes<HTMLAnchorElement> {
   content: string;
-  icon?: any;
+  icon?: ReactNode;
   href: string;
   target: string;
 }

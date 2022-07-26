@@ -30,7 +30,7 @@ export function Projects() {
 
           <UsedTechs>
             <TechLogo>
-              <SiReact />
+              <SiReact color="##5CCFEE" />
             </TechLogo>
             <TechLogo>
               <SiStyledcomponents />

@@ -71,17 +71,14 @@ export const UsedTechs = styled.div`
 
 export const TechLogo = styled.span`
   svg {
-    display: block;
     border-radius: 8px;
-    margin: 0.5rem;
-
-    width: 2rem;
-    height: 2rem;
-
+    width: 1.5rem;
+    height: 1.5rem;
     transition: color 0.1s;
+    margin: 1rem 0.5rem;
 
     &:hover {
-      color: var(--green-500);
+      background-color: var(--gray-900);
     }
   }
 `;

@@ -2,12 +2,11 @@ export default {
   title: "dark",
 
   colors: {
-    primary: "#084d6e",
-    secundary: "#e1e1e6",
+    primary: "var(--blue-700)",
+    secundary: "var(--red-700)",
 
-    background: "#121214",
-    backgroundItens: "#29292e",
-    text: "#e1e1e6",
-    title: "#a8a8b3",
+    background: "var(--gray-950)",
+    backgroundItens: "var(--gray-900)",
+    text: "var(--gray-100)",
   },
 };

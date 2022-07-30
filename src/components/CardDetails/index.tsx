@@ -1,9 +1,12 @@
 import { FaGithub, FaGitlab } from "react-icons/fa";
 import {
   SiBootstrap,
+  SiCss3,
   SiExpress,
   SiGraphql,
+  SiHeroku,
   SiJest,
+  SiNetlify,
   SiNextdotjs,
   SiNodedotjs,
   SiReact,
@@ -27,21 +30,22 @@ import {
 } from "./styles";
 
 interface CardDetailsProps {
+  type?: "challenge" | "personal" | "academic" | "none";
+  colorTop: "projects" | "experiences";
   title: string;
   subtitle?: string;
-  type?: string;
   content: string;
   textButton?: string;
   hasLink?: boolean;
   href?: string;
-  iconButton: "GitHub" | "GitLab";
-  colorType?: "challenge" | "personal" | "academic";
-  colorTop: "projects" | "experiences";
+  iconButton?: "GitHub" | "GitLab";
   hasReact?: boolean;
   hasTypescript?: boolean;
   hasReactNative?: boolean;
+  hasHeroku?: boolean;
   hasJavascript?: boolean;
   hasStyledComponents?: boolean;
+  hasSCSS?: boolean;
   hasGraphQL?: boolean;
   hasJest?: boolean;
   hasNodeJS?: boolean;
@@ -50,25 +54,28 @@ interface CardDetailsProps {
   hasRubyOnRails?: boolean;
   hasBootstrap?: boolean;
   hasRedux?: boolean;
+  hasNetlify?: boolean;
   hasExpress?: boolean;
 }
 
 export function CardDetails({
   title,
   subtitle,
-  type,
   content,
   colorTop,
   hasLink = false,
   href,
   iconButton,
   textButton = "Visualizar projeto",
-  colorType = "challenge",
+  type = "none",
   hasReact = false,
   hasTypescript = false,
+  hasNetlify = false,
+  hasHeroku = false,
   hasReactNative = false,
   hasStyledComponents = false,
   hasGraphQL = false,
+  hasSCSS = false,
   hasJest = false,
   hasVercel = false,
   hasNextJS = false,
@@ -79,13 +86,13 @@ export function CardDetails({
   hasExpress = false,
 }: CardDetailsProps) {
   return (
-    <CardDetailsContainer colorTop={colorTop} colorType={colorType}>
+    <CardDetailsContainer colorTop={colorTop} type={type}>
       <CardDetailsHeader>
         <CardDetailsTitle>
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
         </CardDetailsTitle>
-        <CardDetailsType>
+        <CardDetailsType colorTop={colorTop} type={type}>
           <span>
             {type === "academic"
               ? "acadêmico"
@@ -105,19 +112,25 @@ export function CardDetails({
           <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
         </TechLogo>
         <TechLogo hasNextJS={hasNextJS}>
-          <SiNextdotjs color={"#5CCFEE"} data-tip="NextJS" />
+          <SiNextdotjs color={"#F2F2F2"} data-tip="NextJS" />
         </TechLogo>
         <TechLogo hasVercel={hasVercel}>
-          <SiVercel color={"#5CCFEE"} data-tip="Vercel" />
+          <SiVercel color={"#F2F2F2"} data-tip="Vercel" />
+        </TechLogo>
+        <TechLogo hasNetlify={hasNetlify}>
+          <SiNetlify color={"#37A4B2"} data-tip="Netlify" />
         </TechLogo>
         <TechLogo hasReactNative={hasReactNative}>
-          <TbBrandReactNative color={"#5CCFEE"} data-tip="React Native" />
+          <TbBrandReactNative color={"#01A0C8"} data-tip="React Native" />
         </TechLogo>
         <TechLogo hasTypescript={hasTypescript}>
           <SiTypescript color={"#2F72BC"} data-tip="TypeScript" />
         </TechLogo>
         <TechLogo hasStyledComponents={hasStyledComponents}>
           <SiStyledcomponents color={"#EBAC9D"} data-tip="Styled Components" />
+        </TechLogo>
+        <TechLogo hasSCSS={hasSCSS}>
+          <SiCss3 color={"#C26192"} data-tip="SCSS" />
         </TechLogo>
         <TechLogo hasGraphQL={hasGraphQL}>
           <SiGraphql color={"#D932A2"} data-tip="GraphQL" />
@@ -133,6 +146,9 @@ export function CardDetails({
         </TechLogo>
         <TechLogo hasExpress={hasExpress}>
           <SiExpress color={"#7B7B7B"} data-tip="Express" />
+        </TechLogo>
+        <TechLogo hasHeroku={hasHeroku}>
+          <SiHeroku color={"#3E0094"} data-tip="Heroku" />
         </TechLogo>
         <TechLogo hasRubyOnRails={hasRubyOnRails}>
           <SiRubyonrails color={"#C20000"} data-tip="Ruby on Rails" />

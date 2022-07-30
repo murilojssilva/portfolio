@@ -5,7 +5,6 @@ interface ButtonContainerProps {
 }
 
 export const ButtonContainer = styled.a<ButtonContainerProps>`
-  display: ${(props) => (props.hasLink === false ? "none" : "flex")};
   border: 1px solid ${(props) => props.theme.colors.text};
   border-radius: 8px;
   background-color: transparent;
@@ -15,7 +14,7 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
   display: block;
   text-decoration: none;
 
-  display: flex;
+  display: ${(props) => (props.hasLink === false ? "none" : "flex")};
   text-align: center;
   justify-content: center;
 

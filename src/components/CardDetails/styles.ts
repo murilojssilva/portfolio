@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface CardDetailsContainerProps {
-  colorType: "challenge" | "personal" | "academic";
+  type: "challenge" | "personal" | "academic" | "none";
   colorTop: "projects" | "experiences";
 }
 
@@ -10,11 +10,14 @@ interface TechLogoProps {
   hasTypescript?: boolean;
   hasReactNative?: boolean;
   hasStyledComponents?: boolean;
+  hasHeroku?: boolean;
   hasGraphQL?: boolean;
   hasJest?: boolean;
   hasNodeJS?: boolean;
+  hasNetlify?: boolean;
   hasRubyOnRails?: boolean;
   hasBootstrap?: boolean;
+  hasSCSS?: boolean;
   hasRedux?: boolean;
   hasExpress?: boolean;
   hasNextJS?: boolean;
@@ -54,11 +57,11 @@ export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
   span {
     font-size: 0.875rem;
     color: ${(props) =>
-      props.colorType === "challenge"
+      props.type === "challenge"
         ? "var(--blue-500)"
-        : props.colorType === "personal"
+        : props.type === "personal"
         ? "var(--green-500)"
-        : props.colorType === "academic"
+        : props.type === "academic"
         ? "var(--yellow-500)"
         : "var(--red-500)"};
     font-weight: bold;
@@ -76,7 +79,20 @@ export const CardDetailsTitle = styled.div`
   flex-direction: column;
 `;
 
-export const CardDetailsType = styled.div``;
+export const CardDetailsType = styled.div<CardDetailsContainerProps>`
+  span {
+    font-size: 0.875rem;
+    color: ${(props) =>
+      props.type === "challenge"
+        ? "var(--blue-500)"
+        : props.type === "personal"
+        ? "var(--green-500)"
+        : props.type === "academic"
+        ? "var(--yellow-500)"
+        : "var(--red-500)"};
+    font-weight: bold;
+  }
+`;
 
 export const UsedTechs = styled.div`
   display: flex;
@@ -86,11 +102,14 @@ export const UsedTechs = styled.div`
 export const TechLogo = styled.span<TechLogoProps>`
   display: ${(props) =>
     props.hasReact === false ||
+    props.hasHeroku === false ||
     props.hasVercel === false ||
     props.hasNextJS === false ||
     props.hasGraphQL === false ||
+    props.hasSCSS === false ||
     props.hasTypescript === false ||
     props.hasNodeJS === false ||
+    props.hasNetlify === false ||
     props.hasStyledComponents === false ||
     props.hasReactNative === false ||
     props.hasRedux === false ||

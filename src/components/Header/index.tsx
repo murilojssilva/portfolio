@@ -6,7 +6,6 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
-import { Button } from "../Button";
 import {
   HeaderContacts,
   HeaderContainer,
@@ -20,13 +19,25 @@ export function Header() {
       <HeaderProfile>
         <img src="https://github.com/murilojssilva.png" />
         <SocialMediaIcons>
-          <a target="_blank" href="https://linkedin.com/in/murilojssilva">
+          <a
+            data-tip="LinkedIn"
+            target="_blank"
+            href="https://linkedin.com/in/murilojssilva"
+          >
             <FaLinkedin />
           </a>
-          <a target="_blank" href="https://github.com/murilojssilva">
+          <a
+            data-tip="GitHub"
+            target="_blank"
+            href="https://github.com/murilojssilva"
+          >
             <FaGithub />
           </a>
-          <a target="_blank" href="https://gitlab.com/murilojssilva">
+          <a
+            data-tip="GitLab"
+            target="_blank"
+            href="https://gitlab.com/murilojssilva"
+          >
             <FaGitlab />
           </a>
         </SocialMediaIcons>

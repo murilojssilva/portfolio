@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.aside`
+export const HeaderContainer = styled.header`
   background-color: ${(props) => props.theme.colors.backgroundItens};
   color: ${(props) => props.theme.colors.text};
   border-radius: 8px;
@@ -46,7 +46,7 @@ export const SocialMediaIcons = styled.div`
     color: ${(props) => props.theme.colors.text};
     margin: 0 0.5rem;
     &:hover {
-      background-color: var(--gray-900);
+      background-color: var(--gray-950);
       border-radius: 8px;
     }
     svg {
@@ -72,7 +72,7 @@ export const HeaderContacts = styled.main`
       display: flex;
       flex-direction: column;
       text-align: center;
-      align-items: center;
+      align-items: flex-end;
       line-height: 1.4;
 
       h3 {
@@ -87,10 +87,6 @@ export const HeaderContacts = styled.main`
       a {
         color: ${(props) => props.theme.colors.text};
         text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        text-align: center;
       }
     }
     &:first-child {

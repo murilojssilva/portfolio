@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-export const SidebarContainer = styled.aside`
+export const HeaderContainer = styled.aside`
   background-color: ${(props) => props.theme.colors.backgroundItens};
   color: ${(props) => props.theme.colors.text};
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 1rem;
 `;
 
-export const SidebarProfile = styled.div`
+export const HeaderProfile = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -55,7 +56,7 @@ export const SocialMediaIcons = styled.div`
   }
 `;
 
-export const SidebarContacts = styled.main`
+export const HeaderContacts = styled.main`
   > div {
     padding: 1rem 0;
     border-top: 1px solid ${(props) => props.theme.colors.background};
@@ -98,7 +99,7 @@ export const SidebarContacts = styled.main`
   }
 `;
 
-export const SidebarFooter = styled.footer`
+export const HeaderFooter = styled.footer`
   border-top: 1px solid ${(props) => props.theme.colors.background};
 
   padding: 1.5rem 2rem 2rem;

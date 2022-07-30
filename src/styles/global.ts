@@ -61,8 +61,14 @@ export const GlobalStyle = createGlobalStyle`
     input, button{
         cursor: pointer;
     }
-    [disabled] {
-        opacity: 0.6;
-        cursor: not-allowed;
+   
+    p {
+        font-size: 0.875rem;
     }
+
+    @media (max-width: 768px) {
+   html {
+    font-size: 87,5%;
+   }
+  }
 `;

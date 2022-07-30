@@ -1,7 +1,6 @@
 import {
-  FaDownload,
   FaGithub,
-  FaInstagram,
+  FaGitlab,
   FaLinkedin,
   FaMailBulk,
   FaMapMarkerAlt,
@@ -9,17 +8,16 @@ import {
 } from "react-icons/fa";
 import { Button } from "../Button";
 import {
-  SidebarContacts,
-  SidebarContainer,
-  SidebarFooter,
-  SidebarProfile,
+  HeaderContacts,
+  HeaderContainer,
+  HeaderProfile,
   SocialMediaIcons,
 } from "./styles";
 
-export function Sidebar() {
+export function Header() {
   return (
-    <SidebarContainer>
-      <SidebarProfile>
+    <HeaderContainer>
+      <HeaderProfile>
         <img src="https://github.com/murilojssilva.png" />
         <SocialMediaIcons>
           <a target="_blank" href="https://linkedin.com/in/murilojssilva">
@@ -28,14 +26,14 @@ export function Sidebar() {
           <a target="_blank" href="https://github.com/murilojssilva">
             <FaGithub />
           </a>
-          <a target="_blank" href="https://instagram.com/murilojssilva">
-            <FaInstagram />
+          <a target="_blank" href="https://gitlab.com/murilojssilva">
+            <FaGitlab />
           </a>
         </SocialMediaIcons>
         <strong>Murilo Silva</strong>
         <span>Front End Developer</span>
-      </SidebarProfile>
-      <SidebarContacts>
+      </HeaderProfile>
+      <HeaderContacts>
         <div>
           <FaWhatsapp size={26} />
           <div>
@@ -66,16 +64,7 @@ export function Sidebar() {
             </a>
           </div>
         </div>
-      </SidebarContacts>
-
-      <SidebarFooter>
-        <Button
-          target="_blank"
-          href="#"
-          icon={<FaDownload data-tip="Download" />}
-          content="Baixar Currículo"
-        />
-      </SidebarFooter>
-    </SidebarContainer>
+      </HeaderContacts>
+    </HeaderContainer>
   );
 }

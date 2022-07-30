@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.a`
+interface ButtonContainerProps {
+  hasLink: boolean;
+}
+
+export const ButtonContainer = styled.a<ButtonContainerProps>`
+  display: ${(props) => (props.hasLink === false ? "none" : "flex")};
   border: 1px solid ${(props) => props.theme.colors.text};
   border-radius: 8px;
   background-color: transparent;
@@ -24,5 +29,14 @@ export const ButtonContainer = styled.a`
     background-color: var(--green-500);
     border: 1px solid var(--green-500);
     color: var(--shape);
+  }
+  &:not(:disabled)hover {
+    background-color: var(--green-300);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    background-color: var(--red-500);
+    cursor: not-allowed;
   }
 `;

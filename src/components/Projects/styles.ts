@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ProjectTitleProps {
-  color: "challenge" | "personal" | "extension";
+  color: "challenge" | "personal" | "academic";
 }
 
 export const ProjectsContainer = styled.main`
@@ -57,7 +57,7 @@ export const ProjectTitle = styled.div<ProjectTitleProps>`
         ? "var(--blue-500)"
         : props.color === "personal"
         ? "var(--green-500)"
-        : props.color === "extension"
+        : props.color === "academic"
         ? "var(--yellow-500)"
         : "var(--red-500)"};
     font-weight: bold;
@@ -70,15 +70,15 @@ export const UsedTechs = styled.div`
 `;
 
 export const TechLogo = styled.span`
+  padding: 1rem;
+  color: ${(props) => props.theme.colors.text};
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  &:hover {
+    background-color: var(--gray-900);
+  }
   svg {
-    border-radius: 8px;
     width: 1.5rem;
     height: 1.5rem;
-    transition: color 0.1s;
-    margin: 1rem 0.5rem;
-
-    &:hover {
-      background-color: var(--gray-900);
-    }
   }
 `;

@@ -57,6 +57,4 @@ $ yarn dev
 
 #### A aplicação iniciará na porta:5173 - acesse <http://localhost:5173>
 
----
-
 <h4 align="center">Feito com :black_heart: por <a href="https://github.com/murilojssilva">Murilo</a></h4>

@@ -15,24 +15,6 @@ export const ProjectsContainer = styled.main`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  ul > li {
-    border-top: 5px solid var(--green-500);
-    margin: 2rem;
-    font-size: 1rem;
-    padding: 1rem;
-    background-color: ${(props) => props.theme.colors.background};
-    border-radius: 8px;
-    list-style: none;
-
-    p {
-      font-size: 0.875rem;
-      color: ${(props) => props.theme.colors.text};
-    }
-    a {
-      color: ${(props) => props.theme.colors.text};
-      text-decoration: none;
-    }
-  }
 `;
 
 export const ProjectTitle = styled.div<ProjectTitleProps>`
@@ -51,7 +33,6 @@ export const ProjectTitle = styled.div<ProjectTitleProps>`
     -webkit-text-fill-color: transparent;
   }
   span {
-    font-size: 0.875rem;
     color: ${(props) =>
       props.color === "challenge"
         ? "var(--blue-500)"

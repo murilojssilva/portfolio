@@ -53,11 +53,10 @@ export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
     color: ${(props) => props.theme.colors.text};
   }
   p {
-    font-size: 0.875rem;
     color: ${(props) => props.theme.colors.text};
+    word-wrap: break-word;
   }
   span {
-    font-size: 0.875rem;
     color: ${(props) =>
       props.type === "challenge"
         ? "var(--blue-500)"
@@ -83,7 +82,6 @@ export const CardDetailsTitle = styled.div`
 
 export const CardDetailsType = styled.div<CardDetailsContainerProps>`
   span {
-    font-size: 0.875rem;
     color: ${(props) =>
       props.type === "challenge"
         ? "var(--blue-500)"

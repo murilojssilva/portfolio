@@ -12,7 +12,6 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
   padding: 1rem;
   font-weight: bold;
   display: block;
-  text-decoration: none;
 
   display: ${(props) => (props.hasLink === false ? "none" : "flex")};
   text-align: center;

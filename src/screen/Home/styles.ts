@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InfoCardsContainer = styled.main`
+export const HomeContainer = styled.main`
   background-color: ${(props) => props.theme.colors.backgroundItens};
 
   border-radius: 8px;
@@ -15,6 +15,5 @@ export const InfoCardsContainer = styled.main`
   }
   p {
     margin: 2rem;
-    font-size: 1.5rem;
   }
 `;

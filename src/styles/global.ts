@@ -63,8 +63,18 @@ export const GlobalStyle = createGlobalStyle`
     }
    
     p {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
+
+    span {
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
 
     @media (max-width: 768px) {
    html {

@@ -52,7 +52,7 @@ $ yarn
 #### Execute a aplicação em modo de desenvolvimento
 
 ```shell
-$ yarn start
+$ yarn dev
 ```
 
 #### A aplicação iniciará na porta:5173 - acesse <http://localhost:5173>

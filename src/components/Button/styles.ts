@@ -28,13 +28,4 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
     border: 1px solid var(--green-500);
     color: var(--shape);
   }
-  &:not(:disabled)hover {
-    background-color: var(--green-300);
-  }
-
-  &:disabled {
-    opacity: 0.7;
-    background-color: var(--red-500);
-    cursor: not-allowed;
-  }
 `;

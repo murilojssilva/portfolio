@@ -111,7 +111,7 @@ export function Projects() {
         type="challenge"
         title="Intelie - Pokemon"
         subtitle="Desenvolvedor Front End"
-        content="Desafio proposto pela empresa Intelie."
+        content="Desafio proposto pela empresa Intelie. O mesmo consiste em desenvolver um catálogo de Pokémons baseando-se na POKEAPI."
         hasReact
         hasNetlify
         hasLink

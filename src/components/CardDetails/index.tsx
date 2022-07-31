@@ -31,7 +31,7 @@ import {
 
 interface CardDetailsProps {
   type?: "challenge" | "personal" | "academic" | "none";
-  colorTop: "projects" | "experiences";
+  colorTop: "projects" | "experiences" | "publications";
   title: string;
   subtitle?: string;
   content: string;

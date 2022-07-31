@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface CardDetailsContainerProps {
   type: "challenge" | "personal" | "academic" | "none";
-  colorTop: "projects" | "experiences";
+  colorTop: "projects" | "experiences" | "publications";
 }
 
 interface TechLogoProps {
@@ -31,6 +31,8 @@ export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
         ? "var(--blue-700)"
         : props.colorTop === "projects"
         ? "var(--green-500)"
+        : props.colorTop === "publications"
+        ? "var(--yellow-500)"
         : "var(--red-500)"};
   margin: 2rem;
   padding: 1rem;

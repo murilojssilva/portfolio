@@ -2,13 +2,13 @@
  <h1>:rocket: Meu Porfólio</h1>
 </div>
 
-<p align="center">Olá 👋🏼. Seja bem vindo ou bem vinda ao meu portfólio. Nele, conto um pouco sobre minha trajetória nestes anos de desenvolvimento. Está disponível para visualização [aqui](https://murilojssilva.vercel.app/){:target="_blank"}.
+Olá 👋🏼. Seja bem vindo ou bem vinda ao meu portfólio. Nele, conto um pouco sobre minha trajetória nestes anos de desenvolvimento. Está disponível para visualização [aqui](https://murilojssilva.vercel.app/).
 
 ---
 
 ### :link: Deploy
 
-Para acessar o deploy da aplicação na plataforma da [Vercel](https://www.vercel.app/){:target="\_blank"}, visite [https://murilojssilva.vercel.app/](https://murilojssilva.vercel.app/){:target="\_blank"}.
+Para acessar o deploy da aplicação na plataforma da [Vercel](https://www.vercel.app/), visite [https://murilojssilva.vercel.app/](https://murilojssilva.vercel.app/).
 
 ---
 

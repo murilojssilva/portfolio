@@ -16,7 +16,7 @@ Para acessar o deploy da aplicação na plataforma da [Vercel](https://www.verce
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
-Além disso, recomendado o uso de um um editor para trabalhar com o código, como por exemplo o[VSCode](https://code.visualstudio.com/).
+Além disso, recomendado o uso de um um editor para trabalhar com o código, como por exemplo o [VSCode](https://code.visualstudio.com/).
 
 ---
 
@@ -28,7 +28,8 @@ Além disso, recomendado o uso de um um editor para trabalhar com o código, com
 - [x] Styled Components
 - [x] React Icons
 - [x] React Tooltips
-- [x] Tema
+- [x] Temas
+- [x] Vercel
 
 ---
 

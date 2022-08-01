@@ -1,4 +1,4 @@
-import { FaGithub, FaGitlab } from "react-icons/fa";
+import { FaGithub, FaGitlab, FaInfo } from "react-icons/fa";
 import {
   SiBootstrap,
   SiCss3,
@@ -93,7 +93,9 @@ export function CardDetails({
         <CardDetailsTitle inDevelopment={inDevelopment}>
           <div>
             <h2>{title}</h2>
-            <strong>em desenvolvimento</strong>
+            <strong>
+              <FaInfo data-tip="Em desenvolvimento" />
+            </strong>
           </div>
 
           <h3>{subtitle}</h3>

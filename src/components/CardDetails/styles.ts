@@ -88,12 +88,12 @@ export const CardDetailsTitle = styled.div<InDevelopmentProps>`
     display: flex;
     flex-direction: row;
     strong {
-      font-size: 0.875rem;
-      border-radius: 8px;
-      padding: 0.125rem;
+      font-size: 0.5rem;
+      border-radius: 100px;
+      padding: 0.25rem;
       margin: 5px;
-      color: var(--shape);
-      background-color: var(--blue-900);
+      color: var(--green-200);
+      border: 1px solid var(--green-200);
       display: ${(props) => (props.inDevelopment === false ? "none" : "flex")};
       text-align: center;
       align-items: center;

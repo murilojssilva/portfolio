@@ -25,8 +25,8 @@ export const FooterContacts = styled.footer`
         background-color: ${(props) => props.theme.colors.text};
       }
       svg {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1rem;
+        height: 1rem;
         align-items: center;
       }
     }

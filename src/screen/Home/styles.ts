@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.main`
-  background-color: ${(props) => props.theme.colors.backgroundItens};
-
-  border-radius: 8px;
   height: 100%;
 
   position: relative;

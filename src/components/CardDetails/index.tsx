@@ -56,6 +56,7 @@ interface CardDetailsProps {
   hasRedux?: boolean;
   hasNetlify?: boolean;
   hasExpress?: boolean;
+  inDevelopment?: boolean;
 }
 
 export function CardDetails({
@@ -84,12 +85,17 @@ export function CardDetails({
   hasBootstrap = false,
   hasRedux = false,
   hasExpress = false,
+  inDevelopment = false,
 }: CardDetailsProps) {
   return (
     <CardDetailsContainer colorTop={colorTop} type={type}>
       <CardDetailsHeader>
-        <CardDetailsTitle>
-          <h2>{title}</h2>
+        <CardDetailsTitle inDevelopment={inDevelopment}>
+          <div>
+            <h2>{title}</h2>
+            <strong>em desenvolvimento</strong>
+          </div>
+
           <h3>{subtitle}</h3>
         </CardDetailsTitle>
         <CardDetailsType colorTop={colorTop} type={type}>

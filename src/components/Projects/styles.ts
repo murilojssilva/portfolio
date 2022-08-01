@@ -9,11 +9,20 @@ export const ProjectsContainer = styled.main`
   h1 {
     background: linear-gradient(
       to right,
-      var(--blue-200) 0%,
-      var(--purple-700) 100%
+      var(--green-200) 0%,
+      var(--green-800) 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+`;
+
+export const ProjectsContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 `;
 

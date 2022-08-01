@@ -5,7 +5,8 @@ export const PublicationsContainer = styled.main`
   h1 {
     background: linear-gradient(
       to right,
-      var(--blue-200) 0%,
+      var(--purple-200) 0%,
+      var(--purple-500) 50%,
       var(--purple-700) 100%
     );
     -webkit-background-clip: text;

@@ -22,8 +22,11 @@ export const GlobalStyle = createGlobalStyle`
         --blue-200: #30cfd0;
         --blue-500: #2196F3;
         --blue-700: #084d6e;
+        --blue-900: #0D47A1;
         --red-500: #F44336;
         --red-700: ##6e2908;
+        
+        --purple-200: #CE93D8;
         --purple-500: #9C27B0;
         --purple-700: #330867;
     }
@@ -64,6 +67,7 @@ export const GlobalStyle = createGlobalStyle`
    
     p {
         font-size: 1rem;
+        text-align: justify;
     }
 
     span {
@@ -73,6 +77,10 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
     }
     
 

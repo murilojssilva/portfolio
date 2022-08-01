@@ -6,7 +6,7 @@ export const ExperienceContainer = styled.main`
     background: linear-gradient(
       to right,
       var(--blue-200) 0%,
-      var(--purple-700) 100%
+      var(--blue-900) 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

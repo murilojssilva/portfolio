@@ -24,6 +24,10 @@ interface TechLogoProps {
   hasVercel?: boolean;
 }
 
+interface InDevelopmentProps {
+  inDevelopment?: boolean;
+}
+
 export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
   border-top: 5px solid
     ${(props) =>
@@ -32,10 +36,11 @@ export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
         : props.colorTop === "projects"
         ? "var(--green-500)"
         : props.colorTop === "publications"
-        ? "var(--yellow-500)"
+        ? "var(--purple-700)"
         : "var(--red-500)"};
   margin: 2rem;
   padding: 1rem;
+
   background-color: ${(props) => props.theme.colors.background};
   border-radius: 8px;
   h2 {
@@ -53,6 +58,7 @@ export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
     color: ${(props) => props.theme.colors.text};
   }
   p {
+    min-height: 100px;
     color: ${(props) => props.theme.colors.text};
     word-wrap: break-word;
   }
@@ -75,9 +81,24 @@ export const CardDetailsHeader = styled.div`
   justify-content: space-between;
 `;
 
-export const CardDetailsTitle = styled.div`
+export const CardDetailsTitle = styled.div<InDevelopmentProps>`
   display: flex;
   flex-direction: column;
+  div {
+    display: flex;
+    flex-direction: row;
+    strong {
+      font-size: 0.875rem;
+      border-radius: 8px;
+      padding: 0.125rem;
+      margin: 5px;
+      color: var(--shape);
+      background-color: var(--blue-900);
+      display: ${(props) => (props.inDevelopment === false ? "none" : "flex")};
+      text-align: center;
+      align-items: center;
+    }
+  }
 `;
 
 export const CardDetailsType = styled.div<CardDetailsContainerProps>`

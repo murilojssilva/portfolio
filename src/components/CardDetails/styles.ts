@@ -92,8 +92,8 @@ export const CardDetailsTitle = styled.div<InDevelopmentProps>`
       border-radius: 100px;
       padding: 0.25rem;
       margin: 5px;
-      color: var(--green-200);
-      border: 1px solid var(--green-200);
+      color: var(--shape);
+      border: 1px solid var(--shape);
       display: ${(props) => (props.inDevelopment === false ? "none" : "flex")};
       text-align: center;
       align-items: center;

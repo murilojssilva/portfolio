@@ -1,8 +1,42 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 interface SkillContainerProps {
   color: string;
 }
+
+const borderAnimation = keyframes`
+ 0% {
+  border-left: 2px solid var(--blue-200);
+  border-top: 2px solid var(--blue-500);
+  border-right: 2px solid var(--blue-700);
+  border-bottom: 2px solid var(--blue-900);
+	}
+  25% {
+  border-left: 2px solid var(--blue-900);
+  border-top: 2px solid var(--blue-200);
+  border-right: 2px solid var(--blue-500);
+  border-bottom: 2px solid var(--blue-700);
+  }
+  50% {
+  border-left: 2px solid var(--blue-700);
+  border-top: 2px solid var(--blue-900);
+  border-right: 2px solid var(--blue-200);
+  border-bottom: 2px solid var(--blue-500);
+  }
+  75%{
+    border-left: 2px solid var(--blue-500);
+  border-top: 2px solid var(--blue-700);
+  border-right: 2px solid var(--blue-900);
+    border-bottom: 2px solid var(--blue-200);
+  }
+  100%{
+  border-left: 2px solid var(--blue-200);
+  border-top: 2px solid var(--blue-500);
+  border-right: 2px solid var(--blue-700);
+  border-bottom: 2px solid var(--blue-900);
+  }
+	
+`;
 
 export const SkillContainer = styled.div<SkillContainerProps>`
   display: flex;
@@ -16,9 +50,11 @@ export const SkillContainer = styled.div<SkillContainerProps>`
 
   span {
     padding: 1rem;
+    border-radius: 8px;
     color: ${(props) => props.theme.colors.text};
-    border-radius: 100px;
-    background-color: ${(props) => props.color};
+    animation-name: ${borderAnimation};
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
     svg {
       width: 3rem;
       height: 3rem;

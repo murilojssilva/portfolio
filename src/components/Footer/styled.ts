@@ -5,13 +5,14 @@ export const FooterContacts = styled.footer`
   flex-direction: row;
   justify-content: center;
   padding: 10px 0;
+  width: 100%;
   div {
     padding: 1rem 0;
     border-top: 1px solid ${(props) => props.theme.colors.background};
 
     span {
       padding: 1rem;
-      margin: 0 10px;
+      margin: 0 5px;
       border-radius: 8px;
       border: 1px solid ${(props) => props.theme.colors.text};
 

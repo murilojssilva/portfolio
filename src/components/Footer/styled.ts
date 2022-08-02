@@ -5,6 +5,7 @@ export const FooterContacts = styled.footer`
   flex-direction: row;
   justify-content: center;
   padding: 10px 0;
+  margin-top: auto;
   width: 100%;
   div {
     padding: 1rem 0;

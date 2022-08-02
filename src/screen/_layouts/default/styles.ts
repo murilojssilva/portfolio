@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  height: 100%;
-  background-color: #2b475e;
+export const LayoutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;

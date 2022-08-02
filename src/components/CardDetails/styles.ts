@@ -5,25 +5,6 @@ interface CardDetailsContainerProps {
   colorTop: "projects" | "experiences" | "publications";
 }
 
-interface TechLogoProps {
-  hasReact?: boolean;
-  hasTypescript?: boolean;
-  hasReactNative?: boolean;
-  hasStyledComponents?: boolean;
-  hasHeroku?: boolean;
-  hasGraphQL?: boolean;
-  hasJest?: boolean;
-  hasNodeJS?: boolean;
-  hasNetlify?: boolean;
-  hasRubyOnRails?: boolean;
-  hasBootstrap?: boolean;
-  hasSCSS?: boolean;
-  hasRedux?: boolean;
-  hasExpress?: boolean;
-  hasNextJS?: boolean;
-  hasVercel?: boolean;
-}
-
 interface InDevelopmentProps {
   inDevelopment?: boolean;
 }
@@ -41,7 +22,7 @@ export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
   margin: 2rem;
   padding: 1rem;
 
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.backgroundItens};
   border-radius: 8px;
   h2 {
     font-size: 1.5rem;
@@ -69,7 +50,7 @@ export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
         : props.type === "personal"
         ? "var(--green-500)"
         : props.type === "academic"
-        ? "var(--yellow-500)"
+        ? "var(--purple-500)"
         : "var(--red-500)"};
     font-weight: bold;
   }
@@ -109,46 +90,8 @@ export const CardDetailsType = styled.div<CardDetailsContainerProps>`
         : props.type === "personal"
         ? "var(--green-500)"
         : props.type === "academic"
-        ? "var(--yellow-500)"
+        ? "var(--purple-500)"
         : "var(--red-500)"};
     font-weight: bold;
-  }
-`;
-
-export const UsedTechs = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-export const TechLogo = styled.span<TechLogoProps>`
-  display: ${(props) =>
-    props.hasReact === false ||
-    props.hasHeroku === false ||
-    props.hasVercel === false ||
-    props.hasNextJS === false ||
-    props.hasGraphQL === false ||
-    props.hasSCSS === false ||
-    props.hasTypescript === false ||
-    props.hasNodeJS === false ||
-    props.hasNetlify === false ||
-    props.hasStyledComponents === false ||
-    props.hasReactNative === false ||
-    props.hasRedux === false ||
-    props.hasJest === false ||
-    props.hasBootstrap === false ||
-    props.hasRubyOnRails === false ||
-    props.hasExpress === false
-      ? "none"
-      : "flex"};
-  padding: 1rem;
-  color: ${(props) => props.theme.colors.text};
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-  &:hover {
-    background-color: var(--gray-900);
-  }
-  svg {
-    width: 1.5rem;
-    height: 1.5rem;
   }
 `;

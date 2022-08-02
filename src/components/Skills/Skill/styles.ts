@@ -24,10 +24,10 @@ const borderAnimation = keyframes`
   border-bottom: 2px solid var(--blue-500);
   }
   75%{
-    border-left: 2px solid var(--blue-500);
+  border-left: 2px solid var(--blue-500);
   border-top: 2px solid var(--blue-700);
   border-right: 2px solid var(--blue-900);
-    border-bottom: 2px solid var(--blue-200);
+  border-bottom: 2px solid var(--blue-200);
   }
   100%{
   border-left: 2px solid var(--blue-200);
@@ -42,10 +42,19 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 1rem;
 
   &:not(last-child) {
-    border-right: 1px solid black;
+    border-right: 1px solid ${(props) => props.theme.colors.background};
+  }
+
+  &:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+
+  &:last-child {
+    border-radius: 0 8px 8px 0;
   }
 
   span {
@@ -92,7 +101,14 @@ export const SkillContainer = styled.div<SkillContainerProps>`
 
   @media (max-width: 960px) {
     &:not(last-child) {
-      border-bottom: 1px solid var(--gray-950);
+      border-bottom: 1px solid ${(props) => props.theme.colors.background};
+    }
+    &:first-child {
+      border-radius: 8px 8px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 8px 8px;
     }
   }
 `;

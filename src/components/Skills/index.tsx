@@ -8,7 +8,7 @@ export function Skills() {
       <Skill
         icon={<FaGraduationCap />}
         color={"var(--blue-500)"}
-        title={"<Cientista da Computação />"}
+        title={"Ciência da Computação"}
         description="Universidade do Estado do Rio de Janeiro"
         subtitle="Linguagens que utilizei"
         skills="C, C++, Java, Python, Ruby on Rails"
@@ -35,7 +35,7 @@ export function Skills() {
       <Skill
         icon={<FaCode />}
         color={"var(--blue-700)"}
-        title={"<Desenvolvedor Frontend />"}
+        title={"Desenvolvedor Frontend"}
         description="Desenvolvimento de interfaces web"
         subtitle="Linguagens que utilizei"
         skills="HTML, CSS3, Sass, Git, Javascript, Typescript"
@@ -57,7 +57,7 @@ export function Skills() {
       <Skill
         icon={<FaDatabase />}
         color={"var(--blue-900)"}
-        title={"<Desenvolvedor Backend />"}
+        title={"Desenvolvedor Backend"}
         description="Desenvolvimento de APIs"
         subtitle="Linguagens que utilizei"
         skills="Javascript, Typescript"

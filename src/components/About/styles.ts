@@ -11,9 +11,6 @@ export const AboutContent = styled.header`
   color: ${(props) => props.theme.colors.text};
   border-radius: 8px;
   overflow: hidden;
-`;
-
-export const AboutProfileTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

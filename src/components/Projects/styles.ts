@@ -48,7 +48,7 @@ export const ProjectTitle = styled.div<ProjectTitleProps>`
         : props.color === "personal"
         ? "var(--green-500)"
         : props.color === "academic"
-        ? "var(--yellow-500)"
+        ? "var(--purple-500)"
         : "var(--red-500)"};
     font-weight: bold;
   }

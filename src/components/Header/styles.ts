@@ -19,6 +19,10 @@ export const HeaderContainer = styled.header`
     text-align: center;
 
     a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       border-top: 3px solid transparent;
       border-bottom: 5px solid transparent;
       color: ${(props) => props.theme.colors.secundary};

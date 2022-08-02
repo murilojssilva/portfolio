@@ -2,7 +2,7 @@ import {
   FaGithubAlt,
   FaGitlab,
   FaLinkedinIn,
-  FaMailBulk,
+  FaEnvelope,
   FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
@@ -42,7 +42,7 @@ export function Footer() {
       <div>
         <a target="_blank" href="mailto:murilojssilva@outlook.com">
           <span>
-            <FaMailBulk size={26} data-tip="E-mail" />
+            <FaEnvelope size={26} data-tip="E-mail" />
           </span>
         </a>
       </div>

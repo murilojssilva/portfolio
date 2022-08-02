@@ -28,8 +28,10 @@ Além disso, recomendado o uso de um um editor para trabalhar com o código, com
 - [x] Styled Components
 - [x] React Icons
 - [x] React Tooltips
-- [x] Temas
+- [x] Temas (Dark e Light)
 - [x] Vercel
+- [x] Layouts
+- [x] Rotas
 
 ---
 

@@ -9,22 +9,14 @@ import { Skills } from "../../components/Skills";
 
 import { HomeContainer } from "./styles";
 
-interface HomeProps {
-  toggleTheme(): void;
-}
-
-export function Home({ toggleTheme }: HomeProps) {
-  const theme = useTheme();
-
+export function Home() {
   return (
     <HomeContainer>
-      <Header toggleTheme={toggleTheme} />
       <About />
       <Skills />
       <Experience />
       <Projects />
       <Publicatins />
-      <Footer />
     </HomeContainer>
   );
 }

@@ -33,7 +33,7 @@ export function Skill({
       <h3>{toolsTitle}</h3>
       <ul>
         {tools.map((tool) => (
-          <li>{tool}</li>
+          <li key={tool}>{tool}</li>
         ))}
       </ul>
     </SkillContainer>

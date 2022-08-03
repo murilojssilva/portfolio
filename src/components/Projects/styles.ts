@@ -4,7 +4,7 @@ interface ProjectTitleProps {
   color: "challenge" | "personal" | "academic";
 }
 
-export const ProjectsContainer = styled.main`
+export const ProjectsContainer = styled.section`
   border-top: 1px solid ${(props) => props.theme.colors.background};
   h1 {
     background: linear-gradient(

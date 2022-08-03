@@ -46,7 +46,7 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   padding: 1rem;
 
   &:not(last-child) {
-    border-right: 1px solid ${(props) => props.theme.colors.background};
+    border-right: 1px solid ${(props) => props.theme.colors.backgroundItens};
   }
 
   &:first-child {

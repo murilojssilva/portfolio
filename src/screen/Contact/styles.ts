@@ -61,4 +61,11 @@ export const ContactItemsContainer = styled.div`
     }
     color: ${(props) => props.theme.colors.text};
   }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 60vw;
+    }
+  }
 `;

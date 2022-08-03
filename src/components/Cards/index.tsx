@@ -1,15 +1,10 @@
 import { FaGithub, FaGitlab, FaInfo } from "react-icons/fa";
 import { Button } from "../Button";
 
-import {
-  CardDetailsContainer,
-  CardDetailsHeader,
-  CardDetailsTitle,
-  CardDetailsType,
-} from "./styles";
+import { CardsContainer, CardsHeader, CardsTitle, CardsType } from "./styles";
 import { Techs, TechsProps } from "./Techs";
 
-interface CardDetailsProps extends TechsProps {
+interface CardsProps extends TechsProps {
   type?: "challenge" | "personal" | "academic" | "none";
   colorTop: "projects" | "experiences" | "publications";
   title: string;
@@ -22,7 +17,7 @@ interface CardDetailsProps extends TechsProps {
   inDevelopment?: boolean;
 }
 
-export function CardDetails({
+export function Cards({
   title,
   subtitle,
   content,
@@ -50,11 +45,11 @@ export function CardDetails({
   hasBootstrap = false,
   hasRedux = false,
   hasExpress = false,
-}: CardDetailsProps) {
+}: CardsProps) {
   return (
-    <CardDetailsContainer colorTop={colorTop} type={type}>
-      <CardDetailsHeader>
-        <CardDetailsTitle inDevelopment={inDevelopment}>
+    <CardsContainer colorTop={colorTop} type={type}>
+      <CardsHeader>
+        <CardsTitle inDevelopment={inDevelopment}>
           <div>
             <h2>{title}</h2>
             <strong>
@@ -63,8 +58,8 @@ export function CardDetails({
           </div>
 
           <h3>{subtitle}</h3>
-        </CardDetailsTitle>
-        <CardDetailsType colorTop={colorTop} type={type}>
+        </CardsTitle>
+        <CardsType colorTop={colorTop} type={type}>
           <span>
             {type === "academic"
               ? "acadêmico"
@@ -74,8 +69,8 @@ export function CardDetails({
               ? "desafio"
               : ""}
           </span>
-        </CardDetailsType>
-      </CardDetailsHeader>
+        </CardsType>
+      </CardsHeader>
 
       <p>{content}</p>
 
@@ -114,6 +109,6 @@ export function CardDetails({
         }
         content={textButton}
       />
-    </CardDetailsContainer>
+    </CardsContainer>
   );
 }

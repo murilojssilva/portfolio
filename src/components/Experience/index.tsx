@@ -1,11 +1,11 @@
-import { CardDetails } from "../CardDetails";
+import { Cards } from "../Cards";
 import { ExperienceContainer } from "./styles";
 
 export function Experience() {
   return (
     <ExperienceContainer>
       <h1>{"<Experiências />"}</h1>
-      <CardDetails
+      <Cards
         colorTop="experiences"
         title="Upnid Pagamentos"
         subtitle="Desenvolvedor Front End"
@@ -18,7 +18,7 @@ export function Experience() {
         hasJest
         hasGraphQL
       />
-      <CardDetails
+      <Cards
         colorTop="experiences"
         title="ResolveLogo"
         subtitle="Desenvolvedor Full Stack"
@@ -31,7 +31,7 @@ export function Experience() {
         hasExpress
       />
 
-      <CardDetails
+      <Cards
         colorTop="experiences"
         title="Universidade do Estado do Rio de Janeiro"
         subtitle="Desenvolvedor Full Stack"

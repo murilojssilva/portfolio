@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-interface CardDetailsContainerProps {
+interface CardsContainerProps {
   type: "challenge" | "personal" | "academic" | "none";
   colorTop: "projects" | "experiences" | "publications";
 }
@@ -9,7 +9,7 @@ interface InDevelopmentProps {
   inDevelopment?: boolean;
 }
 
-export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
+export const CardsContainer = styled.div<CardsContainerProps>`
   border-top: 5px solid
     ${(props) =>
       props.colorTop === "experiences"
@@ -50,19 +50,19 @@ export const CardDetailsContainer = styled.div<CardDetailsContainerProps>`
         : props.type === "personal"
         ? "var(--green-500)"
         : props.type === "academic"
-        ? "var(--purple-500)"
+        ? "var(--purple-200)"
         : "var(--red-500)"};
     font-weight: bold;
   }
 `;
 
-export const CardDetailsHeader = styled.div`
+export const CardsHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 `;
 
-export const CardDetailsTitle = styled.div<InDevelopmentProps>`
+export const CardsTitle = styled.div<InDevelopmentProps>`
   display: flex;
   flex-direction: column;
   div {
@@ -82,7 +82,7 @@ export const CardDetailsTitle = styled.div<InDevelopmentProps>`
   }
 `;
 
-export const CardDetailsType = styled.div<CardDetailsContainerProps>`
+export const CardsType = styled.div<CardsContainerProps>`
   span {
     color: ${(props) =>
       props.type === "challenge"

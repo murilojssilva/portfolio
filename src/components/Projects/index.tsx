@@ -1,4 +1,4 @@
-import { CardDetails } from "../CardDetails";
+import { Cards } from "../Cards";
 
 import { ProjectsContainer, ProjectsContent } from "./styles";
 
@@ -7,7 +7,7 @@ export function Projects() {
     <ProjectsContainer>
       <h1>{"<Projetos />"}</h1>
       <ProjectsContent>
-        <CardDetails
+        <Cards
           colorTop="projects"
           type="academic"
           title="Sistema ACESSO"
@@ -18,7 +18,7 @@ export function Projects() {
           hasStyledComponents
           inDevelopment
         />
-        <CardDetails
+        <Cards
           colorTop="projects"
           type="academic"
           title="Instituto de Matemática e Estatística (UERJ)"
@@ -35,7 +35,7 @@ export function Projects() {
           href="https://gitlab.com/imeuerj/site-ime"
         />
 
-        <CardDetails
+        <Cards
           colorTop="projects"
           type="personal"
           title="ResolveLogo (Front End)"
@@ -49,7 +49,7 @@ export function Projects() {
           href="https://github.com/murilojssilva/resolvelogofrontend"
         />
 
-        <CardDetails
+        <Cards
           colorTop="projects"
           type="personal"
           title="ResolveLogo (Back End)"
@@ -63,7 +63,7 @@ export function Projects() {
           href="https://github.com/murilojssilva/resolvelogobackend"
         />
 
-        <CardDetails
+        <Cards
           colorTop="projects"
           type="challenge"
           title="TruckPag"
@@ -79,7 +79,7 @@ export function Projects() {
           href="https://github.com/murilojssilva/desafio-truckpag"
         />
 
-        <CardDetails
+        <Cards
           colorTop="projects"
           type="challenge"
           title="Vizir"
@@ -95,7 +95,7 @@ export function Projects() {
           href="https://github.com/murilojssilva/desafio-vizir"
         />
 
-        <CardDetails
+        <Cards
           colorTop="projects"
           type="challenge"
           title="Intelie - Chart"
@@ -108,7 +108,7 @@ export function Projects() {
           href="https://github.com/murilojssilva/intelie-chart"
         />
 
-        <CardDetails
+        <Cards
           colorTop="projects"
           type="challenge"
           title="Intelie - Pokemon"

@@ -25,14 +25,14 @@ export const HeaderContainer = styled.header`
       align-items: center;
       border-top: 3px solid transparent;
       border-bottom: 5px solid transparent;
-      color: ${(props) => props.theme.colors.secundary};
+      color: ${(props) => props.theme.colors.text};
 
       &:hover {
-        border-bottom: 5px solid var(--blue-500);
+        border-bottom: 5px solid ${(props) => props.theme.colors.secundary};
       }
 
       &.active {
-        color: var(--blue-500);
+        color: ${(props) => props.theme.colors.secundary};
       }
     }
   }

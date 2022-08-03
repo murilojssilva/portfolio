@@ -3,7 +3,7 @@ export default {
 
   colors: {
     primary: "var(--blue-700)",
-    secundary: "var(--red-700)",
+    secundary: "var(--blue-900)",
 
     background: "var(--shape)",
     backgroundItens: "var(--gray-50)",

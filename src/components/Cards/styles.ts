@@ -36,7 +36,7 @@ export const CardsContainer = styled.div<CardsContainerProps>`
       var(--blue-200) 0%,
       var(--blue-700) 100%
     );
-    --webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   h3 {

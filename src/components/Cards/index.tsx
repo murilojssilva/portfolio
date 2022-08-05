@@ -1,5 +1,5 @@
 import { FaGithub, FaGitlab, FaInfo } from "react-icons/fa";
-import { Button } from "../Button";
+import { Button } from "../Form/Button";
 
 import { CardsContainer, CardsHeader, CardsTitle, CardsType } from "./styles";
 import { Techs, TechsProps } from "./Techs";

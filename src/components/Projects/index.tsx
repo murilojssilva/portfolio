@@ -9,6 +9,18 @@ export function Projects() {
       <ProjectsContent>
         <Cards
           colorTop="projects"
+          type="academic"
+          title="Sistema ACESSO"
+          subtitle="Desenvolvedor Mobile"
+          content="Desenvolvimento do trabalho de conclusão de curso da Universidade do Estado do Rio de Janeiro, que consiste na criação de um app mobile que demonstra quais tipos de acessibilidade são atendidas nos estabelecimentos cadastrados."
+          hasReactNative
+          hasTypescript
+          hasStyledComponents
+          hasFirebase
+          inDevelopment
+        />
+        <Cards
+          colorTop="projects"
           type="challenge"
           title="Desafio Pagcom"
           subtitle="Desenvolvedor Front End"
@@ -21,17 +33,7 @@ export function Projects() {
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/desafio-pagcom"
         />
-        <Cards
-          colorTop="projects"
-          type="academic"
-          title="Sistema ACESSO"
-          subtitle="Desenvolvedor Mobile"
-          content="Desenvolvimento do trabalho de conclusão de curso da Universidade do Estado do Rio de Janeiro, que consiste na criação de um app mobile que demonstra quais tipos de acessibilidade são atendidas nos estabelecimentos cadastrados."
-          hasReactNative
-          hasTypescript
-          hasStyledComponents
-          inDevelopment
-        />
+
         <Cards
           colorTop="projects"
           type="academic"

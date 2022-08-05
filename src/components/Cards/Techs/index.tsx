@@ -5,6 +5,7 @@ import {
   SiBootstrap,
   SiCss3,
   SiExpress,
+  SiFirebase,
   SiGraphql,
   SiHeroku,
   SiJavascript,
@@ -34,6 +35,7 @@ export interface TechsProps {
   hasNodeJS?: boolean;
   hasVercel?: boolean;
   hasNextJS?: boolean;
+  hasFirebase?: boolean;
   hasRubyOnRails?: boolean;
   hasBootstrap?: boolean;
   hasRedux?: boolean;
@@ -58,6 +60,7 @@ export function Techs({
   hasRubyOnRails,
   hasBootstrap,
   hasRedux,
+  hasFirebase,
   hasExpress,
 }: TechsProps) {
   const theme = useTheme();
@@ -101,6 +104,9 @@ export function Techs({
       </TechContent>
       <TechContent hasRedux={hasRedux}>
         <SiRedux color={"#7248B7"} data-tip="Redux" />
+      </TechContent>
+      <TechContent hasFirebase={hasFirebase}>
+        <SiFirebase color={"#F7C52F"} data-tip="Redux" />
       </TechContent>
       <TechContent hasJest={hasJest}>
         <SiJest color={"#BC3A14"} data-tip="Jest" />

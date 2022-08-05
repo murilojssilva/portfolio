@@ -32,6 +32,7 @@ export function Cards({
   hasTypescript = false,
   hasNetlify = false,
   hasHeroku = false,
+  hasFirebase = false,
   hasReactNative = false,
   hasStyledComponents = false,
   hasGraphQL = false,
@@ -83,6 +84,7 @@ export function Cards({
         hasJest={hasJest}
         hasNetlify={hasNetlify}
         hasNextJS={hasNextJS}
+        hasFirebase={hasFirebase}
         hasNodeJS={hasNodeJS}
         hasReact={hasReact}
         hasReactNative={hasReactNative}

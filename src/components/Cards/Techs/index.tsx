@@ -67,7 +67,7 @@ export function Techs({
   return (
     <TechsContainer>
       <TechContent hasJavascript={hasJavascript}>
-        <SiJavascript color={"#EFD81D"} data-tip="ReactJS" />
+        <SiJavascript color={"#EFD81D"} data-tip="Javascript" />
       </TechContent>
       <TechContent hasReact={hasReact}>
         <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
@@ -106,7 +106,7 @@ export function Techs({
         <SiRedux color={"#7248B7"} data-tip="Redux" />
       </TechContent>
       <TechContent hasFirebase={hasFirebase}>
-        <SiFirebase color={"#F7C52F"} data-tip="Redux" />
+        <SiFirebase color={"#F7C52F"} data-tip="Firebase" />
       </TechContent>
       <TechContent hasJest={hasJest}>
         <SiJest color={"#BC3A14"} data-tip="Jest" />

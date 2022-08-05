@@ -85,7 +85,7 @@ export const SkillContainer = styled.div<SkillContainerProps>`
     border: 5px solid transparent;
     border-top: 5px solid ${(props) => props.theme.colors.primary};
     &:nth-child(odd) {
-      border-right: 1px solid ${(props) => props.theme.colors.primary};
+      border-right: 5px solid transparent;
     }
     &:nth-child(2n) {
       border-right: 1px solid transparent;

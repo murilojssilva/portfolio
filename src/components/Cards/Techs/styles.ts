@@ -49,8 +49,9 @@ export const TechContent = styled.span<TechContentProps>`
       ? "none"
       : "flex"};
   padding: 1rem;
-  color: ${(props) => props.theme.colors.text};
+  outline: 0;
 
+  color: ${(props) => props.theme.colors.text};
   border-radius: 8px;
   margin-bottom: 0.5rem;
   &:hover {

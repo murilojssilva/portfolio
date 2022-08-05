@@ -49,7 +49,6 @@ export const TechContent = styled.span<TechContentProps>`
       ? "none"
       : "flex"};
   padding: 1rem;
-  outline: 0;
 
   color: ${(props) => props.theme.colors.text};
   border-radius: 8px;
@@ -58,6 +57,8 @@ export const TechContent = styled.span<TechContentProps>`
     background-color: ${(props) => props.theme.colors.backgroundItens};
   }
   svg {
+    outline: 0;
+    border: 0;
     width: 1.5rem;
     height: 1.5rem;
   }

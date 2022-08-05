@@ -12,17 +12,21 @@ export function About() {
             responsável pela manutenção do website, criação de novas telas,
             alertas aos clientes, view de envio de documentos, migração do
             código legado para Typescript e utilização do Storybook para
-            manutenção do Design System, utilizando as tecnologias ReactJS,
-            Typescript, GraphQL, Styled Components e Jest. Fiz parte do projeto
-            de um Extensão na Universidade do Estado do Rio de Janeiro voltado à
-            criação do protótipo do website do Instituto de Matemática e
-            Estatística da Instituição, onde fiz desde a obtenção dos requisitos
-            funcionais, não funcionais e regras de negócio, elaboração do
-            documento de requisitos e o desenvolvimento do protótipo utilizando
-            as tecnologias Ruby on Rails e Bootstrap. Desenvolvi o website da
-            empresa ResolveLogo, tanto o frontend utilizando ReactJS, Axios,
-            Styled Components como no backend, criando um micro-serviço de envio
-            de e-mails utiliando as ferramentas NodeJS, Express e Nodemailer.
+            manutenção do Design System.
+          </p>
+          <p>
+            Fiz parte do projeto de um Extensão na Universidade do Estado do Rio
+            de Janeiro voltado à criação do protótipo do website do Instituto de
+            Matemática e Estatística da Instituição, onde fiz desde a obtenção
+            dos requisitos funcionais, não funcionais e regras de negócio,
+            elaboração do documento de requisitos e o desenvolvimento do
+            protótipo.
+          </p>
+          <p>
+            Desenvolvi o website da empresa ResolveLogo, tanto o frontend
+            utilizando ReactJS, Axios, Styled Components como no backend,
+            criando um micro-serviço de envio de e-mails utiliando as
+            ferramentas NodeJS, Express e Nodemailer.
           </p>
           <p>
             Atualmente, desenvolvendo o Sistema ACESSO, responsável por listar

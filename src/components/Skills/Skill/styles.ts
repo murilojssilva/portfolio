@@ -11,16 +11,13 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   text-align: center;
   gap: 1rem;
 
+  border: 5px solid transparent;
+  border-top: 5px solid ${(props) => props.theme.colors.primary};
+
   transition: filter 0.1s;
   &:hover {
     filter: ${(props) =>
       props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
-  }
-
-  border: 1px solid transparent;
-
-  &:not(:last-child) {
-    border-right: 1px solid ${(props) => props.theme.colors.primary};
   }
 
   span {
@@ -71,27 +68,6 @@ export const SkillContainer = styled.div<SkillContainerProps>`
     padding: 1rem;
     li {
       line-height: 1.6;
-    }
-  }
-  @media (max-width: 1080px) {
-    border: 5px solid transparent;
-    border-top: 5px solid ${(props) => props.theme.colors.primary};
-
-    &:nth-child(odd),
-    &:nth-child(2n) {
-      border-right: 5px solid transparent;
-    }
-
-    &:first-child {
-      border-left: 5px solid transparent;
-    }
-  }
-  @media (max-width: 768px) {
-    border-top: 5px solid ${(props) => props.theme.colors.primary};
-
-    &:not(:last-child) {
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
     }
   }
 `;

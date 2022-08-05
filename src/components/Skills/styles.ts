@@ -8,10 +8,6 @@ export const SkillsContainer = styled.section`
   border-radius: 8px;
   gap: 1rem;
 
-  border: 1px solid transparent;
-
-  border-top: 5px solid ${(props) => props.theme.colors.primary};
-
   box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
   @media (max-width: 1080px) {
     border-top: 5px solid transparent;

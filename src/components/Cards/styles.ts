@@ -23,6 +23,11 @@ export const CardsContainer = styled.div<CardsContainerProps>`
   padding: 1rem;
 
   background-color: ${(props) => props.theme.colors.backgroundItens};
+  transition: filter 0.1s;
+  &:hover {
+    filter: ${(props) =>
+      props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
+  }
   border-radius: 8px;
   h2 {
     font-size: 1.5rem;

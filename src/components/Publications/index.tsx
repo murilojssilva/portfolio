@@ -4,7 +4,7 @@ import { PublicationsContainer } from "./styles";
 export function Publicatins() {
   return (
     <PublicationsContainer>
-      <h1>{"<Publicações />"}</h1>
+      <h1>{"<Publicações>"}</h1>
       <Cards
         colorTop="publications"
         title="Requirements Engineering Out of the Classroom: Anticipating Challenges Experienced in Practice"
@@ -13,6 +13,7 @@ export function Publicatins() {
         hasLink
         href={"https://ieeexplore.ieee.org/document/9206220"}
       />
+      <h1>{"</Publicações>"}</h1>
     </PublicationsContainer>
   );
 }

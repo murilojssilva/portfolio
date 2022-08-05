@@ -7,6 +7,7 @@ import {
   SiExpress,
   SiGraphql,
   SiHeroku,
+  SiJavascript,
   SiJest,
   SiNetlify,
   SiNextdotjs,
@@ -18,6 +19,7 @@ import {
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
+import { useTheme } from "styled-components";
 
 export interface TechsProps {
   hasReact?: boolean;
@@ -58,16 +60,26 @@ export function Techs({
   hasRedux,
   hasExpress,
 }: TechsProps) {
+  const theme = useTheme();
   return (
     <TechsContainer>
+      <TechContent hasJavascript={hasJavascript}>
+        <SiJavascript color={"#EFD81D"} data-tip="ReactJS" />
+      </TechContent>
       <TechContent hasReact={hasReact}>
         <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
       </TechContent>
       <TechContent hasNextJS={hasNextJS}>
-        <SiNextdotjs color={"#F2F2F2"} data-tip="NextJS" />
+        <SiNextdotjs
+          color={theme.title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+          data-tip="NextJS"
+        />
       </TechContent>
       <TechContent hasVercel={hasVercel}>
-        <SiVercel color={"#F2F2F2"} data-tip="Vercel" />
+        <SiVercel
+          color={theme.title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+          data-tip="Vercel"
+        />
       </TechContent>
       <TechContent hasNetlify={hasNetlify}>
         <SiNetlify color={"#37A4B2"} data-tip="Netlify" />

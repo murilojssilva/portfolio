@@ -7,6 +7,7 @@ export const ContactContainer = styled.main`
   justify-content: center;
   padding: 2rem 0;
   min-height: 80vh;
+
   form {
     display: flex;
     flex-direction: column;
@@ -15,6 +16,9 @@ export const ContactContainer = styled.main`
     box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
     align-items: center;
     align-self: center;
+    &:hover {
+      border: 1px solid ${(props) => props.theme.colors.backgroundItens};
+    }
     select,
     textarea {
       width: 60vw;

@@ -5,8 +5,22 @@ import { ProjectsContainer, ProjectsContent } from "./styles";
 export function Projects() {
   return (
     <ProjectsContainer>
-      <h1>{"<Projetos />"}</h1>
+      <h1>{"<Projetos>"}</h1>
       <ProjectsContent>
+        <Cards
+          colorTop="projects"
+          type="challenge"
+          title="Desafio Pagcom"
+          subtitle="Desenvolvedor Front End"
+          content="Desafio proposto pela empresa Pagcom. Ele consiste em replicar o layout elaborado pela equipe."
+          hasReact
+          hasTypescript
+          hasStyledComponents
+          hasVercel
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/desafio-pagcom"
+        />
         <Cards
           colorTop="projects"
           type="academic"
@@ -120,7 +134,8 @@ export function Projects() {
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/pokemon-intelie"
         />
-      </ProjectsContent>
+      </ProjectsContent>{" "}
+      <h1>{"</Projetos>"}</h1>
     </ProjectsContainer>
   );
 }

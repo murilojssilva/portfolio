@@ -4,7 +4,7 @@ import { ExperienceContainer } from "./styles";
 export function Experience() {
   return (
     <ExperienceContainer>
-      <h1>{"<Experiências />"}</h1>
+      <h1>{"<Experiências>"}</h1>
       <Cards
         colorTop="experiences"
         title="Upnid Pagamentos"
@@ -40,6 +40,7 @@ export function Experience() {
         hasRubyOnRails
         hasBootstrap
       />
+      <h1>{"</Experiências>"}</h1>
     </ExperienceContainer>
   );
 }

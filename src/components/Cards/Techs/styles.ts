@@ -17,6 +17,7 @@ interface TechContentProps {
   hasExpress?: boolean;
   hasNextJS?: boolean;
   hasVercel?: boolean;
+  hasJavascript?: boolean;
 }
 
 export const TechsContainer = styled.div`
@@ -26,6 +27,7 @@ export const TechsContainer = styled.div`
 
 export const TechContent = styled.span<TechContentProps>`
   display: ${(props) =>
+    props.hasJavascript === false ||
     props.hasReact === false ||
     props.hasHeroku === false ||
     props.hasVercel === false ||

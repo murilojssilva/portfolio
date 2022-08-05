@@ -9,23 +9,23 @@ export function About() {
           <p>Olá 👋. Este é o portfólio do Murilo Silva.</p>
           <p>
             Trabalhei na empresa Upnid Pagamentos como Front End Developer,
-            responsável pela manutenção do website, criação de novas telas,
-            alertas aos clientes, view de envio de documentos, migração do
-            código legado para Typescript e utilização do Storybook para
+            responsável pela manutenção do website, desenvolvimento de novas
+            telas, alertas aos clientes, view de envio de documentos, migração
+            do código legado para Typescript e utilização do Storybook para
             manutenção do Design System.
           </p>
           <p>
             Fiz parte do projeto de um Extensão na Universidade do Estado do Rio
-            de Janeiro voltado à criação do protótipo do website do Instituto de
-            Matemática e Estatística da Instituição, onde fiz desde a obtenção
-            dos requisitos funcionais, não funcionais e regras de negócio,
-            elaboração do documento de requisitos e o desenvolvimento do
-            protótipo.
+            de Janeiro voltado à desenvolvimento do protótipo do website do
+            Instituto de Matemática e Estatística da Instituição, onde fiz desde
+            a obtenção dos requisitos funcionais, não funcionais e regras de
+            negócio, elaboração do documento de requisitos e o desenvolvimento
+            do protótipo.
           </p>
           <p>
             Desenvolvi o website da empresa ResolveLogo, tanto o frontend
-            utilizando ReactJS, Axios, Styled Components como no backend,
-            criando um micro-serviço de envio de e-mails.
+            desenvolvendo a landing page da empresa, como no backend,
+            desenvolvendo um micro-serviço de envio de e-mails.
           </p>
           <p>
             Atualmente, desenvolvendo o Sistema ACESSO, responsável por listar

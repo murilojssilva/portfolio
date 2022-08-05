@@ -65,7 +65,7 @@ export const SkillContainer = styled.div<SkillContainerProps>`
       var(--blue-200) 0%,
       var(--blue-700) 100%
     );
-    background-clip: text;
+    --webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 

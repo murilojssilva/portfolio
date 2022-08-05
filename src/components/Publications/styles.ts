@@ -9,7 +9,7 @@ export const PublicationsContainer = styled.main`
       var(--purple-500) 50%,
       var(--purple-700) 100%
     );
-    background-clip: text;
+    --webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 `;

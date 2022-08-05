@@ -9,7 +9,7 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  gap: 1rem;
 
   transition: filter 0.1s;
   &:hover {
@@ -21,14 +21,6 @@ export const SkillContainer = styled.div<SkillContainerProps>`
 
   &:not(:last-child) {
     border-right: 1px solid ${(props) => props.theme.colors.primary};
-  }
-
-  &:first-child {
-    border-radius: 8px 0 0 8px;
-  }
-
-  &:last-child {
-    border-radius: 0 8px 8px 0;
   }
 
   span {
@@ -84,17 +76,14 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   @media (max-width: 1080px) {
     border: 5px solid transparent;
     border-top: 5px solid ${(props) => props.theme.colors.primary};
-    &:nth-child(odd) {
+
+    &:nth-child(odd),
+    &:nth-child(2n) {
       border-right: 5px solid transparent;
     }
-    &:nth-child(2n) {
-      border-right: 1px solid transparent;
-    }
+
     &:first-child {
-      border-radius: 8px 8px 0 0;
-    }
-    &:last-child {
-      border-radius: 0 0 8px 8px;
+      border-left: 5px solid transparent;
     }
   }
   @media (max-width: 768px) {

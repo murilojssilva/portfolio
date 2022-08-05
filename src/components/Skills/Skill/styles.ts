@@ -17,8 +17,8 @@ export const SkillContainer = styled.div<SkillContainerProps>`
       props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
   }
 
-  &:not(last-child) {
-    border-right: 1px solid ${(props) => props.theme.colors.backgroundItens};
+  &:not(:last-child) {
+    border-right: 1px solid ${(props) => props.theme.colors.primary};
   }
 
   &:first-child {
@@ -70,9 +70,13 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   }
 
   @media (max-width: 960px) {
-    &:not(last-child) {
-      border-bottom: 1px solid ${(props) => props.theme.colors.background};
+    border-top: 5px solid ${(props) => props.theme.colors.primary};
+
+    &:not(:last-child) {
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
     }
+
     &:first-child {
       border-radius: 8px 8px 0 0;
     }

@@ -1,11 +1,7 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
+import { LayoutContainer } from "../../screen/_layouts/default/styles";
 
-export const AboutContainer = styled.main`
-  p {
-    color: ${(props) => props.theme.colors.text};
-    font-style: unset;
-  }
-`;
+export const AboutContainer = styled(LayoutContainer)``;
 
 export const AboutContent = styled.header`
   color: ${(props) => props.theme.colors.text};
@@ -16,7 +12,7 @@ export const AboutContent = styled.header`
   align-items: center;
 
   article {
-    width: 60%;
+    width: 90%;
     p {
       color: ${(props) => props.theme.colors.text};
       font-size: 1.5rem;

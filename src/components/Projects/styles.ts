@@ -12,7 +12,7 @@ export const ProjectsContainer = styled.section`
       var(--green-200) 0%,
       var(--green-800) 100%
     );
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 `;
@@ -38,7 +38,7 @@ export const ProjectTitle = styled.div<ProjectTitleProps>`
       var(--blue-200) 0%,
       var(--blue-500) 100%
     );
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   span {

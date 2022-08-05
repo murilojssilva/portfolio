@@ -17,6 +17,8 @@ export const SkillContainer = styled.div<SkillContainerProps>`
       props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
   }
 
+  border: 1px solid transparent;
+
   &:not(:last-child) {
     border-right: 1px solid ${(props) => props.theme.colors.primary};
   }
@@ -63,7 +65,7 @@ export const SkillContainer = styled.div<SkillContainerProps>`
       var(--blue-200) 0%,
       var(--blue-700) 100%
     );
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -79,21 +81,28 @@ export const SkillContainer = styled.div<SkillContainerProps>`
       line-height: 1.6;
     }
   }
-
-  @media (max-width: 960px) {
+  @media (max-width: 1080px) {
+    border: 5px solid transparent;
+    border-top: 5px solid ${(props) => props.theme.colors.primary};
+    &:nth-child(odd) {
+      border-right: 1px solid ${(props) => props.theme.colors.primary};
+    }
+    &:nth-child(2n) {
+      border-right: 1px solid transparent;
+    }
+    &:first-child {
+      border-radius: 8px 8px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+  @media (max-width: 768px) {
     border-top: 5px solid ${(props) => props.theme.colors.primary};
 
     &:not(:last-child) {
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
-    }
-
-    &:first-child {
-      border-radius: 8px 8px 0 0;
-    }
-
-    &:last-child {
-      border-radius: 0 0 8px 8px;
     }
   }
 `;

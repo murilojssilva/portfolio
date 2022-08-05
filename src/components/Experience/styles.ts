@@ -8,7 +8,7 @@ export const ExperienceContainer = styled.section`
       var(--blue-200) 0%,
       var(--blue-900) 100%
     );
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 `;

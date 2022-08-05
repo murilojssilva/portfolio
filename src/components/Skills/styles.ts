@@ -9,7 +9,10 @@ export const SkillsContainer = styled.section`
   border: 1px solid transparent;
 
   box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
-  @media (max-width: 960px) {
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 `;

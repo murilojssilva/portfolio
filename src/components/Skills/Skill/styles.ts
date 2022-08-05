@@ -10,7 +10,6 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   align-items: center;
   text-align: center;
   gap: 1rem;
-
   border: 5px solid transparent;
   border-top: 5px solid ${(props) => props.theme.colors.primary};
 
@@ -21,7 +20,7 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   }
 
   span {
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 8px;
     color: ${(props) => props.theme.colors.secundary};
 
@@ -38,16 +37,14 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   }
 
   strong {
-    margin: 10px;
     height: 5rem;
     line-height: 1.6;
-
     text-align: center;
     font-size: 1rem;
     color: ${(props) => props.theme.colors.text};
   }
   h1 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     text-align: center;
     background: linear-gradient(
       to right,

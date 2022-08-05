@@ -29,6 +29,7 @@ export const CardsContainer = styled.div<CardsContainerProps>`
       props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
   }
   border-radius: 8px;
+
   h2 {
     font-size: 1.5rem;
     background: linear-gradient(

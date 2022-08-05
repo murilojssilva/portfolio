@@ -12,7 +12,7 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   gap: 1rem;
   box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
   border-radius: 0 0 8px 8px;
-  border: 5px solid transparent;
+  border-radius: 8px;
   border-top: 5px solid ${(props) => props.theme.colors.primary};
 
   transition: filter 0.1s;

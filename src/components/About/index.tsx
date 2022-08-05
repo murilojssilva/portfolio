@@ -25,14 +25,12 @@ export function About() {
           <p>
             Desenvolvi o website da empresa ResolveLogo, tanto o frontend
             utilizando ReactJS, Axios, Styled Components como no backend,
-            criando um micro-serviço de envio de e-mails utiliando as
-            ferramentas NodeJS, Express e Nodemailer.
+            criando um micro-serviço de envio de e-mails.
           </p>
           <p>
             Atualmente, desenvolvendo o Sistema ACESSO, responsável por listar
             quais tipos de acessibilidade são atendidas nos estabelecimentos
-            cadastrados próximo à localização do usuário. Utilizando as
-            tecnologias React Native, Firebase, Typescript e Styled Components.
+            cadastrados próximo à localização do usuário.
           </p>
         </article>
       </AboutContent>

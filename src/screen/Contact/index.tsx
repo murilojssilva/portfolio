@@ -36,8 +36,6 @@ let schema = yup.object().shape({
 });
 
 export function Contact() {
-  const messageOptions = ["", "E-mail", "WhatsApp"];
-
   const {
     register,
     handleSubmit,
@@ -64,59 +62,58 @@ export function Contact() {
       <ContactItemsContainer>
         <label htmlFor="firstName">
           <p>Nome</p>
-          {errors.firstName && <span>{errors.firstName.message}</span>}
           <input
             placeholder="Digite aqui o nome da sua empresa"
             type="text"
             id="firstName"
             {...register("firstName")}
           />
+          {errors.firstName && <span>{errors.firstName.message}</span>}
         </label>
         <label htmlFor="last_name">
           <p>Sobrenome</p>
-          {errors.lastName ? (
-            <span>{errors.lastName.message}</span>
-          ) : (
-            <span></span>
-          )}
           <input
             placeholder="Sobrenome"
             type="text"
             id="lastName"
             {...register("lastName")}
           />
+          {errors.lastName && <span>{errors.lastName.message}</span>}
         </label>
       </ContactItemsContainer>
       <ContactItemsContainer>
         <label htmlFor="email">
           <p>E-mail</p>
-          {errors.email ? <span>{errors.email.message}</span> : <span></span>}
           <input
-            placeholder="contato@contato.com"
+            placeholder="email@contato.com"
             type="text"
             id="email"
             {...register("email")}
-          />
+          />{" "}
+          {errors.email && <span>{errors.email.message}</span>}
         </label>
+
         <label htmlFor="phone">
           <p>Telefone</p>
-          {errors.phone ? <span>{errors.phone.message}</span> : <span></span>}
+
           <input
             placeholder="( )_____-____"
             type="text"
             id="phone"
             {...register("phone")}
           />
+          {errors.phone ? <span>{errors.phone.message}</span> : <span></span>}
         </label>
       </ContactItemsContainer>
 
       <label htmlFor="">
+        <p>Forma de contato</p>
         <select {...register("contactWay")} id="contactWay">
-          {messageOptions.map((value) => (
-            <option key={value} value={value}>
-              {value}
-            </option>
-          ))}
+          <option value="" disabled selected>
+            Selecione uma opção
+          </option>
+          <option value="E-mail">E-mail</option>
+          <option value="WhatsApp">WhatsApp</option>
         </select>
         {errors.contactWay ? (
           <span>{errors.contactWay.message}</span>
@@ -126,12 +123,12 @@ export function Contact() {
       </label>
       <label htmlFor="message">
         <p>Mensagem</p>
-        {errors.message ? <span>{errors.message.message}</span> : <span></span>}
         <textarea
           placeholder="Mensagem"
           id="message"
           {...register("message")}
         />
+        {errors.message && <span>{errors.message.message}</span>}
       </label>
       <button>
         <FaEnvelope />

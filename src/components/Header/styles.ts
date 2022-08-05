@@ -28,11 +28,11 @@ export const HeaderContainer = styled.header`
       color: ${(props) => props.theme.colors.text};
 
       &:hover {
-        border-bottom: 5px solid ${(props) => props.theme.colors.secundary};
+        border-bottom: 5px solid ${(props) => props.theme.colors.primary};
       }
 
       &.active {
-        color: ${(props) => props.theme.colors.secundary};
+        color: ${(props) => props.theme.colors.primary};
       }
     }
   }

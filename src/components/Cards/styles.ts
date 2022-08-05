@@ -22,7 +22,8 @@ export const CardsContainer = styled.div<CardsContainerProps>`
   margin: 2rem;
   padding: 1rem;
 
-  background-color: ${(props) => props.theme.colors.backgroundItens};
+  background-color: ${(props) => props.theme.colors.background};
+  box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
   transition: filter 0.1s;
   &:hover {
     filter: ${(props) =>
@@ -84,6 +85,10 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
       display: ${(props) => (props.inDevelopment === false ? "none" : "flex")};
       text-align: center;
       align-items: center;
+      &:hover {
+        color: ${(props) => props.theme.colors.backgroundItens};
+        background-color: ${(props) => props.theme.colors.text};
+      }
     }
   }
 `;

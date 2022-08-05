@@ -16,7 +16,6 @@ export const AboutContent = styled.header`
     p {
       color: ${(props) => props.theme.colors.text};
       font-size: 1.5rem;
-      text-align: center;
     }
   }
 

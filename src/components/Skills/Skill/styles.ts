@@ -43,6 +43,17 @@ export const SkillContainer = styled.div<SkillContainerProps>`
     margin: 10px auto;
     line-height: 1.6;
     height: 3rem;
+    text-align: center;
+  }
+
+  strong {
+    margin: 10px;
+    height: 5rem;
+    line-height: 1.6;
+
+    text-align: center;
+    font-size: 1rem;
+    color: ${(props) => props.theme.colors.text};
   }
   h1 {
     font-size: 1.125rem;

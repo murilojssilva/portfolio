@@ -27,7 +27,7 @@ export function Skill({
     <SkillContainer color={color}>
       <span>{icon}</span>
       <h1>{title}</h1>
-      <p>{description}</p>
+      <strong>{description}</strong>
       <h3>{subtitle}</h3>
       <p>{skills}</p>
       <h3>{toolsTitle}</h3>

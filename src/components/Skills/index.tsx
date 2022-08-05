@@ -1,4 +1,4 @@
-import { FaCode, FaDatabase, FaGraduationCap } from "react-icons/fa";
+import { FaCode, FaDatabase, FaGraduationCap, FaMobile } from "react-icons/fa";
 import { Skill } from "./Skill";
 import { SkillsContainer } from "./styles";
 
@@ -53,6 +53,16 @@ export function Skills() {
           "Jest",
           "GraphQL",
         ]}
+      />
+      <Skill
+        icon={<FaMobile />}
+        color={"var(--blue-700)"}
+        title={"Desenvolvedor Mobile"}
+        description="Desenvolvimento de aplicações mobile"
+        subtitle="Linguagens que utilizei"
+        skills="React Native"
+        toolsTitle="Ferramentas"
+        tools={["React Native", "Typescript", "Styled Components", "Firebase"]}
       />
       <Skill
         icon={<FaDatabase />}

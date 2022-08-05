@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 90%;
   margin: 0 auto;
   border-radius: 8px;

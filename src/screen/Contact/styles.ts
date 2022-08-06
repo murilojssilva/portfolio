@@ -18,11 +18,25 @@ export const ContactContainer = styled.form`
   label {
     display: flex;
     flex-direction: column;
-    span {
-      color: var(--red-500);
-    }
-    p {
-      color: ${(props) => props.theme.colors.secundary};
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 2rem;
+      span {
+        background-color: var(--red-500);
+        padding: 0.5rem;
+        gap: 0.5rem;
+        color: var(--shape);
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        color: ${(props) => props.theme.colors.secundary};
+      }
     }
   }
   textarea {

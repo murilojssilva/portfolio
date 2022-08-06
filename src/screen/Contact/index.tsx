@@ -10,6 +10,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { phoneNumber } from "../../utils/validations";
 import { normalizePhoneNumber } from "../../utils/masks";
 import { FaEnvelope } from "react-icons/fa";
+import { FiAlertCircle } from "react-icons/fi";
 
 interface IFormInputs {
   firstName: string;
@@ -61,53 +62,87 @@ export function Contact() {
     <ContactContainer onSubmit={handleSubmit(onSubmit)}>
       <ContactItemsContainer>
         <label htmlFor="firstName">
-          <p>Nome</p>
+          <div>
+            <p>Nome</p>
+            {errors.firstName && (
+              <span>
+                <FiAlertCircle />
+                {errors.firstName.message}
+              </span>
+            )}
+          </div>
+
           <input
-            placeholder="Digite aqui o nome da sua empresa"
+            placeholder="Nome"
             type="text"
             id="firstName"
             {...register("firstName")}
           />
-          {errors.firstName && <span>{errors.firstName.message}</span>}
         </label>
         <label htmlFor="last_name">
-          <p>Sobrenome</p>
+          <div>
+            <p>Sobrenome</p>
+            {errors.lastName && (
+              <span>
+                <FiAlertCircle />
+                {errors.lastName.message}
+              </span>
+            )}
+          </div>
           <input
             placeholder="Sobrenome"
             type="text"
             id="lastName"
             {...register("lastName")}
           />
-          {errors.lastName && <span>{errors.lastName.message}</span>}
         </label>
       </ContactItemsContainer>
       <ContactItemsContainer>
         <label htmlFor="email">
-          <p>E-mail</p>
+          <div>
+            <p>E-mail</p>
+            {errors.email && (
+              <span>
+                <FiAlertCircle /> {errors.email.message}
+              </span>
+            )}
+          </div>
           <input
             placeholder="email@contato.com"
             type="text"
             id="email"
             {...register("email")}
           />{" "}
-          {errors.email && <span>{errors.email.message}</span>}
         </label>
 
         <label htmlFor="phone">
-          <p>Telefone</p>
-
+          <div>
+            <p>Telefone</p>
+            {errors.phone && (
+              <span>
+                <FiAlertCircle /> {errors.phone.message}
+              </span>
+            )}
+          </div>
           <input
             placeholder="( )_____-____"
             type="text"
             id="phone"
             {...register("phone")}
           />
-          {errors.phone ? <span>{errors.phone.message}</span> : <span></span>}
         </label>
       </ContactItemsContainer>
 
       <label htmlFor="">
-        <p>Forma de contato</p>
+        <div>
+          <p>Forma de contato</p>
+          {errors.contactWay && (
+            <span>
+              <FiAlertCircle /> {errors.contactWay.message}
+            </span>
+          )}
+        </div>
+
         <select {...register("contactWay")} id="contactWay">
           <option value="" disabled selected>
             Selecione uma opção
@@ -115,20 +150,22 @@ export function Contact() {
           <option value="E-mail">E-mail</option>
           <option value="WhatsApp">WhatsApp</option>
         </select>
-        {errors.contactWay ? (
-          <span>{errors.contactWay.message}</span>
-        ) : (
-          <span></span>
-        )}
       </label>
       <label htmlFor="message">
-        <p>Mensagem</p>
+        <div>
+          <p>Mensagem</p>
+          {errors.message && (
+            <span>
+              <FiAlertCircle /> {errors.message.message}
+            </span>
+          )}
+        </div>
+
         <textarea
           placeholder="Mensagem"
           id="message"
           {...register("message")}
         />
-        {errors.message && <span>{errors.message.message}</span>}
       </label>
       <button>
         <FaEnvelope />

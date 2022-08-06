@@ -18,6 +18,7 @@ export const ContactContainer = styled.form`
   label {
     display: flex;
     flex-direction: column;
+
     div {
       display: flex;
       flex-direction: row;
@@ -26,6 +27,7 @@ export const ContactContainer = styled.form`
       span {
         background-color: var(--red-500);
         padding: 0.5rem;
+        font-size: 0.75rem;
         gap: 0.5rem;
         color: var(--shape);
         display: flex;
@@ -58,27 +60,20 @@ export const ContactContainer = styled.form`
   select,
   textarea,
   input {
+    width: 60vw;
     margin: 1rem;
     gap: 1rem;
     color: ${(props) => props.theme.colors.text};
     border: 2px solid transparent;
     border-bottom: 2px solid ${(props) => props.theme.colors.primary};
     outline: 0;
-
     border-radius: 8px;
-  }
-
-  select,
-  textarea {
-    width: 60vw;
-  }
-
-  input {
-    width: 29vw;
-    @media (max-width: 768px) {
-      width: 60vw;
+    translate: border 0.2s;
+    &:focus {
+      border: 2px solid ${(props) => props.theme.colors.primary};
     }
   }
+
   button {
     border: 1px solid ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.primary};
@@ -95,16 +90,5 @@ export const ContactContainer = styled.form`
       border: 1px solid ${(props) => props.theme.colors.primary};
       color: ${(props) => props.theme.colors.background};
     }
-  }
-`;
-
-export const ContactItemsContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
   }
 `;

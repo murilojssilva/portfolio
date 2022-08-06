@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-import { ContactContainer, ContactItemsContainer } from "./styles";
+import { ContactContainer } from "./styles";
 
 import { useForm } from "react-hook-form";
 
@@ -22,13 +22,13 @@ interface IFormInputs {
 }
 
 let schema = yup.object().shape({
-  firstName: yup.string().required("Nome é obrigatório."),
-  lastName: yup.string().required("Sobrenome é obrigatório."),
+  firstName: yup.string().required("Insira seu nome."),
+  lastName: yup.string().required("Insira seu sobrenome."),
   email: yup
     .string()
     .email("Insira um e-mail válido.")
     .required("Email é obrigatório."),
-  contactWay: yup.string().required("Forma de contato é obrigatória."),
+  contactWay: yup.string().required("Selecione uma forma de contato."),
   phone: yup
     .string()
     .matches(phoneNumber, "Insira um telefone válido")
@@ -60,78 +60,75 @@ export function Contact() {
 
   return (
     <ContactContainer onSubmit={handleSubmit(onSubmit)}>
-      <ContactItemsContainer>
-        <label htmlFor="firstName">
-          <div>
-            <p>Nome</p>
-            {errors.firstName && (
-              <span>
-                <FiAlertCircle />
-                {errors.firstName.message}
-              </span>
-            )}
-          </div>
+      <label htmlFor="firstName">
+        <div>
+          <p>Nome</p>
+          {errors.firstName && (
+            <span>
+              <FiAlertCircle />
+              {errors.firstName.message}
+            </span>
+          )}
+        </div>
 
-          <input
-            placeholder="Nome"
-            type="text"
-            id="firstName"
-            {...register("firstName")}
-          />
-        </label>
-        <label htmlFor="last_name">
-          <div>
-            <p>Sobrenome</p>
-            {errors.lastName && (
-              <span>
-                <FiAlertCircle />
-                {errors.lastName.message}
-              </span>
-            )}
-          </div>
-          <input
-            placeholder="Sobrenome"
-            type="text"
-            id="lastName"
-            {...register("lastName")}
-          />
-        </label>
-      </ContactItemsContainer>
-      <ContactItemsContainer>
-        <label htmlFor="email">
-          <div>
-            <p>E-mail</p>
-            {errors.email && (
-              <span>
-                <FiAlertCircle /> {errors.email.message}
-              </span>
-            )}
-          </div>
-          <input
-            placeholder="email@contato.com"
-            type="text"
-            id="email"
-            {...register("email")}
-          />{" "}
-        </label>
+        <input
+          placeholder="Nome"
+          type="text"
+          id="firstName"
+          {...register("firstName")}
+        />
+      </label>
+      <label htmlFor="last_name">
+        <div>
+          <p>Sobrenome</p>
+          {errors.lastName && (
+            <span>
+              <FiAlertCircle />
+              {errors.lastName.message}
+            </span>
+          )}
+        </div>
+        <input
+          placeholder="Sobrenome"
+          type="text"
+          id="lastName"
+          {...register("lastName")}
+        />
+      </label>
 
-        <label htmlFor="phone">
-          <div>
-            <p>Telefone</p>
-            {errors.phone && (
-              <span>
-                <FiAlertCircle /> {errors.phone.message}
-              </span>
-            )}
-          </div>
-          <input
-            placeholder="( )_____-____"
-            type="text"
-            id="phone"
-            {...register("phone")}
-          />
-        </label>
-      </ContactItemsContainer>
+      <label htmlFor="email">
+        <div>
+          <p>E-mail</p>
+          {errors.email && (
+            <span>
+              <FiAlertCircle /> {errors.email.message}
+            </span>
+          )}
+        </div>
+        <input
+          placeholder="email@contato.com"
+          type="text"
+          id="email"
+          {...register("email")}
+        />{" "}
+      </label>
+
+      <label htmlFor="phone">
+        <div>
+          <p>Telefone</p>
+          {errors.phone && (
+            <span>
+              <FiAlertCircle /> {errors.phone.message}
+            </span>
+          )}
+        </div>
+        <input
+          placeholder="( )_____-____"
+          type="text"
+          id="phone"
+          {...register("phone")}
+        />
+      </label>
 
       <label htmlFor="">
         <div>

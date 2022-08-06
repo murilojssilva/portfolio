@@ -41,17 +41,6 @@ export const ProjectTitle = styled.div<ProjectTitleProps>`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  span {
-    color: ${(props) =>
-      props.color === "challenge"
-        ? "var(--blue-500)"
-        : props.color === "personal"
-        ? "var(--green-500)"
-        : props.color === "academic"
-        ? "var(--purple-500)"
-        : "var(--red-500)"};
-    font-weight: bold;
-  }
 `;
 
 export const UsedTechs = styled.div`

@@ -88,9 +88,7 @@ export function Cards({
           </span>
         </CardsType>
       </CardsHeader>
-
       <CardsText>{content}</CardsText>
-
       <Techs
         hasBootstrap={hasBootstrap}
         hasExpress={hasExpress}
@@ -115,6 +113,7 @@ export function Cards({
         hasTypescript={hasTypescript}
         hasVercel={hasVercel}
       />
+
       <ButtonContainerPosition>
         <Button
           hasLink={hasLink}

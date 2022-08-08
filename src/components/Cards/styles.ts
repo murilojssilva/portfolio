@@ -121,7 +121,5 @@ export const ButtonContainerPosition = styled.footer<LinksProps>`
   display: flex;
   flex-direction: ${(props) =>
     props.hasDeploy && props.hasLink ? "column" : "row"};
-  justify-content: ${(props) =>
-    !(props.hasDeploy && props.hasLink) && "space-around"};
   gap: 0.5rem;
 `;

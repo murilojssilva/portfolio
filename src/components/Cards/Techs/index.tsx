@@ -10,6 +10,7 @@ import {
   SiHeroku,
   SiJavascript,
   SiJest,
+  SiMongodb,
   SiNetlify,
   SiNextdotjs,
   SiNodedotjs,
@@ -20,6 +21,7 @@ import {
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
+import logoJWT from "../../../assets/jwt.svg";
 import { useTheme } from "styled-components";
 
 export interface TechsProps {
@@ -34,6 +36,8 @@ export interface TechsProps {
   hasJest?: boolean;
   hasNodeJS?: boolean;
   hasVercel?: boolean;
+  hasMongoDB?: boolean;
+  hasJWT?: boolean;
   hasNextJS?: boolean;
   hasFirebase?: boolean;
   hasRubyOnRails?: boolean;
@@ -49,6 +53,8 @@ export function Techs({
   hasJavascript,
   hasNetlify,
   hasHeroku,
+  hasMongoDB,
+  hasJWT,
   hasReactNative,
   hasStyledComponents,
   hasGraphQL,
@@ -116,6 +122,12 @@ export function Techs({
       </TechContent>
       <TechContent hasExpress={hasExpress}>
         <SiExpress color={"#7B7B7B"} data-tip="Express" />
+      </TechContent>
+      <TechContent hasMongoDB={hasMongoDB}>
+        <SiMongodb color={"#3E9738"} data-tip="MongoDB" />
+      </TechContent>
+      <TechContent hasJWT={hasJWT}>
+        <img src={logoJWT} data-tip="JWT" />
       </TechContent>
       <TechContent hasHeroku={hasHeroku}>
         <SiHeroku color={"#3E0094"} data-tip="Heroku" />

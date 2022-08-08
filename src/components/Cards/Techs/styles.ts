@@ -6,6 +6,8 @@ interface TechContentProps {
   hasReactNative?: boolean;
   hasStyledComponents?: boolean;
   hasHeroku?: boolean;
+  hasMongoDB?: boolean;
+  hasJWT?: boolean;
   hasGraphQL?: boolean;
   hasJest?: boolean;
   hasNodeJS?: boolean;
@@ -32,6 +34,8 @@ export const TechContent = styled.span<TechContentProps>`
     props.hasFirebase === false ||
     props.hasReact === false ||
     props.hasHeroku === false ||
+    props.hasJWT === false ||
+    props.hasMongoDB === false ||
     props.hasVercel === false ||
     props.hasNextJS === false ||
     props.hasGraphQL === false ||
@@ -56,7 +60,9 @@ export const TechContent = styled.span<TechContentProps>`
   &:hover {
     background-color: ${(props) => props.theme.colors.backgroundItens};
   }
-  svg {
+
+  svg,
+  img {
     outline: 0;
     border: 0;
     width: 1.5rem;

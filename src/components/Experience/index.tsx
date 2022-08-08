@@ -29,6 +29,8 @@ export function Experience() {
         hasStyledComponents
         hasHeroku
         hasExpress
+        hasJWT
+        hasMongoDB
       />
 
       <Cards

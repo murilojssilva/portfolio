@@ -36,6 +36,8 @@ export function Cards({
   hasReactNative = false,
   hasStyledComponents = false,
   hasGraphQL = false,
+  hasJWT = false,
+  hasMongoDB = false,
   hasSCSS = false,
   hasJest = false,
   hasVercel = false,
@@ -86,6 +88,8 @@ export function Cards({
         hasNextJS={hasNextJS}
         hasFirebase={hasFirebase}
         hasNodeJS={hasNodeJS}
+        hasJWT={hasJWT}
+        hasMongoDB={hasMongoDB}
         hasReact={hasReact}
         hasReactNative={hasReactNative}
         hasRedux={hasRedux}

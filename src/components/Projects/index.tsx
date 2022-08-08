@@ -74,6 +74,8 @@ export function Projects() {
           hasNodeJS
           hasExpress
           hasHeroku
+          hasJWT
+          hasMongoDB
           hasLink
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/resolvelogobackend"

@@ -29,6 +29,7 @@ export function Projects() {
           hasTypescript
           hasStyledComponents
           hasVercel
+          hasVite
           hasLink
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/desafio-pagcom"

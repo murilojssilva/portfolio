@@ -20,8 +20,10 @@ import {
   SiStyledcomponents,
   SiTypescript,
   SiVercel,
+  SiVite,
 } from "react-icons/si";
 import logoJWT from "../../../assets/jwt.svg";
+import logoViteJS from "../../../assets/vitejs.svg";
 import { useTheme } from "styled-components";
 
 export interface TechsProps {
@@ -39,6 +41,7 @@ export interface TechsProps {
   hasMongoDB?: boolean;
   hasJWT?: boolean;
   hasNextJS?: boolean;
+  hasVite?: boolean;
   hasFirebase?: boolean;
   hasRubyOnRails?: boolean;
   hasBootstrap?: boolean;
@@ -62,6 +65,7 @@ export function Techs({
   hasJest,
   hasVercel,
   hasNextJS,
+  hasVite,
   hasNodeJS,
   hasRubyOnRails,
   hasBootstrap,
@@ -83,6 +87,9 @@ export function Techs({
           color={theme.title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
           data-tip="NextJS"
         />
+      </TechContent>
+      <TechContent hasVite={hasVite}>
+        <img src={logoViteJS} data-tip="ViteJS" />
       </TechContent>
       <TechContent hasVercel={hasVercel}>
         <SiVercel

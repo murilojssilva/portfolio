@@ -42,6 +42,7 @@ export function Cards({
   hasJest = false,
   hasVercel = false,
   hasNextJS = false,
+  hasVite = false,
   hasNodeJS = false,
   hasRubyOnRails = false,
   hasJavascript = false,
@@ -86,6 +87,7 @@ export function Cards({
         hasJest={hasJest}
         hasNetlify={hasNetlify}
         hasNextJS={hasNextJS}
+        hasVite={hasVite}
         hasFirebase={hasFirebase}
         hasNodeJS={hasNodeJS}
         hasJWT={hasJWT}

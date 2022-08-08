@@ -13,6 +13,7 @@ interface TechContentProps {
   hasNodeJS?: boolean;
   hasNetlify?: boolean;
   hasRubyOnRails?: boolean;
+  hasVite?: boolean;
   hasBootstrap?: boolean;
   hasSCSS?: boolean;
   hasRedux?: boolean;
@@ -38,6 +39,7 @@ export const TechContent = styled.span<TechContentProps>`
     props.hasMongoDB === false ||
     props.hasVercel === false ||
     props.hasNextJS === false ||
+    props.hasVite === false ||
     props.hasGraphQL === false ||
     props.hasSCSS === false ||
     props.hasTypescript === false ||

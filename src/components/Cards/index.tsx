@@ -1,7 +1,14 @@
-import { FaGithub, FaGitlab, FaInfo } from "react-icons/fa";
+import { FaDeploydog, FaGithub, FaGitlab, FaInfo } from "react-icons/fa";
 import { Button } from "../Form/Button";
 
-import { CardsContainer, CardsHeader, CardsTitle, CardsType } from "./styles";
+import {
+  ButtonContainerPosition,
+  CardsContainer,
+  CardsHeader,
+  CardsText,
+  CardsTitle,
+  CardsType,
+} from "./styles";
 import { Techs, TechsProps } from "./Techs";
 
 interface CardsProps extends TechsProps {
@@ -10,9 +17,10 @@ interface CardsProps extends TechsProps {
   title: string;
   subtitle?: string;
   content: string;
-  textButton?: string;
   hasLink?: boolean;
+  hasDeploy?: boolean;
   href?: string;
+  deploy?: string;
   iconButton?: "GitHub" | "GitLab";
   inDevelopment?: boolean;
 }
@@ -23,9 +31,10 @@ export function Cards({
   content,
   colorTop,
   hasLink = false,
+  hasDeploy = false,
   href,
+  deploy,
   iconButton,
-  textButton = "Visualizar projeto",
   type = "none",
   inDevelopment = false,
   hasReact = false,
@@ -39,6 +48,7 @@ export function Cards({
   hasJWT = false,
   hasMongoDB = false,
   hasSCSS = false,
+  hasSASS = false,
   hasJest = false,
   hasVercel = false,
   hasNextJS = false,
@@ -76,7 +86,7 @@ export function Cards({
         </CardsType>
       </CardsHeader>
 
-      <p>{content}</p>
+      <CardsText>{content}</CardsText>
 
       <Techs
         hasBootstrap={hasBootstrap}
@@ -97,26 +107,35 @@ export function Cards({
         hasRedux={hasRedux}
         hasRubyOnRails={hasRubyOnRails}
         hasSCSS={hasSCSS}
+        hasSASS={hasSASS}
         hasStyledComponents={hasStyledComponents}
         hasTypescript={hasTypescript}
         hasVercel={hasVercel}
       />
-
-      <Button
-        hasLink={hasLink}
-        target="_blank"
-        href={href}
-        icon={
-          iconButton === "GitLab" ? (
-            <FaGitlab />
-          ) : iconButton === "GitHub" ? (
-            <FaGithub />
-          ) : (
-            <></>
-          )
-        }
-        content={textButton}
-      />
+      <ButtonContainerPosition>
+        <Button
+          hasLink={hasLink}
+          target="_blank"
+          href={href}
+          icon={
+            iconButton === "GitLab" ? (
+              <FaGitlab />
+            ) : iconButton === "GitHub" ? (
+              <FaGithub />
+            ) : (
+              <></>
+            )
+          }
+          content={"Visualizar repositório"}
+        />
+        <Button
+          hasDeploy={hasDeploy}
+          target="_blank"
+          href={deploy}
+          icon={<FaDeploydog />}
+          content={"Visualizar projeto"}
+        />
+      </ButtonContainerPosition>
     </CardsContainer>
   );
 }

@@ -17,10 +17,10 @@ import {
   SiReact,
   SiRedux,
   SiRubyonrails,
+  SiSass,
   SiStyledcomponents,
   SiTypescript,
   SiVercel,
-  SiVite,
 } from "react-icons/si";
 import logoJWT from "../../../assets/jwt.svg";
 import logoViteJS from "../../../assets/vitejs.svg";
@@ -34,6 +34,7 @@ export interface TechsProps {
   hasJavascript?: boolean;
   hasStyledComponents?: boolean;
   hasSCSS?: boolean;
+  hasSASS?: boolean;
   hasGraphQL?: boolean;
   hasJest?: boolean;
   hasNodeJS?: boolean;
@@ -62,6 +63,7 @@ export function Techs({
   hasStyledComponents,
   hasGraphQL,
   hasSCSS,
+  hasSASS,
   hasJest,
   hasVercel,
   hasNextJS,
@@ -111,6 +113,9 @@ export function Techs({
       </TechContent>
       <TechContent hasSCSS={hasSCSS}>
         <SiCss3 color={"#C26192"} data-tip="SCSS" />
+      </TechContent>
+      <TechContent hasSASS={hasSASS}>
+        <SiSass color={"#C26192"} data-tip="SASS" />
       </TechContent>
       <TechContent hasGraphQL={hasGraphQL}>
         <SiGraphql color={"#D932A2"} data-tip="GraphQL" />

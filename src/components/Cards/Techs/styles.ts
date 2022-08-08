@@ -16,6 +16,7 @@ interface TechContentProps {
   hasVite?: boolean;
   hasBootstrap?: boolean;
   hasSCSS?: boolean;
+  hasSASS?: boolean;
   hasRedux?: boolean;
   hasExpress?: boolean;
   hasNextJS?: boolean;
@@ -42,6 +43,7 @@ export const TechContent = styled.span<TechContentProps>`
     props.hasVite === false ||
     props.hasGraphQL === false ||
     props.hasSCSS === false ||
+    props.hasSASS === false ||
     props.hasTypescript === false ||
     props.hasNodeJS === false ||
     props.hasNetlify === false ||

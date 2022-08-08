@@ -6,8 +6,10 @@ interface ButtonProps extends React.HTMLAttributes<HTMLAnchorElement> {
   icon?: ReactNode;
   target?: string;
   type?: string;
-  hasLink: boolean;
+  hasLink?: boolean;
+  hasDeploy?: boolean;
   href?: string;
+  deploy?: string;
 }
 
 export function Button({
@@ -16,13 +18,17 @@ export function Button({
   target,
   type,
   href,
+  deploy,
   hasLink = false,
+  hasDeploy = false,
   ...rest
 }: ButtonProps) {
   return (
     <ButtonContainer
       href={href}
+      deploy={deploy}
       hasLink={hasLink}
+      hasDeploy={hasDeploy}
       target={target}
       type={type}
       {...rest}

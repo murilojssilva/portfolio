@@ -9,6 +9,11 @@ interface InDevelopmentProps {
   inDevelopment?: boolean;
 }
 
+interface LinksProps {
+  hasDeploy?: boolean;
+  hasLink?: boolean;
+}
+
 export const CardsContainer = styled.div<CardsContainerProps>`
   border-top: 5px solid
     ${(props) =>
@@ -45,11 +50,7 @@ export const CardsContainer = styled.div<CardsContainerProps>`
     font-size: 1rem;
     color: ${(props) => props.theme.colors.text};
   }
-  p {
-    min-height: 100px;
-    color: ${(props) => props.theme.colors.text};
-    word-wrap: break-word;
-  }
+
   span {
     color: ${(props) =>
       props.type === "challenge"
@@ -105,4 +106,22 @@ export const CardsType = styled.div<CardsContainerProps>`
         : "var(--red-500)"};
     font-weight: bold;
   }
+`;
+
+export const CardsText = styled.p`
+  min-height: 25vh;
+  color: ${(props) => props.theme.colors.text};
+  word-wrap: break-word;
+  @media (max-width: 768px) {
+    min-height: 10vh;
+  }
+`;
+
+export const ButtonContainerPosition = styled.footer<LinksProps>`
+  display: flex;
+  flex-direction: ${(props) =>
+    props.hasDeploy && props.hasLink ? "column" : "row"};
+  justify-content: ${(props) =>
+    !(props.hasDeploy && props.hasLink) && "space-around"};
+  gap: 0.5rem;
 `;

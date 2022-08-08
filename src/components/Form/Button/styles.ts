@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 interface ButtonContainerProps {
-  hasLink: boolean;
+  hasLink?: boolean;
+  hasDeploy?: boolean;
+  deploy?: string;
 }
 
 export const ButtonContainer = styled.a<ButtonContainerProps>`
@@ -13,7 +15,8 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
   font-weight: bold;
   display: block;
 
-  display: ${(props) => (props.hasLink === false ? "none" : "flex")};
+  display: ${(props) =>
+    props.hasLink === false && props.hasDeploy === false ? "none" : "flex"};
   text-align: center;
   justify-content: center;
 
@@ -28,4 +31,5 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
     border: 1px solid var(--green-500);
     color: var(--shape);
   }
+  width: 100%;
 `;

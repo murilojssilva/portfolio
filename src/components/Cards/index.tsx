@@ -1,4 +1,6 @@
-import { FaDeploydog, FaGithub, FaGitlab, FaInfo } from "react-icons/fa";
+import { FaGithub, FaGitlab, FaInfo, FaNewspaper } from "react-icons/fa";
+import { FcDeployment } from "react-icons/fc";
+import { useTheme } from "styled-components";
 import { Button } from "../Form/Button";
 
 import {
@@ -21,7 +23,7 @@ interface CardsProps extends TechsProps {
   hasDeploy?: boolean;
   href?: string;
   deploy?: string;
-  iconButton?: "GitHub" | "GitLab";
+  iconButton?: "GitHub" | "GitLab" | "Paper" | "Deploy";
   inDevelopment?: boolean;
 }
 
@@ -60,6 +62,7 @@ export function Cards({
   hasRedux = false,
   hasExpress = false,
 }: CardsProps) {
+  const theme = useTheme();
   return (
     <CardsContainer colorTop={colorTop} type={type}>
       <CardsHeader>
@@ -122,6 +125,8 @@ export function Cards({
               <FaGitlab />
             ) : iconButton === "GitHub" ? (
               <FaGithub />
+            ) : iconButton === "Paper" ? (
+              <FaNewspaper />
             ) : (
               <></>
             )
@@ -132,7 +137,7 @@ export function Cards({
           hasDeploy={hasDeploy}
           target="_blank"
           href={deploy}
-          icon={<FaDeploydog />}
+          icon={<FcDeployment />}
           content={"Visualizar projeto"}
         />
       </ButtonContainerPosition>

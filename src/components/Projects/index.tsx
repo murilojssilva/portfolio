@@ -84,7 +84,6 @@ export function Projects() {
           iconButton={"GitLab"}
           href="https://gitlab.com/murilojssilva/resolvelogoweb"
         />
-
         <Cards
           colorTop="projects"
           type="personal"
@@ -102,7 +101,6 @@ export function Projects() {
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/resolvelogobackend"
         />
-
         <Cards
           colorTop="projects"
           type="challenge"
@@ -120,7 +118,6 @@ export function Projects() {
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/desafio-truckpag"
         />
-
         <Cards
           colorTop="projects"
           type="challenge"
@@ -138,7 +135,6 @@ export function Projects() {
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/desafio-vizir"
         />
-
         <Cards
           colorTop="projects"
           type="challenge"
@@ -151,7 +147,6 @@ export function Projects() {
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/intelie-chart"
         />
-
         <Cards
           colorTop="projects"
           type="challenge"
@@ -164,7 +159,7 @@ export function Projects() {
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/pokemon-intelie"
         />
-      </ProjectsContent>{" "}
+      </ProjectsContent>
       <h1>{"</Projetos>"}</h1>
     </ProjectsContainer>
   );

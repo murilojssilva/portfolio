@@ -11,6 +11,9 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
   border-radius: 8px;
   background-color: transparent;
   color: ${(props) => props.theme.colors.text};
+  svg {
+    color: ${(props) => props.theme.colors.text};
+  }
   padding: 1rem;
   font-weight: bold;
   display: block;
@@ -19,6 +22,7 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
     props.hasLink === false && props.hasDeploy === false ? "none" : "flex"};
   text-align: center;
   justify-content: center;
+  align-items: center;
 
   gap: 0.5rem;
 
@@ -27,9 +31,12 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
   transition: background-color 0.1s, color 0.1s;
 
   &:hover {
-    background-color: var(--green-500);
-    border: 1px solid var(--green-500);
-    color: var(--shape);
+    background-color: ${(props) => props.theme.colors.primary};
+    border: 1px solid ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.background};
+    svg {
+      color: ${(props) => props.theme.colors.background};
+    }
   }
   width: 100%;
 `;

@@ -11,3 +11,11 @@ export const ExperienceContainer = styled.section`
     -webkit-text-fill-color: transparent;
   }
 `;
+
+export const ExperienceContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+`;

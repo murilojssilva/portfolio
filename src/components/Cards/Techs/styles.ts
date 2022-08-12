@@ -28,6 +28,7 @@ interface TechContentProps {
 export const TechsContainer = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 export const TechContent = styled.span<TechContentProps>`

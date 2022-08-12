@@ -27,12 +27,7 @@ export const HeaderContent = styled.div`
       color: ${(props) => props.theme.colors.text};
 
       :hover {
-        background-color: ${(props) => props.theme.colors.primary};
-        color: ${(props) => props.theme.colors.background};
-        &.active {
-          color: ${(props) => props.theme.colors.background};
-          border-bottom: 1px solid ${(props) => props.theme.colors.primary};
-        }
+        background-color: ${(props) => props.theme.colors.backgroundItens};
       }
 
       &.active {

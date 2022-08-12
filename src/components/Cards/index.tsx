@@ -1,4 +1,4 @@
-import { FaGithub, FaGitlab, FaInfo, FaNewspaper } from "react-icons/fa";
+import { FaGithubAlt, FaGitlab, FaInfo, FaNewspaper } from "react-icons/fa";
 import { FcDeployment } from "react-icons/fc";
 import { useTheme } from "styled-components";
 import { Button } from "../Form/Button";
@@ -6,8 +6,8 @@ import { Button } from "../Form/Button";
 import {
   ButtonContainerPosition,
   CardsContainer,
+  CardsFooter,
   CardsHeader,
-  CardsText,
   CardsTitle,
   CardsType,
 } from "./styles";
@@ -18,7 +18,6 @@ interface CardsProps extends TechsProps {
   colorTop: "projects" | "experiences" | "publications";
   title: string;
   subtitle?: string;
-  content: string;
   hasLink?: boolean;
   hasDeploy?: boolean;
   href?: string;
@@ -30,7 +29,6 @@ interface CardsProps extends TechsProps {
 export function Cards({
   title,
   subtitle,
-  content,
   colorTop,
   hasLink = false,
   hasDeploy = false,
@@ -88,58 +86,59 @@ export function Cards({
           </span>
         </CardsType>
       </CardsHeader>
-      <CardsText>{content}</CardsText>
-      <Techs
-        hasBootstrap={hasBootstrap}
-        hasExpress={hasExpress}
-        hasGraphQL={hasGraphQL}
-        hasHeroku={hasHeroku}
-        hasJavascript={hasJavascript}
-        hasJest={hasJest}
-        hasNetlify={hasNetlify}
-        hasNextJS={hasNextJS}
-        hasVite={hasVite}
-        hasFirebase={hasFirebase}
-        hasNodeJS={hasNodeJS}
-        hasJWT={hasJWT}
-        hasMongoDB={hasMongoDB}
-        hasReact={hasReact}
-        hasReactNative={hasReactNative}
-        hasRedux={hasRedux}
-        hasRubyOnRails={hasRubyOnRails}
-        hasSCSS={hasSCSS}
-        hasSASS={hasSASS}
-        hasStyledComponents={hasStyledComponents}
-        hasTypescript={hasTypescript}
-        hasVercel={hasVercel}
-      />
+      <CardsFooter>
+        <Techs
+          hasBootstrap={hasBootstrap}
+          hasExpress={hasExpress}
+          hasGraphQL={hasGraphQL}
+          hasHeroku={hasHeroku}
+          hasJavascript={hasJavascript}
+          hasJest={hasJest}
+          hasNetlify={hasNetlify}
+          hasNextJS={hasNextJS}
+          hasVite={hasVite}
+          hasFirebase={hasFirebase}
+          hasNodeJS={hasNodeJS}
+          hasJWT={hasJWT}
+          hasMongoDB={hasMongoDB}
+          hasReact={hasReact}
+          hasReactNative={hasReactNative}
+          hasRedux={hasRedux}
+          hasRubyOnRails={hasRubyOnRails}
+          hasSCSS={hasSCSS}
+          hasSASS={hasSASS}
+          hasStyledComponents={hasStyledComponents}
+          hasTypescript={hasTypescript}
+          hasVercel={hasVercel}
+        />
 
-      <ButtonContainerPosition>
-        <Button
-          hasLink={hasLink}
-          target="_blank"
-          href={href}
-          icon={
-            iconButton === "GitLab" ? (
-              <FaGitlab />
-            ) : iconButton === "GitHub" ? (
-              <FaGithub />
-            ) : iconButton === "Paper" ? (
-              <FaNewspaper />
-            ) : (
-              <></>
-            )
-          }
-          content={"Visualizar repositório"}
-        />
-        <Button
-          hasDeploy={hasDeploy}
-          target="_blank"
-          href={deploy}
-          icon={<FcDeployment />}
-          content={"Visualizar projeto"}
-        />
-      </ButtonContainerPosition>
+        <ButtonContainerPosition>
+          <Button
+            hasLink={hasLink}
+            target="_blank"
+            href={href}
+            icon={
+              iconButton === "GitLab" ? (
+                <FaGitlab />
+              ) : iconButton === "GitHub" ? (
+                <FaGithubAlt />
+              ) : iconButton === "Paper" ? (
+                <FaNewspaper />
+              ) : (
+                <></>
+              )
+            }
+            content={"Visualizar repositório"}
+          />
+          <Button
+            hasDeploy={hasDeploy}
+            target="_blank"
+            href={deploy}
+            icon={<FcDeployment />}
+            content={"Visualizar projeto"}
+          />
+        </ButtonContainerPosition>
+      </CardsFooter>
     </CardsContainer>
   );
 }

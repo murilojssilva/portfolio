@@ -12,7 +12,6 @@ export function Projects() {
           type="academic"
           title="Sistema ACESSO"
           subtitle="Desenvolvedor Mobile"
-          content="Desenvolvimento do trabalho de conclusão de curso da Universidade do Estado do Rio de Janeiro, que consiste na criação de um app mobile que demonstra quais tipos de acessibilidade são atendidas nos estabelecimentos cadastrados."
           hasReactNative
           hasTypescript
           hasStyledComponents
@@ -24,7 +23,6 @@ export function Projects() {
           type="challenge"
           title="Desafio Pagcom"
           subtitle="Desenvolvedor Front End"
-          content="Desafio proposto pela empresa Pagcom. Ele consiste em replicar o layout elaborado pela equipe."
           hasReact
           hasTypescript
           hasStyledComponents
@@ -41,9 +39,6 @@ export function Projects() {
           type="challenge"
           title="Desafio Upnid"
           subtitle="Desenvolvedor Front End"
-          content="Desafio proposto pela empresa Upnid Pagamentos. Nesse desafio, você precisará desenvolver um jogo de corrida de carros, rodando num navegador. Ao abrir o jogo, deve aparecer um formulário contendo o campo Nome e um botão Iniciar Corrida. Um contador deve aparecer (3, 2, 1...). Após isso, o carro passará a se movimentar na pista.
-          O carro poderá alternar entre três lados da pista (esquerda, meio e direita). Podemos usar as teclas A (esquerda), S (meio), D (direita) para alternar a posição do carro. Além disso, também deve ser possível alternar a posição para esquerda ou direita usando as setinhas do teclado.
-          Para simplificar o desafio, fizemos duas imagens que você pode usar como base."
           hasReact
           hasNetlify
           hasStyledComponents
@@ -58,8 +53,6 @@ export function Projects() {
           type="academic"
           title="Instituto de Matemática e Estatística (UERJ)"
           subtitle="Desenvolvedor Full Stack"
-          content="Desenvolvimento das páginas relacionadas às seções do Instituto de
-        Matemática e Estatística da Universidade do Estado do Rio de Janeiro."
           hasReact
           hasTypescript
           hasStyledComponents
@@ -74,7 +67,6 @@ export function Projects() {
           type="personal"
           title="ResolveLogo (Front End)"
           subtitle="Desenvolvedor Front End"
-          content="Desenvolvimento da Landing Page da empresa."
           hasReact
           hasSASS
           hasRedux
@@ -89,7 +81,6 @@ export function Projects() {
           type="personal"
           title="ResolveLogo (Back End)"
           subtitle="Desenvolvedor Back End"
-          content="Desenvolvimento da funcionalidade de envio de e-mails para o e-mail da empresa e do gerenciamento de estado do aplicativo."
           hasNodeJS
           hasExpress
           hasHeroku
@@ -106,7 +97,6 @@ export function Projects() {
           type="challenge"
           title="TruckPag"
           subtitle="Desenvolvedor Front End"
-          content="Desafio proposto pela empresa TruckPag. Ele consiste em gerar uma interface que mostre os personagens da Disney, consumindo a API fornecida."
           hasReact
           hasStyledComponents
           hasTypescript
@@ -123,7 +113,6 @@ export function Projects() {
           type="challenge"
           title="Vizir"
           subtitle="Desenvolvedor Front End"
-          content="Desafio proposto pela empresa Vizir. Ele consiste em demonstrar aos clientes as vantagens de se utilizar os serviços FaleMais da empresa Telzir."
           hasReact
           hasTypescript
           hasVercel
@@ -140,7 +129,6 @@ export function Projects() {
           type="challenge"
           title="Intelie - Chart"
           subtitle="Desenvolvedor Front End"
-          content="Desafio proposto pela empresa Intelie."
           hasReact
           hasNetlify
           hasLink
@@ -152,7 +140,6 @@ export function Projects() {
           type="challenge"
           title="Intelie - Pokemon"
           subtitle="Desenvolvedor Front End"
-          content="Desafio proposto pela empresa Intelie. O mesmo consiste em desenvolver um catálogo de Pokémons baseando-se na POKEAPI."
           hasReact
           hasNetlify
           hasLink

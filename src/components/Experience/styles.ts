@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ExperienceContainer = styled.section`
-  border-top: 1px solid ${(props) => props.theme.colors.background};
   h1 {
     background: linear-gradient(
       to right,

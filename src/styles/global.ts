@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         --gray-950: #121214;
 
         --green-500: #00875f;
-        --green-800: #2E7D32;
+        --green-300: #2E7D32;
         --green-200: #A5D6A7;
         --yellow-500: #FFEB3B;
         --blue-200: #30cfd0;
@@ -48,12 +48,13 @@ export const GlobalStyle = createGlobalStyle`
         color: ${(props) => props.theme.colors.text};
 		-webkit-font-smoothing: antialiased;
     }
-    body, input, textarea, button {
-        font-family: "Poppins", sans-serif;
+    body, input, textarea, button, p {
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
     }
     h1, h2, h3, h4, h5, h6, strong {
-        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
     }
     button {
         transform: filter 0.2s;

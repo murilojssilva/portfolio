@@ -25,7 +25,11 @@ export const CardsContainer = styled.div<CardsContainerProps>`
         ? "var(--purple-700)"
         : "var(--red-500)"};
   margin: 2rem;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
 
   background-color: ${(props) => props.theme.colors.background};
   box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
@@ -73,6 +77,7 @@ export const CardsHeader = styled.div`
 export const CardsTitle = styled.div<InDevelopmentProps>`
   display: flex;
   flex-direction: column;
+
   div {
     display: flex;
     flex-direction: row;
@@ -108,18 +113,18 @@ export const CardsType = styled.div<CardsContainerProps>`
   }
 `;
 
-export const CardsText = styled.p`
-  min-height: 25vh;
-  color: ${(props) => props.theme.colors.text};
-  word-wrap: break-word;
-  @media (max-width: 768px) {
-    min-height: 10vh;
-  }
+export const CardsFooter = styled.footer`
+  width: 100%;
+  align-self: flex-end;
 `;
 
 export const ButtonContainerPosition = styled.footer<LinksProps>`
   display: flex;
   flex-direction: ${(props) =>
-    props.hasDeploy && props.hasLink ? "column" : "row"};
+    props.hasDeploy && props.hasLink
+      ? "column"
+      : props.hasDeploy || props.hasLink
+      ? "row"
+      : "none"};
   gap: 0.5rem;
 `;

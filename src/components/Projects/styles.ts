@@ -10,7 +10,7 @@ export const ProjectsContainer = styled.section`
     background: linear-gradient(
       to right,
       var(--green-200) 0%,
-      var(--green-800) 100%
+      var(--green-500) 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,24 +40,5 @@ export const ProjectTitle = styled.div<ProjectTitleProps>`
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-`;
-
-export const UsedTechs = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-export const TechLogo = styled.span`
-  padding: 1rem;
-  color: ${(props) => props.theme.colors.text};
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-  &:hover {
-    background-color: var(--gray-900);
-  }
-  svg {
-    width: 1.5rem;
-    height: 1.5rem;
   }
 `;

@@ -25,9 +25,9 @@ export function Header({ toggleTheme }: HeaderProps) {
         </nav>
         <button onClick={toggleTheme}>
           {theme.title === "light" ? (
-            <FaSun size={20} color={colors.text} />
-          ) : (
             <FaMoon size={20} color={colors.text} />
+          ) : (
+            <FaSun size={20} color={colors.text} />
           )}
         </button>
       </HeaderContent>

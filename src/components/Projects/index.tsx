@@ -11,12 +11,12 @@ export function Projects() {
           colorTop="projects"
           type="bootcamp"
           title="Ignite - DT Money"
-          subtitle="Desenvolvedor Front End"
           hasReact
           hasTypescript
           hasStyledComponents
           hasRadix
           hasZod
+          stack="frontend"
           hasPhosphor
           hasVite
           hasLink
@@ -27,11 +27,11 @@ export function Projects() {
           colorTop="projects"
           type="bootcamp"
           title="Ignite - Coffee Delivery"
-          subtitle="Desenvolvedor Front End"
           hasReact
           hasTypescript
           hasStyledComponents
           hasPhosphor
+          stack="frontend"
           hasVite
           hasLink
           iconButton={"GitHub"}
@@ -41,9 +41,9 @@ export function Projects() {
           colorTop="projects"
           type="bootcamp"
           title="Ignite - Go Finance"
-          subtitle="Desenvolvedor Mobile"
           hasReactNative
           hasTypescript
+          stack="mobile"
           hasStyledComponents
           hasExpo
           hasYup
@@ -56,8 +56,8 @@ export function Projects() {
           colorTop="projects"
           type="bootcamp"
           title="Ignite - Upload de imagens"
-          subtitle="Desenvolvedor Front End"
           hasReact
+          stack="frontend"
           hasTypescript
           hasNextJS
           hasLink
@@ -68,7 +68,7 @@ export function Projects() {
           colorTop="projects"
           type="bootcamp"
           title="Ignite - Stream Data"
-          subtitle="Desenvolvedor Mobile"
+          stack="mobile"
           hasReactNative
           hasTypescript
           hasStyledComponents
@@ -81,7 +81,7 @@ export function Projects() {
           colorTop="projects"
           type="academic"
           title="Sistema ACESSO"
-          subtitle="Desenvolvedor Mobile"
+          stack="mobile"
           hasReactNative
           hasTypescript
           hasStyledComponents
@@ -92,7 +92,7 @@ export function Projects() {
           colorTop="projects"
           type="challenge"
           title="Desafio Pagcom"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasTypescript
           hasStyledComponents
@@ -109,7 +109,7 @@ export function Projects() {
           colorTop="projects"
           type="challenge"
           title="Workana Test"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasJest
           hasLink
@@ -120,7 +120,7 @@ export function Projects() {
           colorTop="projects"
           type="challenge"
           title="Desafio Upnid"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasNetlify
           hasStyledComponents
@@ -133,8 +133,8 @@ export function Projects() {
         <Cards
           colorTop="projects"
           type="academic"
+          stack="fullstack"
           title="Instituto de Matemática e Estatística (UERJ)"
-          subtitle="Desenvolvedor Full Stack"
           hasReact
           hasTypescript
           hasStyledComponents
@@ -148,7 +148,7 @@ export function Projects() {
           colorTop="projects"
           type="personal"
           title="ResolveLogo (Front End)"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasSASS
           hasRedux
@@ -162,7 +162,7 @@ export function Projects() {
           colorTop="projects"
           type="personal"
           title="ResolveLogo (Back End)"
-          subtitle="Desenvolvedor Back End"
+          stack="backend"
           hasNodeJS
           hasExpress
           hasHeroku
@@ -178,7 +178,7 @@ export function Projects() {
           colorTop="projects"
           type="challenge"
           title="TruckPag"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasStyledComponents
           hasTypescript
@@ -194,7 +194,7 @@ export function Projects() {
           colorTop="projects"
           type="challenge"
           title="Vizir"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasTypescript
           hasVercel
@@ -210,7 +210,7 @@ export function Projects() {
           colorTop="projects"
           type="challenge"
           title="Intelie - Chart"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasNetlify
           hasLink
@@ -221,7 +221,7 @@ export function Projects() {
           colorTop="projects"
           type="challenge"
           title="Intelie - Pokemon"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasNetlify
           hasLink

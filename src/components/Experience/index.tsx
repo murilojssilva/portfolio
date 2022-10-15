@@ -9,7 +9,7 @@ export function Experience() {
         <Cards
           colorTop="experiences"
           title="Upnid Pagamentos"
-          subtitle="Desenvolvedor Front End"
+          stack="frontend"
           hasReact
           hasTypescript
           hasStyledComponents
@@ -19,7 +19,7 @@ export function Experience() {
         <Cards
           colorTop="experiences"
           title="ResolveLogo"
-          subtitle="Desenvolvedor Full Stack"
+          stack="fullstack"
           hasReact
           hasStyledComponents
           hasHeroku
@@ -30,8 +30,8 @@ export function Experience() {
 
         <Cards
           colorTop="experiences"
+          stack="fullstack"
           title="Universidade do Estado do Rio de Janeiro"
-          subtitle="Desenvolvedor Full Stack"
           hasRubyOnRails
           hasBootstrap
         />

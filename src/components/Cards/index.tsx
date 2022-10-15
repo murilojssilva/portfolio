@@ -1,4 +1,13 @@
-import { FaGithubAlt, FaGitlab, FaInfo, FaNewspaper } from "react-icons/fa";
+import {
+  FaDatabase,
+  FaCode,
+  FaGithubAlt,
+  FaGitlab,
+  FaInfo,
+  FaMobile,
+  FaNewspaper,
+  FaDesktop,
+} from "react-icons/fa";
 import { FcDeployment } from "react-icons/fc";
 import { useTheme } from "styled-components";
 import { Button } from "../Form/Button";
@@ -15,9 +24,9 @@ import { Techs, TechsProps } from "./Techs";
 
 interface CardsProps extends TechsProps {
   type?: "challenge" | "personal" | "academic" | "bootcamp" | "none";
+  stack?: "mobile" | "backend" | "frontend" | "fullstack";
   colorTop: "projects" | "experiences" | "publications";
   title: string;
-  subtitle?: string;
   hasLink?: boolean;
   hasDeploy?: boolean;
   href?: string;
@@ -28,8 +37,8 @@ interface CardsProps extends TechsProps {
 
 export function Cards({
   title,
-  subtitle,
   colorTop,
+  stack,
   hasLink = false,
   hasDeploy = false,
   href,
@@ -73,14 +82,38 @@ export function Cards({
     <CardsContainer colorTop={colorTop} type={type}>
       <CardsHeader>
         <CardsTitle inDevelopment={inDevelopment}>
-          <div>
-            <h2>{title}</h2>
-            <strong>
-              <FaInfo data-tip="Em desenvolvimento" />
-            </strong>
-          </div>
+          <h2>
+            {`${title} `}
+            {stack === "mobile" ? (
+              <FaMobile
+                size={16}
+                color={theme.colors["primary"]}
+                data-tip="Mobile"
+              />
+            ) : stack === "backend" ? (
+              <FaDatabase
+                size={16}
+                color={theme.colors["primary"]}
+                data-tip="Backend"
+              />
+            ) : stack === "frontend" ? (
+              <FaCode
+                size={16}
+                color={theme.colors["primary"]}
+                data-tip="Frontend"
+              />
+            ) : stack === "fullstack" ? (
+              <FaDesktop
+                size={16}
+                color={theme.colors["primary"]}
+                data-tip="Fullstack"
+              />
+            ) : null}
+          </h2>
 
-          <h3>{subtitle}</h3>
+          <strong>
+            <FaInfo data-tip="Em desenvolvimento" />
+          </strong>
         </CardsTitle>
         <CardsType colorTop={colorTop} type={type}>
           <span>

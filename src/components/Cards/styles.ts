@@ -62,7 +62,7 @@ export const CardsContainer = styled.div<CardsContainerProps>`
         : props.type === "personal"
         ? "var(--green-500)"
         : props.type === "bootcamp"
-        ? "var(--yellow-500)"
+        ? "var(--orange-500)"
         : props.type === "academic"
         ? "var(--purple-200)"
         : "var(--red-500)"};
@@ -78,25 +78,23 @@ export const CardsHeader = styled.div`
 
 export const CardsTitle = styled.div<InDevelopmentProps>`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
 
-  div {
-    display: flex;
-    flex-direction: row;
-    strong {
-      font-size: 0.5rem;
-      border-radius: 100px;
-      padding: 0.25rem;
-      margin: 5px;
-      color: ${(props) => props.theme.colors.text};
-      border: 1px solid ${(props) => props.theme.colors.text};
-      display: ${(props) => (props.inDevelopment === false ? "none" : "flex")};
-      text-align: center;
-      align-items: center;
-      &:hover {
-        color: ${(props) => props.theme.colors.backgroundItens};
-        background-color: ${(props) => props.theme.colors.text};
-      }
+  strong {
+    font-size: 0.5rem;
+    border-radius: 100px;
+    padding: 0.25rem;
+    margin: 5px;
+    color: ${(props) => props.theme.colors.text};
+    border: 1px solid ${(props) => props.theme.colors.text};
+    display: ${(props) => (props.inDevelopment === false ? "none" : "flex")};
+    text-align: center;
+    align-items: center;
+    &:hover {
+      color: ${(props) => props.theme.colors.backgroundItens};
+      background-color: ${(props) => props.theme.colors.text};
     }
   }
 `;
@@ -109,7 +107,7 @@ export const CardsType = styled.div<CardsContainerProps>`
         : props.type === "personal"
         ? "var(--green-500)"
         : props.type === "bootcamp"
-        ? "var(--yellow-500)"
+        ? "var(--orange-500)"
         : props.type === "academic"
         ? "var(--purple-500)"
         : "var(--red-500)"};

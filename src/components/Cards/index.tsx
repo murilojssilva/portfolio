@@ -82,8 +82,7 @@ export function Cards({
     <CardsContainer colorTop={colorTop} type={type}>
       <CardsHeader>
         <CardsTitle inDevelopment={inDevelopment}>
-          <h2>
-            {`${title} `}
+          <span>
             {stack === "mobile" ? (
               <FaMobile
                 size={16}
@@ -109,7 +108,8 @@ export function Cards({
                 data-tip="Fullstack"
               />
             ) : null}
-          </h2>
+          </span>
+          <h2>{`${title} `}</h2>
 
           <strong>
             <FaInfo data-tip="Em desenvolvimento" />

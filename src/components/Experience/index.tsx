@@ -31,7 +31,7 @@ export function Experience() {
         <Cards
           colorTop="experiences"
           stack="fullstack"
-          title="Universidade do Estado do Rio de Janeiro"
+          title="Universidade do Estado do Rio de Janeiro (UERJ)"
           hasRubyOnRails
           hasBootstrap
         />

@@ -80,13 +80,20 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.25rem;
+
+  span {
+    display: flex;
+    padding: 1rem;
+    border-radius: 8px;
+    &:hover {
+      background-color: ${(props) => props.theme.colors.backgroundItens};
+    }
+  }
 
   strong {
     font-size: 0.5rem;
     border-radius: 100px;
     padding: 0.25rem;
-    margin: 5px;
     color: ${(props) => props.theme.colors.text};
     border: 1px solid ${(props) => props.theme.colors.text};
     display: ${(props) => (props.inDevelopment === false ? "none" : "flex")};

@@ -9,6 +9,76 @@ export function Projects() {
       <ProjectsContent>
         <Cards
           colorTop="projects"
+          type="bootcamp"
+          title="Ignite - DT Money"
+          subtitle="Desenvolvedor Front End"
+          hasReact
+          hasTypescript
+          hasStyledComponents
+          hasRadix
+          hasZod
+          hasPhosphor
+          hasVite
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-dt-money"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - Coffee Delivery"
+          subtitle="Desenvolvedor Front End"
+          hasReact
+          hasTypescript
+          hasStyledComponents
+          hasPhosphor
+          hasVite
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-reactjs-challenge-2-coffee-delivery"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - Go Finance"
+          subtitle="Desenvolvedor Mobile"
+          hasReactNative
+          hasTypescript
+          hasStyledComponents
+          hasExpo
+          hasYup
+          hasVictoryNative
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-react-native-gofinance"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - Upload de imagens"
+          subtitle="Desenvolvedor Front End"
+          hasReact
+          hasTypescript
+          hasNextJS
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-upload-de-imagens"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - Stream Data"
+          subtitle="Desenvolvedor Mobile"
+          hasReactNative
+          hasTypescript
+          hasStyledComponents
+          hasExpo
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/desafio-02-ignite-react-native-chapter-ii"
+        />
+        <Cards
+          colorTop="projects"
           type="academic"
           title="Sistema ACESSO"
           subtitle="Desenvolvedor Mobile"
@@ -27,12 +97,24 @@ export function Projects() {
           hasTypescript
           hasStyledComponents
           hasVercel
+          hasAxios
           hasVite
           hasLink
           hasDeploy
           deploy="https://desafio-pagcom.vercel.app/"
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/desafio-pagcom"
+        />
+        <Cards
+          colorTop="projects"
+          type="challenge"
+          title="Workana Test"
+          subtitle="Desenvolvedor Front End"
+          hasReact
+          hasJest
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/workana-test"
         />
         <Cards
           colorTop="projects"

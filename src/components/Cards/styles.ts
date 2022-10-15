@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface CardsContainerProps {
-  type: "challenge" | "personal" | "academic" | "none";
+  type: "challenge" | "personal" | "academic" | "bootcamp" | "none";
   colorTop: "projects" | "experiences" | "publications";
 }
 
@@ -61,6 +61,8 @@ export const CardsContainer = styled.div<CardsContainerProps>`
         ? "var(--blue-500)"
         : props.type === "personal"
         ? "var(--green-500)"
+        : props.type === "bootcamp"
+        ? "var(--yellow-500)"
         : props.type === "academic"
         ? "var(--purple-200)"
         : "var(--red-500)"};
@@ -106,6 +108,8 @@ export const CardsType = styled.div<CardsContainerProps>`
         ? "var(--blue-500)"
         : props.type === "personal"
         ? "var(--green-500)"
+        : props.type === "bootcamp"
+        ? "var(--yellow-500)"
         : props.type === "academic"
         ? "var(--purple-500)"
         : "var(--red-500)"};

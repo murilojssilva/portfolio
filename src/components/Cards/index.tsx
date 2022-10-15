@@ -14,7 +14,7 @@ import {
 import { Techs, TechsProps } from "./Techs";
 
 interface CardsProps extends TechsProps {
-  type?: "challenge" | "personal" | "academic" | "none";
+  type?: "challenge" | "personal" | "academic" | "bootcamp" | "none";
   colorTop: "projects" | "experiences" | "publications";
   title: string;
   subtitle?: string;
@@ -45,6 +45,14 @@ export function Cards({
   hasReactNative = false,
   hasStyledComponents = false,
   hasGraphQL = false,
+  hasPhosphor = false,
+  hasZod = false,
+  hasRadix = false,
+  hasExpo = false,
+  hasAxios = false,
+  hasFaunaDB = false,
+  hasYup = false,
+  hasVictoryNative = false,
   hasJWT = false,
   hasMongoDB = false,
   hasSCSS = false,
@@ -82,6 +90,8 @@ export function Cards({
               ? "pessoal"
               : type === "challenge"
               ? "desafio"
+              : type === "bootcamp"
+              ? "bootcamp"
               : ""}
           </span>
         </CardsType>
@@ -96,6 +106,14 @@ export function Cards({
           hasJest={hasJest}
           hasNetlify={hasNetlify}
           hasNextJS={hasNextJS}
+          hasRadix={hasRadix}
+          hasExpo={hasExpo}
+          hasFaunaDB={hasFaunaDB}
+          hasAxios={hasAxios}
+          hasYup={hasYup}
+          hasVictoryNative={hasVictoryNative}
+          hasZod={hasZod}
+          hasPhosphor={hasPhosphor}
           hasVite={hasVite}
           hasFirebase={hasFirebase}
           hasNodeJS={hasNodeJS}

@@ -4,6 +4,7 @@ import { TbBrandReactNative } from "react-icons/tb";
 import {
   SiBootstrap,
   SiCss3,
+  SiExpo,
   SiExpress,
   SiFirebase,
   SiGraphql,
@@ -24,6 +25,13 @@ import {
 } from "react-icons/si";
 import logoJWT from "../../../assets/jwt.svg";
 import logoViteJS from "../../../assets/vitejs.svg";
+import logoFaunaDB from "../../../assets/faunadb.svg";
+import logoAxios from "../../../assets/axios.svg";
+import logoZod from "../../../assets/zod.svg";
+import logoVictory from "../../../assets/victory.svg";
+import logoPhosphor from "../../../assets/phosphor.svg";
+import logoYup from "../../../assets/yup.svg";
+
 import { useTheme } from "styled-components";
 
 export interface TechsProps {
@@ -43,6 +51,14 @@ export interface TechsProps {
   hasJWT?: boolean;
   hasNextJS?: boolean;
   hasVite?: boolean;
+  hasRadix?: boolean;
+  hasExpo?: boolean;
+  hasAxios?: boolean;
+  hasFaunaDB?: boolean;
+  hasYup?: boolean;
+  hasVictoryNative?: boolean;
+  hasPhosphor?: boolean;
+  hasZod?: boolean;
   hasFirebase?: boolean;
   hasRubyOnRails?: boolean;
   hasBootstrap?: boolean;
@@ -68,6 +84,14 @@ export function Techs({
   hasVercel,
   hasNextJS,
   hasVite,
+  hasPhosphor,
+  hasRadix,
+  hasExpo,
+  hasFaunaDB,
+  hasAxios,
+  hasYup,
+  hasVictoryNative,
+  hasZod,
   hasNodeJS,
   hasRubyOnRails,
   hasBootstrap,
@@ -90,8 +114,55 @@ export function Techs({
           data-tip="NextJS"
         />
       </TechContent>
+      <TechContent hasExpo={hasExpo}>
+        <SiExpo
+          color={theme.title === "dark" ? "#BBC3CD" : "var(--gray-950)"}
+          data-tip="Expo"
+        />
+      </TechContent>
+      <TechContent hasYup={hasYup}>
+        <img src={logoYup} data-tip="Yup" />
+      </TechContent>
+      <TechContent hasVictoryNative={hasVictoryNative}>
+        <img src={logoVictory} data-tip="Victory Pie" />
+      </TechContent>
       <TechContent hasVite={hasVite}>
         <img src={logoViteJS} data-tip="ViteJS" />
+      </TechContent>
+      <TechContent hasFaunaDB={hasFaunaDB}>
+        <img src={logoFaunaDB} data-tip="FaunaDB" />
+      </TechContent>
+      <TechContent hasAxios={hasAxios}>
+        <img src={logoAxios} data-tip="Axios" />
+      </TechContent>
+      <TechContent hasRadix={hasRadix}>
+        <svg
+          data-tip="Radix UI"
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill={theme.title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+        >
+          <path
+            d="M12 25C7.58173 25 4 21.4183 4 17C4 12.5817 7.58173 9 12 9V25Z"
+            fill={theme.title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+          ></path>
+          <path
+            d="M12 0H4V8H12V0Z"
+            fill={theme.title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+          ></path>
+          <path
+            d="M17 8C19.2091 8 21 6.20914 21 4C21 1.79086 19.2091 0 17 0C14.7909 0 13 1.79086 13 4C13 6.20914 14.7909 8 17 8Z"
+            fill={theme.title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+          ></path>
+        </svg>
+      </TechContent>
+      <TechContent hasPhosphor={hasPhosphor}>
+        <img src={logoPhosphor} data-tip="Phosphor" />
+      </TechContent>
+      <TechContent hasZod={hasZod}>
+        <img src={logoZod} data-tip="Zod" />
       </TechContent>
       <TechContent hasVercel={hasVercel}>
         <SiVercel

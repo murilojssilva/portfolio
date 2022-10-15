@@ -9,4 +9,4 @@ export default {
     backgroundItens: "var(--gray-900)",
     text: "var(--gray-100)",
   },
-};
+} as const;

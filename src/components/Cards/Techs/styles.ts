@@ -14,6 +14,14 @@ interface TechContentProps {
   hasNetlify?: boolean;
   hasRubyOnRails?: boolean;
   hasVite?: boolean;
+  hasRadix?: boolean;
+  hasExpo?: boolean;
+  hasFaunaDB?: boolean;
+  hasAxios?: boolean;
+  hasYup?: boolean;
+  hasVictoryNative?: boolean;
+  hasZod?: boolean;
+  hasPhosphor?: boolean;
   hasBootstrap?: boolean;
   hasSCSS?: boolean;
   hasSASS?: boolean;
@@ -42,7 +50,15 @@ export const TechContent = styled.span<TechContentProps>`
     props.hasVercel === false ||
     props.hasNextJS === false ||
     props.hasVite === false ||
+    props.hasRadix === false ||
+    props.hasZod === false ||
+    props.hasPhosphor === false ||
     props.hasGraphQL === false ||
+    props.hasVictoryNative === false ||
+    props.hasExpo === false ||
+    props.hasAxios === false ||
+    props.hasFaunaDB === false ||
+    props.hasYup === false ||
     props.hasSCSS === false ||
     props.hasSASS === false ||
     props.hasTypescript === false ||

@@ -108,6 +108,8 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
 `;
 
 export const CardsType = styled.div<CardsContainerProps>`
+  display: flex;
+  align-items: center;
   span {
     color: ${(props) =>
       props.type === "challenge"

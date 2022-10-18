@@ -47,6 +47,7 @@ export function Cards({
   type = "none",
   inDevelopment = false,
   hasReact = false,
+  hasVue = false,
   hasTypescript = false,
   hasNetlify = false,
   hasHeroku = false,
@@ -143,6 +144,7 @@ export function Cards({
           hasNextJS={hasNextJS}
           hasRadix={hasRadix}
           hasExpo={hasExpo}
+          hasVue={hasVue}
           hasFaunaDB={hasFaunaDB}
           hasAxios={hasAxios}
           hasYup={hasYup}

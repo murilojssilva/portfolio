@@ -22,6 +22,7 @@ import {
   SiStyledcomponents,
   SiTypescript,
   SiVercel,
+  SiVuedotjs,
 } from "react-icons/si";
 import logoJWT from "../../../assets/jwt.svg";
 import logoViteJS from "../../../assets/vitejs.svg";
@@ -32,6 +33,7 @@ import logoVictory from "../../../assets/victory.svg";
 import logoPhosphor from "../../../assets/phosphor.svg";
 import logoYup from "../../../assets/yup.svg";
 import logoStripe from "../../../assets/stripe.svg";
+import logoVue from "../../../assets/vue.svg";
 
 import { useTheme } from "styled-components";
 
@@ -55,6 +57,7 @@ export interface TechsProps {
   hasVite?: boolean;
   hasRadix?: boolean;
   hasExpo?: boolean;
+  hasVue?: boolean;
   hasAxios?: boolean;
   hasFaunaDB?: boolean;
   hasYup?: boolean;
@@ -90,6 +93,7 @@ export function Techs({
   hasPhosphor,
   hasRadix,
   hasExpo,
+  hasVue,
   hasFaunaDB,
   hasAxios,
   hasYup,
@@ -110,6 +114,9 @@ export function Techs({
       </TechContent>
       <TechContent hasReact={hasReact}>
         <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
+      </TechContent>
+      <TechContent hasVue={hasVue}>
+        <img src={logoVue} data-tip="Vue.JS" />
       </TechContent>
       <TechContent hasNextJS={hasNextJS}>
         <SiNextdotjs

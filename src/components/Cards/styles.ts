@@ -30,21 +30,19 @@ export const CardsContainer = styled.div<CardsContainerProps>`
         : props.colorTop === "publications"
         ? "var(--purple-700)"
         : "var(--red-500)"};
-  margin: 2rem;
+  margin: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
-  gap: 2rem;
-
-  background-color: ${(props) => props.theme.colors.background};
   box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
-  transition: filter 0.1s;
+  border-radius: 8px;
+
   &:hover {
     filter: ${(props) =>
       props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
+    transition: filter 0.2s;
   }
-  border-radius: 8px;
 
   h2 {
     font-size: 1.5rem;
@@ -95,7 +93,8 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
     padding: 1rem;
     border-radius: 8px;
     &:hover {
-      background-color: ${(props) => props.theme.colors.backgroundItens};
+      background-color: ${(props) => props.theme.colors.background};
+      transition: background 0.2s;
     }
   }
 
@@ -109,8 +108,9 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
     text-align: center;
     align-items: center;
     &:hover {
-      color: ${(props) => props.theme.colors.backgroundItens};
+      color: ${(props) => props.theme.colors.background};
       background-color: ${(props) => props.theme.colors.text};
+      transition: background 0.2s, color 0.2s;
     }
   }
 `;
@@ -126,9 +126,12 @@ export const CardsType = styled.div<CardsContainerProps>`
     border-radius: 8px;
     border: 0;
     outline: 0;
-    color: ${(props) =>
-      props.type === "none" ? "var(--gray-900)" : "var(--shape)"};
+
     background: ${(props) =>
+      props.theme.title === "dark"
+        ? props.theme.colors.backgroundItens
+        : "var(--shape)"};
+    color: ${(props) =>
       props.type === "challenge"
         ? "var(--blue-500)"
         : props.type === "personal"
@@ -141,9 +144,9 @@ export const CardsType = styled.div<CardsContainerProps>`
         ? "var(--purple-500)"
         : "var(--yellow-500)"};
     &:hover {
-      background: ${(props) =>
-        props.type === "none" ? "var(--gray-900)" : "var(--shape)"};
       color: ${(props) =>
+        props.type === "none" ? "var(--gray-900)" : "var(--shape)"};
+      background: ${(props) =>
         props.type === "challenge"
           ? "var(--blue-500)"
           : props.type === "personal"

@@ -7,6 +7,7 @@ export function Publicatins() {
       <h1>{"<Publicações>"}</h1>
       <Cards
         colorTop="publications"
+        stack="fullstack"
         title="Requirements Engineering Out of the Classroom: Anticipating Challenges Experienced in Practice"
         subtitle="2020 IEEE 32nd Conference on Software Engineering Education and Training (CSEE&T)"
         hasLink

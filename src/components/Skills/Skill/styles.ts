@@ -11,14 +11,13 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   text-align: center;
   gap: 1rem;
   box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
-  border-radius: 0 0 8px 8px;
   border-radius: 8px;
   border-top: 5px solid ${(props) => props.theme.colors.primary};
 
-  transition: filter 0.1s;
   &:hover {
     filter: ${(props) =>
       props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
+    transition: filter 0.2s;
   }
 
   span {

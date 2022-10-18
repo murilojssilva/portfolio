@@ -83,7 +83,8 @@ export const TechContent = styled.span<TechContentProps>`
   border-radius: 8px;
   margin-bottom: 0.5rem;
   &:hover {
-    background-color: ${(props) => props.theme.colors.backgroundItens};
+    background-color: ${(props) => props.theme.colors.background};
+    transition: background 0.2s;
   }
 
   svg,

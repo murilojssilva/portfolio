@@ -52,6 +52,7 @@ export function Cards({
   hasHeroku = false,
   hasFirebase = false,
   hasReactNative = false,
+  hasStripe = false,
   hasStyledComponents = false,
   hasGraphQL = false,
   hasPhosphor = false,
@@ -134,6 +135,7 @@ export function Cards({
           hasBootstrap={hasBootstrap}
           hasExpress={hasExpress}
           hasGraphQL={hasGraphQL}
+          hasStripe={hasStripe}
           hasHeroku={hasHeroku}
           hasJavascript={hasJavascript}
           hasJest={hasJest}

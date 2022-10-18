@@ -80,6 +80,7 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 0.25rem;
 
   span {
     display: flex;

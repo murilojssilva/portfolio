@@ -31,6 +31,7 @@ import logoZod from "../../../assets/zod.svg";
 import logoVictory from "../../../assets/victory.svg";
 import logoPhosphor from "../../../assets/phosphor.svg";
 import logoYup from "../../../assets/yup.svg";
+import logoStripe from "../../../assets/stripe.svg";
 
 import { useTheme } from "styled-components";
 
@@ -44,6 +45,7 @@ export interface TechsProps {
   hasSCSS?: boolean;
   hasSASS?: boolean;
   hasGraphQL?: boolean;
+  hasStripe?: boolean;
   hasJest?: boolean;
   hasNodeJS?: boolean;
   hasVercel?: boolean;
@@ -78,6 +80,7 @@ export function Techs({
   hasReactNative,
   hasStyledComponents,
   hasGraphQL,
+  hasStripe,
   hasSCSS,
   hasSASS,
   hasJest,
@@ -190,6 +193,9 @@ export function Techs({
       </TechContent>
       <TechContent hasGraphQL={hasGraphQL}>
         <SiGraphql color={"#D932A2"} data-tip="GraphQL" />
+      </TechContent>
+      <TechContent hasStripe={hasStripe}>
+        <img src={logoStripe} data-tip="Stripe" />
       </TechContent>
       <TechContent hasRedux={hasRedux}>
         <SiRedux color={"#7248B7"} data-tip="Redux" />

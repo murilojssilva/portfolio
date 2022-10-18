@@ -9,6 +9,7 @@ interface TechContentProps {
   hasMongoDB?: boolean;
   hasJWT?: boolean;
   hasGraphQL?: boolean;
+  hasStripe?: boolean;
   hasJest?: boolean;
   hasNodeJS?: boolean;
   hasNetlify?: boolean;
@@ -54,6 +55,7 @@ export const TechContent = styled.span<TechContentProps>`
     props.hasZod === false ||
     props.hasPhosphor === false ||
     props.hasGraphQL === false ||
+    props.hasStripe === false ||
     props.hasVictoryNative === false ||
     props.hasExpo === false ||
     props.hasAxios === false ||

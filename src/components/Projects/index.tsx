@@ -11,17 +11,41 @@ export function Projects() {
           colorTop="projects"
           type="bootcamp"
           title="Ignite - DT Money"
+          stack="frontend"
           hasReact
           hasTypescript
           hasStyledComponents
           hasRadix
           hasZod
-          stack="frontend"
           hasPhosphor
           hasVite
           hasLink
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/ignite-dt-money"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - Savepass"
+          stack="mobile"
+          hasReactNative
+          hasTypescript
+          hasStyledComponents
+          hasExpo
+          hasYup
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/desafio-1-ignite-react-native-capter-ii"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - Todos"
+          stack="mobile"
+          hasReactNative
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-template-react-native-todos"
         />
         <Cards
           colorTop="projects"
@@ -35,6 +59,25 @@ export function Projects() {
           hasVite
           hasLink
           iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-reactjs-challenge-2-coffee-delivery"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - Ignews"
+          stack="frontend"
+          hasReact
+          hasTypescript
+          hasStyledComponents
+          hasNextJS
+          hasSASS
+          hasFaunaDB
+          hasAxios
+          hasStripe
+          hasLink
+          hasDeploy
+          iconButton={"GitHub"}
+          deploy="https://murilojssilva-ignite-deploy-application.netlify.app/"
           href="https://github.com/murilojssilva/ignite-reactjs-challenge-2-coffee-delivery"
         />
         <Cards
@@ -55,6 +98,29 @@ export function Projects() {
         <Cards
           colorTop="projects"
           type="bootcamp"
+          title="Ignite - Otimizando a aplicação"
+          stack="frontend"
+          hasReact
+          hasTypescript
+          hasAxios
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-otimizando-aplicacao"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - Fundamentos ReactJS"
+          stack="frontend"
+          hasReact
+          hasPhosphor
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/01-fundamentos-reactjs-ignite"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
           title="Ignite - Upload de imagens"
           hasReact
           stack="frontend"
@@ -63,6 +129,20 @@ export function Projects() {
           hasLink
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/ignite-upload-de-imagens"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - SpaceTraveling"
+          stack="frontend"
+          hasReact
+          hasSASS
+          hasJest
+          hasTypescript
+          hasNextJS
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/04-spacetraveling"
         />
         <Cards
           colorTop="projects"
@@ -76,6 +156,17 @@ export function Projects() {
           hasLink
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/desafio-02-ignite-react-native-chapter-ii"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
+          title="Ignite - My Skills"
+          stack="mobile"
+          hasReactNative
+          hasTypescript
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-react-native-myskills"
         />
         <Cards
           colorTop="projects"

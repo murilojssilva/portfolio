@@ -10,6 +10,7 @@ export function Publicatins() {
         title="Requirements Engineering Out of the Classroom: Anticipating Challenges Experienced in Practice"
         subtitle="2020 IEEE 32nd Conference on Software Engineering Education and Training (CSEE&T)"
         hasLink
+        type="academic"
         iconButton={"Paper"}
         href={"https://ieeexplore.ieee.org/document/9206220"}
       />

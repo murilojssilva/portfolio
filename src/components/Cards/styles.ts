@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
 interface CardsContainerProps {
-  type: "challenge" | "personal" | "academic" | "bootcamp" | "none";
+  type:
+    | "challenge"
+    | "personal"
+    | "academic"
+    | "bootcamp"
+    | "professional"
+    | "none";
   colorTop: "projects" | "experiences" | "publications";
 }
 
@@ -63,6 +69,8 @@ export const CardsContainer = styled.div<CardsContainerProps>`
         ? "var(--green-500)"
         : props.type === "bootcamp"
         ? "var(--orange-500)"
+        : props.type === "professional"
+        ? "var(--yellow-500)"
         : props.type === "academic"
         ? "var(--purple-200)"
         : "var(--red-500)"};
@@ -109,18 +117,46 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
 
 export const CardsType = styled.div<CardsContainerProps>`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
     color: ${(props) =>
+      props.type === "none" ? "var(--gray-900)" : "var(--shape)"};
+    background: ${(props) =>
       props.type === "challenge"
         ? "var(--blue-500)"
         : props.type === "personal"
         ? "var(--green-500)"
         : props.type === "bootcamp"
         ? "var(--orange-500)"
+        : props.type === "professional"
+        ? "var(--red-500)"
         : props.type === "academic"
         ? "var(--purple-500)"
-        : "var(--red-500)"};
+        : "var(--yellow-500)"};
+    &:hover {
+      background: ${(props) =>
+        props.type === "none" ? "var(--gray-900)" : "var(--shape)"};
+      color: ${(props) =>
+        props.type === "challenge"
+          ? "var(--blue-500)"
+          : props.type === "personal"
+          ? "var(--green-500)"
+          : props.type === "bootcamp"
+          ? "var(--orange-500)"
+          : props.type === "professional"
+          ? "var(--red-500)"
+          : props.type === "academic"
+          ? "var(--purple-500)"
+          : "var(--yellow-500)"};
+      transition: background 0.2s, color 0.2s;
+    }
     font-weight: bold;
   }
 `;

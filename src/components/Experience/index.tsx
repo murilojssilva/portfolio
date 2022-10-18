@@ -10,6 +10,7 @@ export function Experience() {
           colorTop="experiences"
           title="Upnid Pagamentos"
           stack="frontend"
+          type="professional"
           hasReact
           hasTypescript
           hasStyledComponents
@@ -20,6 +21,7 @@ export function Experience() {
           colorTop="experiences"
           title="ResolveLogo"
           stack="fullstack"
+          type="personal"
           hasReact
           hasStyledComponents
           hasHeroku
@@ -31,6 +33,7 @@ export function Experience() {
         <Cards
           colorTop="experiences"
           stack="fullstack"
+          type="academic"
           title="Universidade do Estado do Rio de Janeiro (UERJ)"
           hasRubyOnRails
           hasBootstrap

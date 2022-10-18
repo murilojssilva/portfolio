@@ -7,6 +7,12 @@ import {
   FaMobile,
   FaNewspaper,
   FaDesktop,
+  FaUniversity,
+  FaTrophy,
+  FaPeopleArrows,
+  FaLaptopCode,
+  FaSuitcase,
+  FaCampground,
 } from "react-icons/fa";
 import { FcDeployment } from "react-icons/fc";
 import { useTheme } from "styled-components";
@@ -23,12 +29,19 @@ import {
 import { Techs, TechsProps } from "./Techs";
 
 interface CardsProps extends TechsProps {
-  type?: "challenge" | "personal" | "academic" | "bootcamp" | "none";
+  type?:
+    | "challenge"
+    | "personal"
+    | "academic"
+    | "bootcamp"
+    | "professional"
+    | "none";
   stack?: "mobile" | "backend" | "frontend" | "fullstack";
   colorTop: "projects" | "experiences" | "publications";
   title: string;
   hasLink?: boolean;
   hasDeploy?: boolean;
+  subtitle?: string;
   href?: string;
   deploy?: string;
   iconButton?: "GitHub" | "GitLab" | "Paper" | "Deploy";
@@ -37,6 +50,7 @@ interface CardsProps extends TechsProps {
 
 export function Cards({
   title,
+  subtitle,
   colorTop,
   stack,
   hasLink = false,
@@ -119,18 +133,23 @@ export function Cards({
         </CardsTitle>
         <CardsType colorTop={colorTop} type={type}>
           <span>
-            {type === "academic"
-              ? "acadêmico"
-              : type === "personal"
-              ? "pessoal"
-              : type === "challenge"
-              ? "desafio"
-              : type === "bootcamp"
-              ? "bootcamp"
-              : ""}
+            {type === "academic" ? (
+              <FaUniversity size={20} data-tip="Acadêmico" />
+            ) : type === "personal" ? (
+              <FaLaptopCode size={20} data-tip="Pessoal" />
+            ) : type === "challenge" ? (
+              <FaTrophy size={20} data-tip="Desafio" />
+            ) : type === "professional" ? (
+              <FaSuitcase size={20} data-tip="Profissional" />
+            ) : type === "bootcamp" ? (
+              <FaCampground size={20} data-tip="Bootcamp" />
+            ) : (
+              ""
+            )}{" "}
           </span>
         </CardsType>
       </CardsHeader>
+      <p>{subtitle}</p>
       <CardsFooter>
         <Techs
           hasBootstrap={hasBootstrap}

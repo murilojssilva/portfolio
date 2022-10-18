@@ -74,6 +74,7 @@ export function Cards({
   hasZod = false,
   hasRadix = false,
   hasExpo = false,
+  hasChakra = false,
   hasAxios = false,
   hasFaunaDB = false,
   hasYup = false,
@@ -163,6 +164,7 @@ export function Cards({
           hasNextJS={hasNextJS}
           hasRadix={hasRadix}
           hasExpo={hasExpo}
+          hasChakra={hasChakra}
           hasVue={hasVue}
           hasFaunaDB={hasFaunaDB}
           hasAxios={hasAxios}

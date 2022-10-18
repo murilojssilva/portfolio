@@ -129,7 +129,7 @@ export const CardsType = styled.div<CardsContainerProps>`
 
     background: ${(props) =>
       props.theme.title === "dark"
-        ? props.theme.colors.backgroundItens
+        ? props.theme.colors.background
         : "var(--shape)"};
     color: ${(props) =>
       props.type === "challenge"

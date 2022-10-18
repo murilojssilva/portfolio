@@ -17,6 +17,7 @@ interface TechContentProps {
   hasVite?: boolean;
   hasRadix?: boolean;
   hasExpo?: boolean;
+  hasChakra?: boolean;
   hasVue?: boolean;
   hasFaunaDB?: boolean;
   hasAxios?: boolean;
@@ -59,6 +60,7 @@ export const TechContent = styled.span<TechContentProps>`
     props.hasStripe === false ||
     props.hasVictoryNative === false ||
     props.hasExpo === false ||
+    props.hasChakra === false ||
     props.hasVue === false ||
     props.hasAxios === false ||
     props.hasFaunaDB === false ||

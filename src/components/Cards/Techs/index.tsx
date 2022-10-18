@@ -3,6 +3,7 @@ import { TbBrandReactNative } from "react-icons/tb";
 
 import {
   SiBootstrap,
+  SiChakraui,
   SiCss3,
   SiExpo,
   SiExpress,
@@ -22,7 +23,6 @@ import {
   SiStyledcomponents,
   SiTypescript,
   SiVercel,
-  SiVuedotjs,
 } from "react-icons/si";
 import logoJWT from "../../../assets/jwt.svg";
 import logoViteJS from "../../../assets/vitejs.svg";
@@ -57,6 +57,7 @@ export interface TechsProps {
   hasVite?: boolean;
   hasRadix?: boolean;
   hasExpo?: boolean;
+  hasChakra?: boolean;
   hasVue?: boolean;
   hasAxios?: boolean;
   hasFaunaDB?: boolean;
@@ -93,6 +94,7 @@ export function Techs({
   hasPhosphor,
   hasRadix,
   hasExpo,
+  hasChakra,
   hasVue,
   hasFaunaDB,
   hasAxios,
@@ -129,6 +131,9 @@ export function Techs({
           color={theme.title === "dark" ? "#BBC3CD" : "var(--gray-950)"}
           data-tip="Expo"
         />
+      </TechContent>
+      <TechContent hasChakra={hasChakra}>
+        <SiChakraui color={"#49C6C0"} data-tip="ChakraUI" />
       </TechContent>
       <TechContent hasYup={hasYup}>
         <img src={logoYup} data-tip="Yup" />

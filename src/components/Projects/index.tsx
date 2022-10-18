@@ -196,6 +196,7 @@ export function Projects() {
           stack="frontend"
           hasTypescript
           hasNextJS
+          hasChakra
           hasLink
           iconButton={"GitHub"}
           href="https://github.com/murilojssilva/ignite-upload-de-imagens"

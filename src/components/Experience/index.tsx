@@ -34,7 +34,7 @@ export function Experience() {
           colorTop="experiences"
           stack="fullstack"
           type="academic"
-          title="Universidade do Estado do Rio de Janeiro (UERJ)"
+          title="UERJ"
           hasRubyOnRails
           hasBootstrap
         />

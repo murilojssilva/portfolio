@@ -135,6 +135,21 @@ export function Projects() {
         <Cards
           colorTop="projects"
           type="bootcamp"
+          title="Ignite - Github Blog"
+          stack="frontend"
+          inDevelopment
+          hasReact
+          hasTypescript
+          hasStyledComponents
+          hasPhosphor
+          hasVite
+          hasLink
+          iconButton={"GitHub"}
+          href="https://github.com/murilojssilva/ignite-github-blog"
+        />
+        <Cards
+          colorTop="projects"
+          type="bootcamp"
           title="Ignite - Coffee Delivery"
           stack="frontend"
           hasReact
@@ -376,7 +391,7 @@ export function Projects() {
           colorTop="projects"
           type="academic"
           stack="fullstack"
-          title="Instituto de Matemática e Estatística (UERJ)"
+          title="IME-UERJ"
           hasReact
           hasTypescript
           hasStyledComponents

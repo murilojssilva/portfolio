@@ -68,10 +68,10 @@ export const CardsContainer = styled.div<CardsContainerProps>`
         : props.type === "bootcamp"
         ? "var(--orange-500)"
         : props.type === "professional"
-        ? "var(--yellow-500)"
+        ? "var(--red-500)"
         : props.type === "academic"
         ? "var(--purple-200)"
-        : "var(--red-500)"};
+        : "var(--yellow-500)"};
     font-weight: bold;
   }
 `;
@@ -117,7 +117,8 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
 
 export const CardsType = styled.div<CardsContainerProps>`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+
   span {
     display: flex;
     align-items: center;
@@ -127,10 +128,7 @@ export const CardsType = styled.div<CardsContainerProps>`
     border: 0;
     outline: 0;
 
-    background: ${(props) =>
-      props.theme.title === "dark"
-        ? props.theme.colors.background
-        : "var(--shape)"};
+    background: transparent;
     color: ${(props) =>
       props.type === "challenge"
         ? "var(--blue-500)"

@@ -134,15 +134,15 @@ export function Cards({
         <CardsType colorTop={colorTop} type={type}>
           <span>
             {type === "academic" ? (
-              <FaUniversity size={20} data-tip="Acadêmico" />
+              <FaUniversity size={16} data-tip="Acadêmico" />
             ) : type === "personal" ? (
-              <FaLaptopCode size={20} data-tip="Pessoal" />
+              <FaLaptopCode size={16} data-tip="Pessoal" />
             ) : type === "challenge" ? (
-              <FaTrophy size={20} data-tip="Desafio" />
+              <FaTrophy size={16} data-tip="Desafio" />
             ) : type === "professional" ? (
-              <FaSuitcase size={20} data-tip="Profissional" />
+              <FaSuitcase size={16} data-tip="Profissional" />
             ) : type === "bootcamp" ? (
-              <FaCampground size={20} data-tip="Bootcamp" />
+              <FaCampground size={16} data-tip="Bootcamp" />
             ) : (
               ""
             )}{" "}

@@ -1,10 +1,13 @@
+import { useContext } from "react";
+import { ProfileContext } from "../../contexts/ProfileContext";
 import { AboutContainer, AboutContent } from "./styles";
 
 export function About() {
+  const { data } = useContext(ProfileContext);
   return (
     <AboutContainer>
       <AboutContent>
-        <img src="https://github.com/murilojssilva.png" />
+        <img src={`https://github.com/${data.login}.png`} />
         <article>
           <p>Olá 👋. Este é o portfólio do Murilo Silva.</p>
           <p>

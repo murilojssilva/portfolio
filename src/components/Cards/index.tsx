@@ -3,16 +3,15 @@ import {
   FaCode,
   FaGithubAlt,
   FaGitlab,
-  FaInfo,
   FaMobile,
   FaNewspaper,
   FaDesktop,
   FaUniversity,
   FaTrophy,
-  FaPeopleArrows,
   FaLaptopCode,
   FaSuitcase,
   FaCampground,
+  FaClock,
 } from "react-icons/fa";
 import { FcDeployment } from "react-icons/fc";
 import { useTheme } from "styled-components";
@@ -46,6 +45,7 @@ interface CardsProps extends TechsProps {
   deploy?: string;
   iconButton?: "GitHub" | "GitLab" | "Paper" | "Deploy";
   inDevelopment?: boolean;
+  last_commit: string;
 }
 
 export function Cards({
@@ -58,6 +58,7 @@ export function Cards({
   href,
   deploy,
   iconButton,
+  last_commit,
   type = "none",
   inDevelopment = false,
   hasReact = false,
@@ -127,29 +128,18 @@ export function Cards({
             ) : null}
           </span>
           <h2>{`${title} `}</h2>
-
-          <strong>
-            <FaInfo data-tip="Em desenvolvimento" />
-          </strong>
         </CardsTitle>
+
         <CardsType colorTop={colorTop} type={type}>
-          <span>
-            {type === "academic" ? (
-              <FaUniversity size={16} data-tip="Acadêmico" />
-            ) : type === "personal" ? (
-              <FaLaptopCode size={16} data-tip="Pessoal" />
-            ) : type === "challenge" ? (
-              <FaTrophy size={16} data-tip="Desafio" />
-            ) : type === "professional" ? (
-              <FaSuitcase size={16} data-tip="Profissional" />
-            ) : type === "bootcamp" ? (
-              <FaCampground size={16} data-tip="Bootcamp" />
-            ) : (
-              ""
-            )}{" "}
-          </span>
+          {last_commit && (
+            <span data-tip={last_commit}>
+              <FaClock />
+              {last_commit}
+            </span>
+          )}
         </CardsType>
       </CardsHeader>
+
       <p>{subtitle}</p>
       <CardsFooter>
         <Techs
@@ -187,7 +177,6 @@ export function Cards({
           hasTypescript={hasTypescript}
           hasVercel={hasVercel}
         />
-
         <ButtonContainerPosition>
           <Button
             hasLink={hasLink}
@@ -200,9 +189,7 @@ export function Cards({
                 <FaGithubAlt />
               ) : iconButton === "Paper" ? (
                 <FaNewspaper />
-              ) : (
-                <></>
-              )
+              ) : null
             }
             content={"Visualizar repositório"}
           />

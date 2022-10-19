@@ -11,8 +11,15 @@ interface IProfileProps {
   repos_url: string;
 }
 
+interface IRepoProps {
+  pushed_at: Date;
+  name: string;
+  html_url: string;
+}
+
 interface IProfileContextProps {
   data: IProfileProps;
+  repositories: IRepoProps[];
 }
 
 export const ProfileContext = createContext({} as IProfileContextProps);
@@ -23,6 +30,7 @@ interface ProfileProviderProps {
 
 export function ProfileProvider({ children }: ProfileProviderProps) {
   const [data, setData] = useState<IProfileProps>({} as IProfileProps);
+  const [repositories, setRepositories] = useState<IRepoProps[]>([]);
 
   const username = "murilojssilva";
 
@@ -31,14 +39,23 @@ export function ProfileProvider({ children }: ProfileProviderProps) {
     setData(response.data);
   }
 
+  async function fetchPosts() {
+    const responsePosts = await api.get(`/users/${username}/repos`, {
+      params: { sort: "pushed", direction: "desc" },
+    });
+    setRepositories(responsePosts.data);
+  }
+
   useEffect(() => {
     fetchProfile();
+    fetchPosts();
   }, []);
 
   return (
     <ProfileContext.Provider
       value={{
         data,
+        repositories,
       }}
     >
       {children}

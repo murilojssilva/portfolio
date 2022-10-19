@@ -98,6 +98,11 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
     }
   }
 
+  h2 {
+    display: flex;
+    flex-direction: row;
+  }
+
   strong {
     font-size: 0.5rem;
     border-radius: 100px;
@@ -117,7 +122,7 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
 
 export const CardsType = styled.div<CardsContainerProps>`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   span {
     display: flex;
@@ -127,6 +132,7 @@ export const CardsType = styled.div<CardsContainerProps>`
     border-radius: 8px;
     border: 0;
     outline: 0;
+    gap: 0.25rem;
 
     background: transparent;
     color: ${(props) =>
@@ -141,23 +147,7 @@ export const CardsType = styled.div<CardsContainerProps>`
         : props.type === "academic"
         ? "var(--purple-500)"
         : "var(--yellow-500)"};
-    &:hover {
-      color: ${(props) =>
-        props.type === "none" ? "var(--gray-900)" : "var(--shape)"};
-      background: ${(props) =>
-        props.type === "challenge"
-          ? "var(--blue-500)"
-          : props.type === "personal"
-          ? "var(--green-500)"
-          : props.type === "bootcamp"
-          ? "var(--orange-500)"
-          : props.type === "professional"
-          ? "var(--red-500)"
-          : props.type === "academic"
-          ? "var(--purple-500)"
-          : "var(--yellow-500)"};
-      transition: background 0.2s, color 0.2s;
-    }
+
     font-weight: bold;
   }
 `;

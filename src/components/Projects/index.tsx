@@ -21,13 +21,78 @@ export function Projects() {
               <div key={repository.id}>
                 <Cards
                   colorTop="projects"
-                  type="challenge"
+                  type={
+                    repository.name === "desafio-pagcom" ||
+                    repository.name === "workana-test" ||
+                    repository.name === "codeleap-challenge" ||
+                    repository.name === "desafio-star-wars" ||
+                    repository.name === "desafio-truckpag" ||
+                    repository.name === "desafio-upnid-uprace"
+                      ? "challenge"
+                      : repository.name === "ignite-ignews" ||
+                        repository.name === "ignite-github-blog" ||
+                        repository.name === "rocketseat-omnistack-10" ||
+                        repository.name === "ignite-dt-money" ||
+                        repository.name ===
+                          "ignite-reactjs-challenge-2-coffee-delivery" ||
+                        repository.name === "origamid-ranek" ||
+                        repository.name ===
+                          "ignite-react-native-chapter-ii-desafio-02" ||
+                        repository.name ===
+                          "ignite-react-native-capter-ii-desafio-01" ||
+                        repository.name === "ignite-otimizando-aplicacao" ||
+                        repository.name === "ignite-upload-de-imagens" ||
+                        repository.name === "ignite-react-native-myskills" ||
+                        repository.name === "rocketseat-nlw1" ||
+                        repository.name === "ignite-react-native-gofinance" ||
+                        repository.name === "ignite-reactjs-desafio-01" ||
+                        repository.name ===
+                          "ignite-template-react-native-todos" ||
+                        repository.name === "ignite-reactjs-01-fundamentos" ||
+                        repository.name === "rocketseat-react-native-nubank" ||
+                        repository.name === "bossabox-vuttr"
+                      ? "bootcamp"
+                      : repository.name === "resolvelogo-backend" ||
+                        repository.name === "murilojssilva" ||
+                        repository.name === "UERJ" ||
+                        repository.name === "portfolio"
+                      ? "personal"
+                      : "none"
+                  }
                   title={
-                    repository.name.length > 13
-                      ? `${repository.name.substring(0, 13)}...`
+                    repository.name.length > 20
+                      ? `${repository.name.substring(0, 20)}...`
                       : repository.name
                   }
-                  stack="frontend"
+                  stack={
+                    repository.name === "portfolio" ||
+                    repository.name === "ignite-github-blog" ||
+                    repository.name === "ignite-dt-money" ||
+                    repository.name === "murilojssilva" ||
+                    repository.name === "codeleap-challenge" ||
+                    repository.name === "workana-test" ||
+                    repository.name === "desafio-pagcom" ||
+                    repository.name === "desafio-truckpag" ||
+                    repository.name === "ignite-ignews" ||
+                    repository.name === "ignite-otimizando-aplicacao" ||
+                    repository.name === "ignite-upload-de-imagens" ||
+                    repository.name === "desafio-upnid-uprace" ||
+                    repository.name === "desafio-star-wars" ||
+                    repository.name === "origamid-ranek" ||
+                    repository.name === "rocketseat-nlw1" ||
+                    repository.name === "ignite-reactjs-01-fundamentos" ||
+                    repository.name === "ignite-reactjs-desafio-01" ||
+                    repository.name ===
+                      "ignite-reactjs-challenge-2-coffee-delivery"
+                      ? "frontend"
+                      : repository.name === "resolvelogo-backend"
+                      ? "backend"
+                      : repository.name === "bossabox-vuttr" ||
+                        repository.name === "murilojssilva" ||
+                        repository.name === "UERJ"
+                      ? "fullstack"
+                      : "mobile"
+                  }
                   hasJavascript={repository.language === "JavaScript" && true}
                   hasTypescript={
                     repository.language === "TypeScript" ||

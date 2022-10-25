@@ -90,7 +90,6 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
 
   span {
     display: flex;
-    padding: 1rem;
     border-radius: 8px;
     &:hover {
       background-color: ${(props) => props.theme.colors.background};
@@ -101,6 +100,7 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
   h2 {
     display: flex;
     flex-direction: row;
+    font-size: 1rem;
   }
 
   strong {

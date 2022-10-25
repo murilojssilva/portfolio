@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const LoadingContainer = styled.section`
+  width: 100vw;
+  min-height: 10vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   @keyframes icon-spin {
     100% {

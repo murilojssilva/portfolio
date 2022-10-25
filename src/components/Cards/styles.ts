@@ -120,33 +120,21 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
   }
 `;
 
-export const CardsType = styled.div<CardsContainerProps>`
+export const CardsType = styled.div`
   display: flex;
-  align-items: flex-start;
 
   span {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
     border-radius: 8px;
     border: 0;
     outline: 0;
     gap: 0.25rem;
+    font-size: 0.75rem;
 
     background: transparent;
-    color: ${(props) =>
-      props.type === "challenge"
-        ? "var(--blue-500)"
-        : props.type === "personal"
-        ? "var(--green-500)"
-        : props.type === "bootcamp"
-        ? "var(--orange-500)"
-        : props.type === "professional"
-        ? "var(--red-500)"
-        : props.type === "academic"
-        ? "var(--purple-500)"
-        : "var(--yellow-500)"};
 
     font-weight: bold;
   }

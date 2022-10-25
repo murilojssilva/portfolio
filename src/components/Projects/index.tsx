@@ -12,167 +12,175 @@ export function Projects() {
     <ProjectsContainer>
       <h1>{"<Projetos>"}</h1>
       <ProjectsContent>
-        {repositories.map((repository) => (
-          <div key={repository.id}>
-            <Cards
-              colorTop="projects"
-              type="challenge"
-              title={
-                repository.name.length > 13
-                  ? `${repository.name.substring(0, 13)}...`
-                  : repository.name
-              }
-              stack="frontend"
-              hasJavascript={repository.language === "JavaScript" && true}
-              hasTypescript={
-                repository.language === "TypeScript" ||
-                repository.name === "portfolio" ||
-                (repository.name === "ignite-dt-money" && true)
-              }
-              hasJest={
-                repository.name === "desafio-truckpag" ||
-                repository.name ===
-                  "ignite-react-native-capter-ii-desafio-01" ||
-                (repository.name === "workana-test" && true)
-              }
-              hasMongoDB={
-                repository.name === "bossabox-vuttr" ||
-                (repository.name === "resolvelogo-backend" && true)
-              }
-              hasStripe={repository.name === "ignite-ignews" && true}
-              hasNextJS={
-                repository.name === "ignite-reactjs-04-dashgo" ||
-                repository.name === "ignite-upload-de-imagens" ||
-                (repository.name === "ignite-ignews" && true)
-              }
-              hasSASS={
-                repository.name === "ignite-otimizando-aplicacao" ||
-                (repository.name === "ignite-ignews" && true)
-              }
-              hasChakra={repository.name === "ignite-upload-de-imagens" && true}
-              hasNodeJS={
-                repository.name === "bossabox-vuttr" ||
-                repository.name === "resolvelogo-backend" ||
-                (repository.name === "rocketseat-nlw1" && true)
-              }
-              hasExpress={
-                repository.name === "bossabox-vuttr" ||
-                repository.name === "resolvelogo-backend" ||
-                (repository.name === "rocketseat-nlw1" && true)
-              }
-              hasReact={
-                repository.name === "ignite-reactjs-04-dashgo" ||
-                repository.name === "desafio-upnid-uprace" ||
-                repository.name === "rocketseat-nlw1" ||
-                repository.name === "desafio-truckpag" ||
-                repository.name === "ignite-reactjs-01-fundamentos" ||
-                repository.name === "ignite-reactjs-desafio-01" ||
-                repository.name === "portfolio" ||
-                repository.name === "desafio-pagcom" ||
-                repository.name === "workana-test" ||
-                repository.name === "rocketseat-omnistack-10" ||
-                repository.name === "ignite-github-blog" ||
-                repository.name ===
-                  "ignite-reactjs-challenge-2-coffee-delivery" ||
-                (repository.name === "codeleap-challenge" && true)
-              }
-              hasVue={repository.language === "Vue" && true}
-              hasYup={
-                repository.name === "ignite-upload-de-imagens" ||
-                repository.name === "bossabox-vuttr" ||
-                repository.name === "ignite-react-native-gofinance" ||
-                repository.name ===
-                  "ignite-react-native-capter-ii-desafio-01" ||
-                repository.name === "portfolio" ||
-                (repository.name === "desafio-pagcom" && true)
-              }
-              hasPhosphor={
-                repository.name === "ignite-dt-money" ||
-                (repository.name === "ignite-github-blog" && true)
-              }
-              hasExpo={
-                repository.name === "rocketseat-NLW5-ReactNative" ||
-                repository.name === "ignite-react-native-gofinance" ||
-                repository.name ===
-                  "ignite-react-native-capter-ii-desafio-01" ||
-                (repository.name ===
-                  "ignite-react-native-chapter-ii-desafio-02" &&
-                  true)
-              }
-              hasReactNative={
-                repository.name === "rocketseat-NLW5-ReactNative" ||
-                repository.name === "ignite-react-native-myskills" ||
-                repository.name === "ignite-template-react-native-todos" ||
-                repository.name === "rocketseat-react-native-nubank" ||
-                repository.name === "ignite-react-native-gofinance" ||
-                repository.name ===
-                  "ignite-react-native-chapter-ii-desafio-02" ||
-                (repository.name ===
-                  "ignite-react-native-capter-ii-desafio-01" &&
-                  true)
-              }
-              hasVictoryNative={
-                repository.name === "ignite-react-native-gofinance" && true
-              }
-              hasAxios={
-                repository.name === "ignite-upload-de-imagens" ||
-                repository.name === "ignite-otimizando-aplicacao" ||
-                repository.name === "desafio-truckpag" ||
-                repository.name === "bossabox-vuttr" ||
-                repository.name === "rocketseat-react-native-nubank" ||
-                repository.name === "portfolio" ||
-                repository.name === "origamid-ranek" ||
-                repository.name ===
-                  "ignite-react-native-chapter-ii-desafio-02" ||
-                repository.name === "desafio-pagcom" ||
-                repository.name === "rocketseat-omnistack-10" ||
-                repository.name === "ignite-dt-money" ||
-                repository.name === "ignite-github-blog" ||
-                (repository.name ===
-                  "ignite-reactjs-challenge-2-coffee-delivery" &&
-                  true)
-              }
-              hasFaunaDB={
-                repository.name === "ignite-upload-de-imagens" ||
-                (repository.name === "ignite-ignews" && true)
-              }
-              hasStyledComponents={
-                repository.name === "desafio-upnid-uprace" ||
-                repository.name === "desafio-truckpag" ||
-                repository.name === "rocketseat-react-native-nubank" ||
-                repository.name === "ignite-react-native-gofinance" ||
-                repository.name === "portfolio" ||
-                repository.name ===
-                  "ignite-react-native-capter-ii-desafio-01" ||
-                repository.name ===
-                  "ignite-react-native-chapter-ii-desafio-02" ||
-                repository.name === "desafio-pagcom" ||
-                repository.name === "ignite-dt-money" ||
-                repository.name === "ignite-github-blog" ||
-                repository.name ===
-                  "ignite-reactjs-challenge-2-coffee-delivery" ||
-                (repository.name === "codeleap-challenge" && true)
-              }
-              hasZod={repository.name === "ignite-dt-money" && true}
-              hasRadix={repository.name === "ignite-dt-money" && true}
-              hasVite={
-                repository.name === "ignite-reactjs-01-fundamentos" ||
-                repository.name === "ignite-reactjs-desafio-01" ||
-                repository.name === "portfolio" ||
-                repository.name === "desafio-pagcom" ||
-                repository.name === "ignite-dt-money" ||
-                repository.name === "ignite-github-blog" ||
-                repository.name ===
-                  "ignite-reactjs-challenge-2-coffee-delivery" ||
-                (repository.name === "codeleap-challenge" && true)
-              }
-              last_commit={dateFormatter(new Date(repository.pushed_at))}
-              hasLink
-              iconButton={"GitHub"}
-              href={repository.html_url}
-            />
-          </div>
-        ))}
+        {repositories ? (
+          <>
+            {repositories.map((repository) => (
+              <div key={repository.id}>
+                <Cards
+                  colorTop="projects"
+                  type="challenge"
+                  title={
+                    repository.name.length > 13
+                      ? `${repository.name.substring(0, 13)}...`
+                      : repository.name
+                  }
+                  stack="frontend"
+                  hasJavascript={repository.language === "JavaScript" && true}
+                  hasTypescript={
+                    repository.language === "TypeScript" ||
+                    repository.name === "portfolio" ||
+                    (repository.name === "ignite-dt-money" && true)
+                  }
+                  hasJest={
+                    repository.name === "desafio-truckpag" ||
+                    repository.name ===
+                      "ignite-react-native-capter-ii-desafio-01" ||
+                    (repository.name === "workana-test" && true)
+                  }
+                  hasMongoDB={
+                    repository.name === "bossabox-vuttr" ||
+                    (repository.name === "resolvelogo-backend" && true)
+                  }
+                  hasStripe={repository.name === "ignite-ignews" && true}
+                  hasNextJS={
+                    repository.name === "ignite-reactjs-04-dashgo" ||
+                    repository.name === "ignite-upload-de-imagens" ||
+                    (repository.name === "ignite-ignews" && true)
+                  }
+                  hasSASS={
+                    repository.name === "ignite-otimizando-aplicacao" ||
+                    (repository.name === "ignite-ignews" && true)
+                  }
+                  hasChakra={
+                    repository.name === "ignite-upload-de-imagens" && true
+                  }
+                  hasNodeJS={
+                    repository.name === "bossabox-vuttr" ||
+                    repository.name === "resolvelogo-backend" ||
+                    (repository.name === "rocketseat-nlw1" && true)
+                  }
+                  hasExpress={
+                    repository.name === "bossabox-vuttr" ||
+                    repository.name === "resolvelogo-backend" ||
+                    (repository.name === "rocketseat-nlw1" && true)
+                  }
+                  hasReact={
+                    repository.name === "ignite-reactjs-04-dashgo" ||
+                    repository.name === "desafio-upnid-uprace" ||
+                    repository.name === "rocketseat-nlw1" ||
+                    repository.name === "desafio-truckpag" ||
+                    repository.name === "ignite-reactjs-01-fundamentos" ||
+                    repository.name === "ignite-reactjs-desafio-01" ||
+                    repository.name === "portfolio" ||
+                    repository.name === "desafio-pagcom" ||
+                    repository.name === "workana-test" ||
+                    repository.name === "rocketseat-omnistack-10" ||
+                    repository.name === "ignite-github-blog" ||
+                    repository.name ===
+                      "ignite-reactjs-challenge-2-coffee-delivery" ||
+                    (repository.name === "codeleap-challenge" && true)
+                  }
+                  hasVue={repository.language === "Vue" && true}
+                  hasYup={
+                    repository.name === "ignite-upload-de-imagens" ||
+                    repository.name === "bossabox-vuttr" ||
+                    repository.name === "ignite-react-native-gofinance" ||
+                    repository.name ===
+                      "ignite-react-native-capter-ii-desafio-01" ||
+                    repository.name === "portfolio" ||
+                    (repository.name === "desafio-pagcom" && true)
+                  }
+                  hasPhosphor={
+                    repository.name === "ignite-dt-money" ||
+                    (repository.name === "ignite-github-blog" && true)
+                  }
+                  hasExpo={
+                    repository.name === "rocketseat-NLW5-ReactNative" ||
+                    repository.name === "ignite-react-native-gofinance" ||
+                    repository.name ===
+                      "ignite-react-native-capter-ii-desafio-01" ||
+                    (repository.name ===
+                      "ignite-react-native-chapter-ii-desafio-02" &&
+                      true)
+                  }
+                  hasReactNative={
+                    repository.name === "rocketseat-NLW5-ReactNative" ||
+                    repository.name === "ignite-react-native-myskills" ||
+                    repository.name === "ignite-template-react-native-todos" ||
+                    repository.name === "rocketseat-react-native-nubank" ||
+                    repository.name === "ignite-react-native-gofinance" ||
+                    repository.name ===
+                      "ignite-react-native-chapter-ii-desafio-02" ||
+                    (repository.name ===
+                      "ignite-react-native-capter-ii-desafio-01" &&
+                      true)
+                  }
+                  hasVictoryNative={
+                    repository.name === "ignite-react-native-gofinance" && true
+                  }
+                  hasAxios={
+                    repository.name === "ignite-upload-de-imagens" ||
+                    repository.name === "ignite-otimizando-aplicacao" ||
+                    repository.name === "desafio-truckpag" ||
+                    repository.name === "bossabox-vuttr" ||
+                    repository.name === "rocketseat-react-native-nubank" ||
+                    repository.name === "portfolio" ||
+                    repository.name === "origamid-ranek" ||
+                    repository.name ===
+                      "ignite-react-native-chapter-ii-desafio-02" ||
+                    repository.name === "desafio-pagcom" ||
+                    repository.name === "rocketseat-omnistack-10" ||
+                    repository.name === "ignite-dt-money" ||
+                    repository.name === "ignite-github-blog" ||
+                    (repository.name ===
+                      "ignite-reactjs-challenge-2-coffee-delivery" &&
+                      true)
+                  }
+                  hasFaunaDB={
+                    repository.name === "ignite-upload-de-imagens" ||
+                    (repository.name === "ignite-ignews" && true)
+                  }
+                  hasStyledComponents={
+                    repository.name === "desafio-upnid-uprace" ||
+                    repository.name === "desafio-truckpag" ||
+                    repository.name === "rocketseat-react-native-nubank" ||
+                    repository.name === "ignite-react-native-gofinance" ||
+                    repository.name === "portfolio" ||
+                    repository.name ===
+                      "ignite-react-native-capter-ii-desafio-01" ||
+                    repository.name ===
+                      "ignite-react-native-chapter-ii-desafio-02" ||
+                    repository.name === "desafio-pagcom" ||
+                    repository.name === "ignite-dt-money" ||
+                    repository.name === "ignite-github-blog" ||
+                    repository.name ===
+                      "ignite-reactjs-challenge-2-coffee-delivery" ||
+                    (repository.name === "codeleap-challenge" && true)
+                  }
+                  hasZod={repository.name === "ignite-dt-money" && true}
+                  hasRadix={repository.name === "ignite-dt-money" && true}
+                  hasVite={
+                    repository.name === "ignite-reactjs-01-fundamentos" ||
+                    repository.name === "ignite-reactjs-desafio-01" ||
+                    repository.name === "portfolio" ||
+                    repository.name === "desafio-pagcom" ||
+                    repository.name === "ignite-dt-money" ||
+                    repository.name === "ignite-github-blog" ||
+                    repository.name ===
+                      "ignite-reactjs-challenge-2-coffee-delivery" ||
+                    (repository.name === "codeleap-challenge" && true)
+                  }
+                  last_commit={dateFormatter(new Date(repository.pushed_at))}
+                  hasLink
+                  iconButton={"GitHub"}
+                  href={repository.html_url}
+                />
+              </div>
+            ))}
+          </>
+        ) : (
+          "Carregando"
+        )}
       </ProjectsContent>
       <h1>{"</Projetos>"}</h1>
     </ProjectsContainer>

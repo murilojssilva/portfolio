@@ -130,9 +130,9 @@ export function Cards({
           <h2 data-tip={title}>{`${title} `}</h2>
         </CardsTitle>
 
-        <CardsType colorTop={colorTop} type={type}>
+        <CardsType>
           {last_commit && (
-            <span data-tip={last_commit}>
+            <span>
               <FaClock />
               {last_commit}
             </span>

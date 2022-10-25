@@ -45,7 +45,7 @@ interface CardsProps extends TechsProps {
   deploy?: string;
   iconButton?: "GitHub" | "GitLab" | "Paper" | "Deploy";
   inDevelopment?: boolean;
-  last_commit: string;
+  last_commit?: string;
 }
 
 export function Cards({

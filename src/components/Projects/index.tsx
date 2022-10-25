@@ -166,7 +166,7 @@ export function Projects() {
                   "ignite-reactjs-challenge-2-coffee-delivery" ||
                 (repository.name === "codeleap-challenge" && true)
               }
-              last_commit={dateFormatter.format(new Date(repository.pushed_at))}
+              last_commit={dateFormatter(new Date(repository.pushed_at))}
               hasLink
               iconButton={"GitHub"}
               href={repository.html_url}

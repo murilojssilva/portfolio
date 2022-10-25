@@ -1,0 +1,18 @@
+import styled from "styled-components";
+
+export const LoadingContainer = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @keyframes icon-spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  svg {
+    animation: icon-spin 2s infinite linear;
+    color: ${(props) => props.theme.colors.secundary};
+  }
+`;

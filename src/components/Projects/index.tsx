@@ -1,18 +1,21 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { ProfileContext } from "../../contexts/ProfileContext";
 import { dateFormatter } from "../../utils/formatter";
 import { Cards } from "../Cards";
+import { Loading } from "../Loading";
 
 import { ProjectsContainer, ProjectsContent } from "./styles";
 
 export function Projects() {
-  const { repositories } = useContext(ProfileContext);
+  const { repositories, loading } = useContext(ProfileContext);
 
   return (
     <ProjectsContainer>
       <h1>{"<Projetos>"}</h1>
       <ProjectsContent>
-        {repositories ? (
+        {loading ? (
+          <Loading />
+        ) : (
           <>
             {repositories.map((repository) => (
               <div key={repository.id}>
@@ -178,8 +181,6 @@ export function Projects() {
               </div>
             ))}
           </>
-        ) : (
-          "Carregando"
         )}
       </ProjectsContent>
       <h1>{"</Projetos>"}</h1>

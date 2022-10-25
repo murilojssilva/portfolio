@@ -23,6 +23,7 @@ interface IRepoProps {
 interface IProfileContextProps {
   data: IProfileProps;
   repositories: IRepoProps[];
+  loading: boolean;
 }
 
 export const ProfileContext = createContext({} as IProfileContextProps);
@@ -34,6 +35,7 @@ interface ProfileProviderProps {
 export function ProfileProvider({ children }: ProfileProviderProps) {
   const [data, setData] = useState<IProfileProps>({} as IProfileProps);
   const [repositories, setRepositories] = useState<IRepoProps[]>([]);
+  const [loading, setLoading] = useState(true);
 
   const username = "murilojssilva";
 
@@ -43,10 +45,12 @@ export function ProfileProvider({ children }: ProfileProviderProps) {
   }
 
   async function fetchPosts() {
+    setLoading(true);
     const responsePosts = await api.get(`/users/${username}/repos`, {
       params: { sort: "pushed", direction: "desc" },
     });
     setRepositories(responsePosts.data);
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -59,6 +63,7 @@ export function ProfileProvider({ children }: ProfileProviderProps) {
       value={{
         data,
         repositories,
+        loading,
       }}
     >
       {children}

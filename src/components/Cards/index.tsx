@@ -127,7 +127,7 @@ export function Cards({
               />
             ) : null}
           </span>
-          <h2>{`${title} `}</h2>
+          <h2 data-tip={title}>{`${title} `}</h2>
         </CardsTitle>
 
         <CardsType colorTop={colorTop} type={type}>

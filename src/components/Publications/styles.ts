@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PublicationsContainer = styled.main`
-  border-top: 1px solid ${(props) => props.theme.colors.background};
+  border-top: 1px solid ${({ theme }) => theme.colors.background};
   h1 {
     background: linear-gradient(
       to right,

@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   FaDatabase,
   FaCode,
@@ -6,15 +7,11 @@ import {
   FaMobile,
   FaNewspaper,
   FaDesktop,
-  FaUniversity,
-  FaTrophy,
-  FaLaptopCode,
-  FaSuitcase,
-  FaCampground,
   FaClock,
 } from "react-icons/fa";
 import { FcDeployment } from "react-icons/fc";
 import { useTheme } from "styled-components";
+import { ProfileContext } from "../../contexts/ProfileContext";
 import { Button } from "../Form/Button";
 
 import {
@@ -67,6 +64,7 @@ export function Cards({
   hasNetlify = false,
   hasHeroku = false,
   hasFirebase = false,
+  hasAsyncStorage = false,
   hasReactNative = false,
   hasStripe = false,
   hasStyledComponents = false,
@@ -96,6 +94,7 @@ export function Cards({
   hasExpress = false,
 }: CardsProps) {
   const theme = useTheme();
+  const { loading } = useContext(ProfileContext);
   return (
     <CardsContainer colorTop={colorTop} type={type}>
       <CardsHeader>
@@ -105,29 +104,29 @@ export function Cards({
               <FaMobile
                 size={16}
                 color={theme.colors["primary"]}
-                data-tip="Mobile"
+                data-tip={loading ? "Carregando" : "Mobile"}
               />
             ) : stack === "backend" ? (
               <FaDatabase
                 size={16}
                 color={theme.colors["primary"]}
-                data-tip="Backend"
+                data-tip={loading ? "Carregando" : "Backend"}
               />
             ) : stack === "frontend" ? (
               <FaCode
                 size={16}
                 color={theme.colors["primary"]}
-                data-tip="Frontend"
+                data-tip={loading ? "Carregando" : "Frontend"}
               />
             ) : stack === "fullstack" ? (
               <FaDesktop
                 size={16}
                 color={theme.colors["primary"]}
-                data-tip="Fullstack"
+                data-tip={loading ? "Carregando" : "Fullstack"}
               />
             ) : null}
           </span>
-          <h2 data-tip={title}>{`${title} `}</h2>
+          <h2 data-tip={loading ? "Carregando" : title}>{`${title} `}</h2>
         </CardsTitle>
 
         <CardsType>
@@ -158,6 +157,7 @@ export function Cards({
           hasVue={hasVue}
           hasFaunaDB={hasFaunaDB}
           hasAxios={hasAxios}
+          hasAsyncStorage={hasAsyncStorage}
           hasYup={hasYup}
           hasVictoryNative={hasVictoryNative}
           hasZod={hasZod}

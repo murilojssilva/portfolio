@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ContactContainer = styled.form`
   display: flex;
@@ -11,9 +11,10 @@ export const ContactContainer = styled.form`
   border-radius: 8px;
   min-height: 80vh;
   width: 80vw;
-  border-top: 5px solid ${(props) => props.theme.colors.primary};
-
-  box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
+  ${({ theme }) => css`
+    border-top: 5px solid ${theme.colors.primary};
+    box-shadow: 0 0 1em ${theme.colors.backgroundItens};
+  `};
 
   label {
     display: flex;
@@ -37,7 +38,7 @@ export const ContactContainer = styled.form`
       p {
         display: flex;
         align-items: center;
-        color: ${(props) => props.theme.colors.secundary};
+        color: ${({ theme }) => theme.colors.secundary};
       }
     }
   }
@@ -52,7 +53,7 @@ export const ContactContainer = styled.form`
   button {
     border-radius: 8px;
     background-color: transparent;
-    color: ${(props) => props.theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
     cursor: pointer;
     padding: 1rem;
   }
@@ -63,20 +64,27 @@ export const ContactContainer = styled.form`
     width: 60vw;
     margin: 1rem;
     gap: 1rem;
-    color: ${(props) => props.theme.colors.text};
+
     border: 2px solid transparent;
-    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
+
     outline: 0;
     border-radius: 8px;
     translate: border 0.2s;
+    ${({ theme }) => css`
+      border-bottom: 2px solid ${theme.colors.primary};
+      color: ${theme.colors.text};
+    `};
+
     &:focus {
-      border: 2px solid ${(props) => props.theme.colors.primary};
+      border: 2px solid ${({ theme }) => theme.colors.primary};
     }
   }
 
   button {
-    border: 1px solid ${(props) => props.theme.colors.primary};
-    color: ${(props) => props.theme.colors.primary};
+    ${({ theme }) => css`
+      border: 1px solid ${theme.colors.primary};
+      color: ${theme.colors.primary};
+    `};
 
     font-weight: bold;
     display: block;
@@ -86,9 +94,11 @@ export const ContactContainer = styled.form`
     gap: 0.5rem;
     transition: background-color 0.1s, color 0.1s;
     &:hover {
-      background-color: ${(props) => props.theme.colors.primary};
-      border: 1px solid ${(props) => props.theme.colors.primary};
-      color: ${(props) => props.theme.colors.background};
+      ${({ theme }) => css`
+        background-color: ${theme.colors.primary};
+        border: 1px solid ${theme.colors.primary};
+        color: ${theme.colors.background};
+      `};
     }
   }
 `;

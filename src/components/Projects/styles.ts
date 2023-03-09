@@ -5,7 +5,7 @@ interface ProjectTitleProps {
 }
 
 export const ProjectsContainer = styled.section`
-  border-top: 1px solid ${(props) => props.theme.colors.background};
+  border-top: 1px solid ${({ theme }) => theme.colors.background};
   h1 {
     background: linear-gradient(
       to right,

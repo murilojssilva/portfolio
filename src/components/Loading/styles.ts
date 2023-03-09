@@ -15,6 +15,6 @@ export const LoadingContainer = styled.section`
 
   svg {
     animation: icon-spin 2s infinite linear;
-    color: ${(props) => props.theme.colors.secundary};
+    color: ${({ theme }) => theme.colors.secundary};
   }
 `;

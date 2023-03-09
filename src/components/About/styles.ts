@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { LayoutContainer } from "../../screen/_layouts/default/styles";
 
 export const AboutContainer = styled(LayoutContainer)``;
 
 export const AboutContent = styled.header`
-  color: ${(props) => props.theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -14,7 +14,7 @@ export const AboutContent = styled.header`
   article {
     width: 90%;
     p {
-      color: ${(props) => props.theme.colors.text};
+      color: ${({ theme }) => theme.colors.text};
       font-size: 1.5rem;
     }
   }
@@ -23,8 +23,11 @@ export const AboutContent = styled.header`
     width: calc(5rem + 12px);
     height: calc(5rem + 12px);
     border-radius: 8px;
-    border: 4px solid ${(props) => props.theme.colors.backgroundItens};
-    outline: 2px solid ${(props) => props.theme.colors.text};
+    ${({ theme }) => css`
+      border: 4px solid ${theme.colors.backgroundItens};
+      outline: 2px solid ${theme.colors.text};
+    `};
+
     margin: 1rem 0;
   }
 `;

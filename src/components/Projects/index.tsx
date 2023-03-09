@@ -29,6 +29,8 @@ export function Projects() {
                     repository.name === "desafio-truckpag" ||
                     repository.name === "desafio-upnid-uprace"
                       ? "challenge"
+                      : repository.name === "UERJ"
+                      ? "academic"
                       : repository.name === "ignite-ignews" ||
                         repository.name === "ignite-github-blog" ||
                         repository.name === "rocketseat-omnistack-10" ||
@@ -54,7 +56,6 @@ export function Projects() {
                       ? "bootcamp"
                       : repository.name === "resolvelogo-backend" ||
                         repository.name === "murilojssilva" ||
-                        repository.name === "UERJ" ||
                         repository.name === "portfolio"
                       ? "personal"
                       : "none"
@@ -156,6 +157,9 @@ export function Projects() {
                     repository.name ===
                       "ignite-react-native-capter-ii-desafio-01" ||
                     repository.name === "portfolio" ||
+                    repository.name === "daily-diet-native" ||
+                    repository.name === "todolist-native" ||
+                    repository.name === "igniteshoesapp" ||
                     (repository.name === "desafio-pagcom" && true)
                   }
                   hasPhosphor={
@@ -167,6 +171,9 @@ export function Projects() {
                     repository.name === "ignite-react-native-gofinance" ||
                     repository.name ===
                       "ignite-react-native-capter-ii-desafio-01" ||
+                    repository.name === "daily-diet-native" ||
+                    repository.name === "todolist-native" ||
+                    repository.name === "igniteshoesapp" ||
                     (repository.name ===
                       "ignite-react-native-chapter-ii-desafio-02" &&
                       true)
@@ -177,6 +184,9 @@ export function Projects() {
                     repository.name === "ignite-template-react-native-todos" ||
                     repository.name === "rocketseat-react-native-nubank" ||
                     repository.name === "ignite-react-native-gofinance" ||
+                    repository.name === "daily-diet-native" ||
+                    repository.name === "todolist-native" ||
+                    repository.name === "igniteshoesapp" ||
                     repository.name ===
                       "ignite-react-native-chapter-ii-desafio-02" ||
                     (repository.name ===
@@ -208,9 +218,16 @@ export function Projects() {
                     repository.name === "ignite-upload-de-imagens" ||
                     (repository.name === "ignite-ignews" && true)
                   }
+                  hasAsyncStorage={
+                    repository.name === "daily-diet-native" ||
+                    (repository.name === "todolist-native" && true)
+                  }
                   hasStyledComponents={
                     repository.name === "desafio-upnid-uprace" ||
                     repository.name === "desafio-truckpag" ||
+                    repository.name === "daily-diet-native" ||
+                    repository.name === "todolist-native" ||
+                    repository.name === "igniteshoesapp" ||
                     repository.name === "rocketseat-react-native-nubank" ||
                     repository.name === "ignite-react-native-gofinance" ||
                     repository.name === "portfolio" ||

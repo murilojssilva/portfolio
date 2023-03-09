@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const HeaderContainer = styled.header`
   display: flex;
   height: 5rem;
-  border-bottom: 1px solid ${(props) => props.theme.colors.backgroundItens};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundItens};
 `;
 
 export const HeaderContent = styled.div`
@@ -24,15 +24,17 @@ export const HeaderContent = styled.div`
       align-items: center;
       padding: 0 1rem;
       border-bottom: 1px solid transparent;
-      color: ${(props) => props.theme.colors.text};
+      color: ${({ theme }) => theme.colors.text};
 
-      :hover {
-        background-color: ${(props) => props.theme.colors.backgroundItens};
+      &.:hover {
+        background-color: ${({ theme }) => theme.colors.backgroundItens};
       }
 
       &.active {
-        color: ${(props) => props.theme.colors.primary};
-        border-bottom: 1px solid ${(props) => props.theme.colors.primary};
+        ${({ theme }) => css`
+          color: ${theme.colors.primary};
+          border-bottom: 1px solid ${theme.colors.primary};
+        `};
       }
       @media (max-width: 768px) {
         span {

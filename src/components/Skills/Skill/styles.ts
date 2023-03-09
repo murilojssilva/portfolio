@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 interface SkillContainerProps {
   color: string;
@@ -10,20 +10,23 @@ export const SkillContainer = styled.div<SkillContainerProps>`
   align-items: center;
   text-align: center;
   gap: 1rem;
-  box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
+
   border-radius: 8px;
-  border-top: 5px solid ${(props) => props.theme.colors.primary};
+  ${({ theme }) => css`
+    border-top: 5px solid ${theme.colors.primary};
+    box-shadow: 0 0 1em ${theme.colors.backgroundItens};
+  `};
 
   &:hover {
-    filter: ${(props) =>
-      props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
+    filter: ${({ theme }) =>
+      theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
     transition: filter 0.2s;
   }
 
   span {
     padding: 3rem;
     border-radius: 8px;
-    color: ${(props) => props.theme.colors.secundary};
+    color: ${({ theme }) => theme.colors.secundary};
 
     svg {
       width: 3rem;
@@ -42,7 +45,7 @@ export const SkillContainer = styled.div<SkillContainerProps>`
     line-height: 1.6;
     text-align: center;
     font-size: 1rem;
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
   }
   h1 {
     font-size: 1.25rem;

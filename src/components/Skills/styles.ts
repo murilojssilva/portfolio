@@ -7,7 +7,7 @@ export const SkillsContainer = styled.section`
   margin: 0 auto;
   gap: 1rem;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1200px) {
     border-top: 5px solid transparent;
     grid-template-columns: repeat(2, 1fr);
   }

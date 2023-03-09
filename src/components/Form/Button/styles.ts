@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface ButtonContainerProps {
   hasLink?: boolean;
@@ -7,19 +7,22 @@ interface ButtonContainerProps {
 }
 
 export const ButtonContainer = styled.a<ButtonContainerProps>`
-  border: 1px solid ${(props) => props.theme.colors.text};
   border-radius: 8px;
   background-color: transparent;
-  color: ${(props) => props.theme.colors.text};
+  ${({ theme }) => css`
+    border: 1px solid ${theme.colors.text};
+    color: ${theme.colors.text};
+  `};
+
   svg {
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
   }
   padding: 1rem;
   font-weight: bold;
   display: block;
 
-  display: ${(props) =>
-    props.hasLink === false && props.hasDeploy === false ? "none" : "flex"};
+  display: ${({ hasLink, hasDeploy }) =>
+    hasLink === false && hasDeploy === false ? "none" : "flex"};
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -31,11 +34,14 @@ export const ButtonContainer = styled.a<ButtonContainerProps>`
   transition: background-color 0.1s, color 0.1s;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.primary};
-    border: 1px solid ${(props) => props.theme.colors.primary};
-    color: ${(props) => props.theme.colors.background};
+    ${({ theme }) => css`
+      background-color: ${theme.colors.primary};
+      border: 1px solid ${theme.colors.primary};
+      color: ${theme.colors.background};
+    `};
+
     svg {
-      color: ${(props) => props.theme.colors.background};
+      color: ${({ theme }) => theme.colors.background};
     }
   }
   width: 100%;

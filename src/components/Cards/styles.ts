@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface CardsContainerProps {
   type:
@@ -21,26 +21,29 @@ interface LinksProps {
 }
 
 export const CardsContainer = styled.div<CardsContainerProps>`
-  border-top: 5px solid
-    ${(props) =>
-      props.colorTop === "experiences"
+  ${({ colorTop, theme }) => css`
+    border-top: 5px solid
+      ${colorTop === "experiences"
         ? "var(--blue-700)"
-        : props.colorTop === "projects"
+        : colorTop === "projects"
         ? "var(--green-500)"
-        : props.colorTop === "publications"
+        : colorTop === "publications"
         ? "var(--purple-700)"
         : "var(--red-500)"};
+    box-shadow: 0 0 1em ${theme.colors.backgroundItens};
+  `};
+
   margin: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
-  box-shadow: 0 0 1em ${(props) => props.theme.colors.backgroundItens};
+
   border-radius: 8px;
 
   &:hover {
-    filter: ${(props) =>
-      props.theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
+    filter: ${({ theme }) =>
+      theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
     transition: filter 0.2s;
   }
 
@@ -56,20 +59,20 @@ export const CardsContainer = styled.div<CardsContainerProps>`
   }
   h3 {
     font-size: 1rem;
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
   }
 
   span {
-    color: ${(props) =>
-      props.type === "challenge"
+    color: ${({ type }) =>
+      type === "challenge"
         ? "var(--blue-500)"
-        : props.type === "personal"
+        : type === "personal"
         ? "var(--green-500)"
-        : props.type === "bootcamp"
+        : type === "bootcamp"
         ? "var(--orange-500)"
-        : props.type === "professional"
+        : type === "professional"
         ? "var(--red-500)"
-        : props.type === "academic"
+        : type === "academic"
         ? "var(--purple-200)"
         : "var(--yellow-500)"};
     font-weight: bold;
@@ -92,7 +95,7 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
     display: flex;
     border-radius: 8px;
     &:hover {
-      background-color: ${(props) => props.theme.colors.background};
+      background-color: ${({ theme }) => theme.colors.background};
       transition: background 0.2s;
     }
   }
@@ -107,14 +110,22 @@ export const CardsTitle = styled.div<InDevelopmentProps>`
     font-size: 0.5rem;
     border-radius: 100px;
     padding: 0.25rem;
-    color: ${(props) => props.theme.colors.text};
-    border: 1px solid ${(props) => props.theme.colors.text};
-    display: ${(props) => (props.inDevelopment === false ? "none" : "flex")};
+
+    display: ${({ inDevelopment }) =>
+      inDevelopment === false ? "none" : "flex"};
     text-align: center;
     align-items: center;
+    ${({ theme }) => css`
+      color: ${theme.colors.text};
+      border: 1px solid ${theme.colors.text};
+    `};
+
     &:hover {
-      color: ${(props) => props.theme.colors.background};
-      background-color: ${(props) => props.theme.colors.text};
+      ${({ theme }) => css`
+        color: ${theme.colors.background};
+        background-color: ${theme.colors.text};
+      `};
+
       transition: background 0.2s, color 0.2s;
     }
   }
@@ -147,11 +158,7 @@ export const CardsFooter = styled.footer`
 
 export const ButtonContainerPosition = styled.footer<LinksProps>`
   display: flex;
-  flex-direction: ${(props) =>
-    props.hasDeploy && props.hasLink
-      ? "column"
-      : props.hasDeploy || props.hasLink
-      ? "row"
-      : "none"};
+  flex-direction: ${({ hasDeploy, hasLink }) =>
+    hasDeploy && hasLink ? "column" : hasDeploy || hasLink ? "row" : "none"};
   gap: 0.5rem;
 `;

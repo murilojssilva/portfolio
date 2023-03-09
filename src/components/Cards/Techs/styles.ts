@@ -34,6 +34,7 @@ interface TechContentProps {
   hasVercel?: boolean;
   hasJavascript?: boolean;
   hasFirebase?: boolean;
+  hasAsyncStorage?: boolean;
 }
 
 export const TechsContainer = styled.div`
@@ -46,6 +47,7 @@ export const TechContent = styled.span<TechContentProps>`
   display: ${(props) =>
     props.hasJavascript === false ||
     props.hasFirebase === false ||
+    props.hasAsyncStorage === false ||
     props.hasReact === false ||
     props.hasHeroku === false ||
     props.hasJWT === false ||
@@ -81,11 +83,11 @@ export const TechContent = styled.span<TechContentProps>`
       : "flex"};
   padding: 1rem;
 
-  color: ${(props) => props.theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
   border-radius: 8px;
   margin-bottom: 0.5rem;
   &:hover {
-    background-color: ${(props) => props.theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.background};
     transition: background 0.2s;
   }
 

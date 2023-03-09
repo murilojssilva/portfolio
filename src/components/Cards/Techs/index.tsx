@@ -34,6 +34,7 @@ import logoPhosphor from "../../../assets/phosphor.svg";
 import logoYup from "../../../assets/yup.svg";
 import logoStripe from "../../../assets/stripe.svg";
 import logoVue from "../../../assets/vue.svg";
+import logoAsyncStorage from "../../../assets/AsyncStorage.png";
 
 import { useTheme } from "styled-components";
 
@@ -60,6 +61,7 @@ export interface TechsProps {
   hasChakra?: boolean;
   hasVue?: boolean;
   hasAxios?: boolean;
+  hasAsyncStorage?: boolean;
   hasFaunaDB?: boolean;
   hasYup?: boolean;
   hasVictoryNative?: boolean;
@@ -98,6 +100,7 @@ export function Techs({
   hasVue,
   hasFaunaDB,
   hasAxios,
+  hasAsyncStorage,
   hasYup,
   hasVictoryNative,
   hasZod,
@@ -149,6 +152,9 @@ export function Techs({
       </TechContent>
       <TechContent hasAxios={hasAxios}>
         <img src={logoAxios} data-tip="Axios" />
+      </TechContent>
+      <TechContent hasAsyncStorage={hasAsyncStorage}>
+        <img src={logoAsyncStorage} data-tip="Async Storage" />
       </TechContent>
       <TechContent hasRadix={hasRadix}>
         <svg

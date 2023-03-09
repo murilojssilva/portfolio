@@ -1,4 +1,4 @@
-import { DefaultTheme, ThemeProvider, useTheme } from "styled-components";
+import { DefaultTheme, ThemeProvider } from "styled-components";
 
 import { GlobalStyle } from "./styles/global";
 import ReactTooltip from "react-tooltip";

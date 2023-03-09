@@ -44,41 +44,76 @@ export const TechsContainer = styled.div`
 `;
 
 export const TechContent = styled.span<TechContentProps>`
-  display: ${(props) =>
-    props.hasJavascript === false ||
-    props.hasFirebase === false ||
-    props.hasAsyncStorage === false ||
-    props.hasReact === false ||
-    props.hasHeroku === false ||
-    props.hasJWT === false ||
-    props.hasMongoDB === false ||
-    props.hasVercel === false ||
-    props.hasNextJS === false ||
-    props.hasVite === false ||
-    props.hasRadix === false ||
-    props.hasZod === false ||
-    props.hasPhosphor === false ||
-    props.hasGraphQL === false ||
-    props.hasStripe === false ||
-    props.hasVictoryNative === false ||
-    props.hasExpo === false ||
-    props.hasChakra === false ||
-    props.hasVue === false ||
-    props.hasAxios === false ||
-    props.hasFaunaDB === false ||
-    props.hasYup === false ||
-    props.hasSCSS === false ||
-    props.hasSASS === false ||
-    props.hasTypescript === false ||
-    props.hasNodeJS === false ||
-    props.hasNetlify === false ||
-    props.hasStyledComponents === false ||
-    props.hasReactNative === false ||
-    props.hasRedux === false ||
-    props.hasJest === false ||
-    props.hasBootstrap === false ||
-    props.hasRubyOnRails === false ||
-    props.hasExpress === false
+  display: ${({
+    hasReact,
+    hasTypescript,
+    hasReactNative,
+    hasStyledComponents,
+    hasHeroku,
+    hasMongoDB,
+    hasJWT,
+    hasGraphQL,
+    hasStripe,
+    hasJest,
+    hasNodeJS,
+    hasNetlify,
+    hasRubyOnRails,
+    hasVite,
+    hasRadix,
+    hasExpo,
+    hasChakra,
+    hasVue,
+    hasFaunaDB,
+    hasAxios,
+    hasYup,
+    hasVictoryNative,
+    hasZod,
+    hasPhosphor,
+    hasBootstrap,
+    hasSCSS,
+    hasSASS,
+    hasRedux,
+    hasExpress,
+    hasNextJS,
+    hasVercel,
+    hasJavascript,
+    hasFirebase,
+    hasAsyncStorage,
+  }) =>
+    hasJavascript === false ||
+    hasFirebase === false ||
+    hasAsyncStorage === false ||
+    hasReact === false ||
+    hasHeroku === false ||
+    hasJWT === false ||
+    hasMongoDB === false ||
+    hasVercel === false ||
+    hasNextJS === false ||
+    hasVite === false ||
+    hasRadix === false ||
+    hasZod === false ||
+    hasPhosphor === false ||
+    hasGraphQL === false ||
+    hasStripe === false ||
+    hasVictoryNative === false ||
+    hasExpo === false ||
+    hasChakra === false ||
+    hasVue === false ||
+    hasAxios === false ||
+    hasFaunaDB === false ||
+    hasYup === false ||
+    hasSCSS === false ||
+    hasSASS === false ||
+    hasTypescript === false ||
+    hasNodeJS === false ||
+    hasNetlify === false ||
+    hasStyledComponents === false ||
+    hasReactNative === false ||
+    hasRedux === false ||
+    hasJest === false ||
+    hasBootstrap === false ||
+    hasRubyOnRails === false ||
+    hasExpress === false
       ? "none"
       : "flex"};
   padding: 1rem;

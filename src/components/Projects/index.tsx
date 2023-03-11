@@ -111,6 +111,7 @@ export function Projects() {
                     (repository.name === "resolvelogo-backend" && true)
                   }
                   hasStripe={repository.name === "ignite-ignews" && true}
+                  hasFirebase={repository.name === "gopizza-native" && true}
                   hasNextJS={
                     repository.name === "ignite-reactjs-04-dashgo" ||
                     repository.name === "ignite-upload-de-imagens" ||
@@ -167,6 +168,7 @@ export function Projects() {
                     (repository.name === "ignite-github-blog" && true)
                   }
                   hasExpo={
+                    repository.name === "gopizza-native" ||
                     repository.name === "rocketseat-NLW5-ReactNative" ||
                     repository.name === "ignite-react-native-gofinance" ||
                     repository.name ===
@@ -179,6 +181,7 @@ export function Projects() {
                       true)
                   }
                   hasReactNative={
+                    repository.name === "gopizza-native" ||
                     repository.name === "rocketseat-NLW5-ReactNative" ||
                     repository.name === "ignite-react-native-myskills" ||
                     repository.name === "ignite-template-react-native-todos" ||
@@ -219,10 +222,12 @@ export function Projects() {
                     (repository.name === "ignite-ignews" && true)
                   }
                   hasAsyncStorage={
+                    repository.name === "gopizza-native" ||
                     repository.name === "daily-diet-native" ||
                     (repository.name === "todolist-native" && true)
                   }
                   hasStyledComponents={
+                    repository.name === "gopizza-native" ||
                     repository.name === "desafio-upnid-uprace" ||
                     repository.name === "desafio-truckpag" ||
                     repository.name === "daily-diet-native" ||

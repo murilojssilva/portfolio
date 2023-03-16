@@ -32,6 +32,9 @@ export function Projects() {
                       : repository.name === "UERJ"
                       ? "academic"
                       : repository.name === "ignite-ignews" ||
+                        repository.name === "ignitegym-native" ||
+                        repository.name === "masterclass-reanimated-native" ||
+                        repository.name === "ignite-marketspace-native" ||
                         repository.name === "ignite-github-blog" ||
                         repository.name === "rocketseat-omnistack-10" ||
                         repository.name === "ignite-dt-money" ||
@@ -153,6 +156,8 @@ export function Projects() {
                   hasVue={repository.language === "Vue" && true}
                   hasYup={
                     repository.name === "ignite-upload-de-imagens" ||
+                    repository.name === "ignitegym-native" ||
+                    repository.name === "ignite-marketspace-native" ||
                     repository.name === "bossabox-vuttr" ||
                     repository.name === "ignite-react-native-gofinance" ||
                     repository.name ===
@@ -169,6 +174,9 @@ export function Projects() {
                   }
                   hasExpo={
                     repository.name === "gopizza-native" ||
+                    repository.name === "ignitegym-native" ||
+                    repository.name === "masterclass-reanimated-native" ||
+                    repository.name === "ignite-marketspace-native" ||
                     repository.name === "rocketseat-NLW5-ReactNative" ||
                     repository.name === "ignite-react-native-gofinance" ||
                     repository.name ===
@@ -180,8 +188,16 @@ export function Projects() {
                       "ignite-react-native-chapter-ii-desafio-02" &&
                       true)
                   }
+                  hasElixir={
+                    repository.name === "ignite-sumlist-elixir" ||
+                    repository.name === "ignite-listfilter-elixir" ||
+                    (repository.name === "ignite-lenghtlist-elixir" && true)
+                  }
                   hasReactNative={
                     repository.name === "gopizza-native" ||
+                    repository.name === "ignitegym-native" ||
+                    repository.name === "ignite-marketspace-native" ||
+                    repository.name === "masterclass-reanimated-native" ||
                     repository.name === "rocketseat-NLW5-ReactNative" ||
                     repository.name === "ignite-react-native-myskills" ||
                     repository.name === "ignite-template-react-native-todos" ||

@@ -4,6 +4,7 @@ interface TechContentProps {
   hasReact?: boolean;
   hasTypescript?: boolean;
   hasReactNative?: boolean;
+  hasElixir?: boolean;
   hasStyledComponents?: boolean;
   hasHeroku?: boolean;
   hasMongoDB?: boolean;
@@ -48,6 +49,7 @@ export const TechContent = styled.span<TechContentProps>`
     hasReact,
     hasTypescript,
     hasReactNative,
+    hasElixir,
     hasStyledComponents,
     hasHeroku,
     hasMongoDB,
@@ -109,6 +111,7 @@ export const TechContent = styled.span<TechContentProps>`
     hasNetlify === false ||
     hasStyledComponents === false ||
     hasReactNative === false ||
+    hasElixir === false ||
     hasRedux === false ||
     hasJest === false ||
     hasBootstrap === false ||

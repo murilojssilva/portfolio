@@ -66,6 +66,7 @@ export function Cards({
   hasFirebase = false,
   hasAsyncStorage = false,
   hasReactNative = false,
+  hasElixir = false,
   hasStripe = false,
   hasStyledComponents = false,
   hasGraphQL = false,
@@ -126,7 +127,7 @@ export function Cards({
               />
             ) : null}
           </span>
-          <h2 data-tip={loading ? "Carregando" : title}>{`${title} `}</h2>
+          <h2>{`${title} `}</h2>
         </CardsTitle>
 
         <CardsType>
@@ -169,6 +170,7 @@ export function Cards({
           hasMongoDB={hasMongoDB}
           hasReact={hasReact}
           hasReactNative={hasReactNative}
+          hasElixir={hasElixir}
           hasRedux={hasRedux}
           hasRubyOnRails={hasRubyOnRails}
           hasSCSS={hasSCSS}

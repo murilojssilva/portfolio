@@ -5,6 +5,7 @@ import {
   SiBootstrap,
   SiChakraui,
   SiCss3,
+  SiElixir,
   SiExpo,
   SiExpress,
   SiFirebase,
@@ -42,6 +43,7 @@ export interface TechsProps {
   hasReact?: boolean;
   hasTypescript?: boolean;
   hasReactNative?: boolean;
+  hasElixir?: boolean;
   hasHeroku?: boolean;
   hasJavascript?: boolean;
   hasStyledComponents?: boolean;
@@ -84,6 +86,7 @@ export function Techs({
   hasMongoDB,
   hasJWT,
   hasReactNative,
+  hasElixir,
   hasStyledComponents,
   hasGraphQL,
   hasStripe,
@@ -202,6 +205,9 @@ export function Techs({
       </TechContent>
       <TechContent hasStyledComponents={hasStyledComponents}>
         <SiStyledcomponents color={"#EBAC9D"} data-tip="Styled Components" />
+      </TechContent>
+      <TechContent hasElixir={hasElixir}>
+        <SiElixir color={"#AD38E9"} data-tip="Elixir" />
       </TechContent>
       <TechContent hasSCSS={hasSCSS}>
         <SiCss3 color={"#C26192"} data-tip="SCSS" />

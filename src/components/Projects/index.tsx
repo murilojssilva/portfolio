@@ -217,6 +217,7 @@ export function Projects() {
                   }
                   hasAxios={
                     repository.name === "ignite-upload-de-imagens" ||
+                    repository.name === "ignitegym-native" ||
                     repository.name === "ignite-otimizando-aplicacao" ||
                     repository.name === "desafio-truckpag" ||
                     repository.name === "bossabox-vuttr" ||
@@ -232,6 +233,10 @@ export function Projects() {
                     (repository.name ===
                       "ignite-reactjs-challenge-2-coffee-delivery" &&
                       true)
+                  }
+                  hasJWT={
+                    repository.name === "ignitegym-native" ||
+                    (repository.name === "resolvelogo-backend" && true)
                   }
                   hasFaunaDB={
                     repository.name === "ignite-upload-de-imagens" ||

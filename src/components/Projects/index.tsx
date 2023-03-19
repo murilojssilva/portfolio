@@ -190,6 +190,7 @@ export function Projects() {
                   }
                   hasElixir={
                     repository.name === "ignite-sumlist-elixir" ||
+                    repository.name === "ignite-reports_generator-elixir" ||
                     repository.name === "ignite-listfilter-elixir" ||
                     (repository.name === "ignite-lenghtlist-elixir" && true)
                   }
@@ -243,6 +244,7 @@ export function Projects() {
                     (repository.name === "ignite-ignews" && true)
                   }
                   hasAsyncStorage={
+                    repository.name === "ignitegym-native" ||
                     repository.name === "gopizza-native" ||
                     repository.name === "daily-diet-native" ||
                     (repository.name === "todolist-native" && true)

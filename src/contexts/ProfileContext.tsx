@@ -1,9 +1,9 @@
 import { useEffect, useState, createContext, ReactNode } from "react";
 
-import { api } from "../lib/axios";
+import { api } from "@lib/axios";
 
-import { IProfileProps } from "../interfaces/IProfileProps";
-import { IRepoProps } from "../interfaces/IRepoProps";
+import { IProfileProps } from "@interfaces/IProfileProps";
+import { IRepoProps } from "@interfaces/IRepoProps";
 
 interface IProfileContextProps {
   data: IProfileProps;
@@ -11,11 +11,11 @@ interface IProfileContextProps {
   loading: boolean;
 }
 
-export const ProfileContext = createContext({} as IProfileContextProps);
-
 interface ProfileProviderProps {
   children: ReactNode;
 }
+
+export const ProfileContext = createContext({} as IProfileContextProps);
 
 export function ProfileProvider({ children }: ProfileProviderProps) {
   const [data, setData] = useState<IProfileProps>({} as IProfileProps);

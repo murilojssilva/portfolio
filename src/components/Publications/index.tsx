@@ -1,4 +1,4 @@
-import { Cards } from "../Cards";
+import { Cards } from "@components/Cards";
 import { PublicationsContainer } from "./styles";
 
 export function Publicatins() {

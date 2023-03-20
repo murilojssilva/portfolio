@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { LayoutContainer } from "../../screen/_layouts/default/styles";
+import { LayoutContainer } from "@pages/_layouts/default/styles";
 
 export const AboutContainer = styled(LayoutContainer)``;
 

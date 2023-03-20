@@ -1,5 +1,6 @@
-import { Cards } from "../Cards";
 import { ExperienceContainer, ExperienceContent } from "./styles";
+
+import { Cards } from "@components/Cards";
 
 export function Experience() {
   return (

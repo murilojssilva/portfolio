@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { ITechsProps } from "../../../interfaces/ITechsProps";
+import { ITechsProps } from "@interfaces/ITechsProps";
 
 export const TechsContainer = styled.div`
   display: flex;

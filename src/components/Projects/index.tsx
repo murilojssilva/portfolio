@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { ProfileContext } from "../../contexts/ProfileContext";
-import { dateFormatter } from "../../utils/formatter";
-import { Cards } from "../Cards";
-import { Loading } from "../Loading";
+import { ProfileContext } from "@contexts/ProfileContext";
+import { dateFormatter } from "@utils/formatter";
+import { Cards } from "@components/Cards";
+import { Loading } from "@components/Loading";
 
 import { ProjectsContainer, ProjectsContent } from "./styles";
 

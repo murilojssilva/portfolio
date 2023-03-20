@@ -11,8 +11,8 @@ import {
 } from "react-icons/fa";
 import { FcDeployment } from "react-icons/fc";
 import { useTheme } from "styled-components";
-import { ProfileContext } from "../../contexts/ProfileContext";
-import { Button } from "../Form/Button";
+import { ProfileContext } from "@contexts/ProfileContext";
+import { Button } from "@components/Form/Button";
 
 import {
   ButtonContainerPosition,
@@ -23,7 +23,7 @@ import {
   CardsType,
 } from "./styles";
 import { Techs } from "./Techs";
-import { ITechsProps } from "../../interfaces/ITechsProps";
+import { ITechsProps } from "@interfaces/ITechsProps";
 
 interface ICardsProps extends ITechsProps {
   type?:

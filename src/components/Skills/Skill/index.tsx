@@ -1,17 +1,5 @@
-import { ReactNode } from "react";
-import { FaReact } from "react-icons/fa";
 import { SkillContainer } from "./styles";
-
-interface SkillProps {
-  color: string;
-  title: string;
-  description: string;
-  subtitle: string;
-  skills: string;
-  toolsTitle: string;
-  tools: string[];
-  icon: ReactNode;
-}
+import { ISkillProps } from "@interfaces/ISkillProps";
 
 export function Skill({
   color,
@@ -22,7 +10,7 @@ export function Skill({
   toolsTitle,
   tools,
   icon,
-}: SkillProps) {
+}: ISkillProps) {
   return (
     <SkillContainer color={color}>
       <span>{icon}</span>

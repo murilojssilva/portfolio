@@ -1,7 +1,10 @@
 import { useContext } from "react";
-import { ProfileContext } from "../../contexts/ProfileContext";
-import { Loading } from "../Loading";
+
 import { AboutContainer, AboutContent } from "./styles";
+
+import { Loading } from "@components/Loading";
+
+import { ProfileContext } from "@contexts/ProfileContext";
 
 export function About() {
   const { data, loading } = useContext(ProfileContext);

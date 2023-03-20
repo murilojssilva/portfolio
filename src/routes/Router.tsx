@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import { Contact } from "../screen/Contact";
-import { Home } from "../screen/Home";
+import { Contact } from "@pages/Contact";
+import { Home } from "@pages/Home";
 
-import { DefaultLayout } from "../screen/_layouts/default";
+import { DefaultLayout } from "@pages/_layouts/default";
 
 interface RouterProps {
   toggleTheme(): void;

@@ -25,21 +25,21 @@ import {
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
-import logoJWT from "../../../assets/jwt.svg";
-import logoViteJS from "../../../assets/vitejs.svg";
-import logoFaunaDB from "../../../assets/faunadb.svg";
-import logoAxios from "../../../assets/axios.svg";
-import logoZod from "../../../assets/zod.svg";
-import logoVictory from "../../../assets/victory.svg";
-import logoPhosphor from "../../../assets/phosphor.svg";
-import logoYup from "../../../assets/yup.svg";
-import logoStripe from "../../../assets/stripe.svg";
-import logoVue from "../../../assets/vue.svg";
-import logoAsyncStorage from "../../../assets/AsyncStorage.png";
+import logoJWT from "@assets/jwt.svg";
+import logoViteJS from "@assets/vitejs.svg";
+import logoFaunaDB from "@assets/faunadb.svg";
+import logoAxios from "@assets/axios.svg";
+import logoZod from "@assets/zod.svg";
+import logoVictory from "@assets/victory.svg";
+import logoPhosphor from "@assets/phosphor.svg";
+import logoYup from "@assets/yup.svg";
+import logoStripe from "@assets/stripe.svg";
+import logoVue from "@assets/vue.svg";
+import logoAsyncStorage from "@assets/AsyncStorage.png";
 
 import { useTheme } from "styled-components";
 
-import { ITechsProps } from "../../../interfaces/ITechsProps";
+import { ITechsProps } from "@interfaces/ITechsProps";
 
 export function Techs({
   hasReact,

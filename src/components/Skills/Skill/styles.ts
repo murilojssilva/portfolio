@@ -1,10 +1,10 @@
 import styled, { css, keyframes } from "styled-components";
 
-interface SkillContainerProps {
+interface ISkillContainerProps {
   color: string;
 }
 
-export const SkillContainer = styled.div<SkillContainerProps>`
+export const SkillContainer = styled.div<ISkillContainerProps>`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -3,15 +3,6 @@ import { IProjectTitleProps } from "@/interfaces/IProjectTitleProps";
 
 export const ProjectsContainer = styled.section`
   border-top: 1px solid ${({ theme }) => theme.colors.background};
-  h1 {
-    background: linear-gradient(
-      to right,
-      var(--green-200) 0%,
-      var(--green-500) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 `;
 
 export const ProjectsContent = styled.div`
@@ -24,22 +15,5 @@ export const ProjectsContent = styled.div`
 
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
-  }
-`;
-
-export const ProjectTitle = styled.div<IProjectTitleProps>`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  h2 {
-    font-size: 1.5rem;
-    background: linear-gradient(
-      to right,
-      var(--blue-200) 0%,
-      var(--blue-500) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 `;

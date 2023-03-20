@@ -39,43 +39,7 @@ import logoAsyncStorage from "../../../assets/AsyncStorage.png";
 
 import { useTheme } from "styled-components";
 
-export interface TechsProps {
-  hasReact?: boolean;
-  hasTypescript?: boolean;
-  hasReactNative?: boolean;
-  hasElixir?: boolean;
-  hasHeroku?: boolean;
-  hasJavascript?: boolean;
-  hasStyledComponents?: boolean;
-  hasSCSS?: boolean;
-  hasSASS?: boolean;
-  hasGraphQL?: boolean;
-  hasStripe?: boolean;
-  hasJest?: boolean;
-  hasNodeJS?: boolean;
-  hasVercel?: boolean;
-  hasMongoDB?: boolean;
-  hasJWT?: boolean;
-  hasNextJS?: boolean;
-  hasVite?: boolean;
-  hasRadix?: boolean;
-  hasExpo?: boolean;
-  hasChakra?: boolean;
-  hasVue?: boolean;
-  hasAxios?: boolean;
-  hasAsyncStorage?: boolean;
-  hasFaunaDB?: boolean;
-  hasYup?: boolean;
-  hasVictoryNative?: boolean;
-  hasPhosphor?: boolean;
-  hasZod?: boolean;
-  hasFirebase?: boolean;
-  hasRubyOnRails?: boolean;
-  hasBootstrap?: boolean;
-  hasRedux?: boolean;
-  hasNetlify?: boolean;
-  hasExpress?: boolean;
-}
+import { ITechsProps } from "../../../interfaces/ITechsProps";
 
 export function Techs({
   hasReact,
@@ -113,7 +77,7 @@ export function Techs({
   hasRedux,
   hasFirebase,
   hasExpress,
-}: TechsProps) {
+}: ITechsProps) {
   const theme = useTheme();
   return (
     <TechsContainer>

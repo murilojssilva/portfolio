@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-interface CardsContainerProps {
+interface ICardsContainerProps {
   type:
     | "challenge"
     | "personal"
@@ -11,16 +11,16 @@ interface CardsContainerProps {
   colorTop: "projects" | "experiences" | "publications";
 }
 
-interface InDevelopmentProps {
+interface IInDevelopmentProps {
   inDevelopment?: boolean;
 }
 
-interface LinksProps {
+interface ILinksProps {
   hasDeploy?: boolean;
   hasLink?: boolean;
 }
 
-export const CardsContainer = styled.div<CardsContainerProps>`
+export const CardsContainer = styled.div<ICardsContainerProps>`
   ${({ colorTop, theme }) => css`
     border-top: 5px solid
       ${colorTop === "experiences"
@@ -85,7 +85,7 @@ export const CardsHeader = styled.div`
   justify-content: space-between;
 `;
 
-export const CardsTitle = styled.div<InDevelopmentProps>`
+export const CardsTitle = styled.div<IInDevelopmentProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -156,7 +156,7 @@ export const CardsFooter = styled.footer`
   align-self: flex-end;
 `;
 
-export const ButtonContainerPosition = styled.footer<LinksProps>`
+export const ButtonContainerPosition = styled.footer<ILinksProps>`
   display: flex;
   flex-direction: ${({ hasDeploy, hasLink }) =>
     hasDeploy && hasLink ? "column" : hasDeploy || hasLink ? "row" : "none"};

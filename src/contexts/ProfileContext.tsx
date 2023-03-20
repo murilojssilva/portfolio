@@ -2,23 +2,8 @@ import { useEffect, useState, createContext, ReactNode } from "react";
 
 import { api } from "../lib/axios";
 
-interface IProfileProps {
-  name: string;
-  bio: string;
-  login: string;
-  followers: number;
-  company?: string;
-  repos_url: string;
-}
-
-interface IRepoProps {
-  pushed_at: Date;
-  name: string;
-  html_url: string;
-  language: string;
-  languages_url: {};
-  id: number;
-}
+import { IProfileProps } from "../interfaces/IProfileProps";
+import { IRepoProps } from "../interfaces/IRepoProps";
 
 interface IProfileContextProps {
   data: IProfileProps;

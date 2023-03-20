@@ -1,42 +1,6 @@
 import styled from "styled-components";
 
-interface TechContentProps {
-  hasReact?: boolean;
-  hasTypescript?: boolean;
-  hasReactNative?: boolean;
-  hasElixir?: boolean;
-  hasStyledComponents?: boolean;
-  hasHeroku?: boolean;
-  hasMongoDB?: boolean;
-  hasJWT?: boolean;
-  hasGraphQL?: boolean;
-  hasStripe?: boolean;
-  hasJest?: boolean;
-  hasNodeJS?: boolean;
-  hasNetlify?: boolean;
-  hasRubyOnRails?: boolean;
-  hasVite?: boolean;
-  hasRadix?: boolean;
-  hasExpo?: boolean;
-  hasChakra?: boolean;
-  hasVue?: boolean;
-  hasFaunaDB?: boolean;
-  hasAxios?: boolean;
-  hasYup?: boolean;
-  hasVictoryNative?: boolean;
-  hasZod?: boolean;
-  hasPhosphor?: boolean;
-  hasBootstrap?: boolean;
-  hasSCSS?: boolean;
-  hasSASS?: boolean;
-  hasRedux?: boolean;
-  hasExpress?: boolean;
-  hasNextJS?: boolean;
-  hasVercel?: boolean;
-  hasJavascript?: boolean;
-  hasFirebase?: boolean;
-  hasAsyncStorage?: boolean;
-}
+import { ITechsProps } from "../../../interfaces/ITechsProps";
 
 export const TechsContainer = styled.div`
   display: flex;
@@ -44,7 +8,7 @@ export const TechsContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-export const TechContent = styled.span<TechContentProps>`
+export const TechContent = styled.span<ITechsProps>`
   display: ${({
     hasReact,
     hasTypescript,

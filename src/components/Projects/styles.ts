@@ -1,8 +1,5 @@
 import styled from "styled-components";
-
-interface ProjectTitleProps {
-  color: "challenge" | "personal" | "academic";
-}
+import { IProjectTitleProps } from "../../interfaces/IProjectTitleProps";
 
 export const ProjectsContainer = styled.section`
   border-top: 1px solid ${({ theme }) => theme.colors.background};
@@ -30,7 +27,7 @@ export const ProjectsContent = styled.div`
   }
 `;
 
-export const ProjectTitle = styled.div<ProjectTitleProps>`
+export const ProjectTitle = styled.div<IProjectTitleProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;

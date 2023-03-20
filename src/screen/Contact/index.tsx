@@ -12,14 +12,7 @@ import { normalizePhoneNumber } from "../../utils/masks";
 import { FaEnvelope } from "react-icons/fa";
 import { FiAlertCircle } from "react-icons/fi";
 
-interface IFormInputs {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  contactWay: string;
-  message: string;
-}
+import { IFormInputs } from "../../interfaces/IFormProps";
 
 let schema = yup.object().shape({
   firstName: yup.string().required("Insira seu nome."),

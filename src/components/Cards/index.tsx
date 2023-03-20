@@ -22,9 +22,10 @@ import {
   CardsTitle,
   CardsType,
 } from "./styles";
-import { Techs, TechsProps } from "./Techs";
+import { Techs } from "./Techs";
+import { ITechsProps } from "../../interfaces/ITechsProps";
 
-interface CardsProps extends TechsProps {
+interface ICardsProps extends ITechsProps {
   type?:
     | "challenge"
     | "personal"
@@ -93,7 +94,7 @@ export function Cards({
   hasBootstrap = false,
   hasRedux = false,
   hasExpress = false,
-}: CardsProps) {
+}: ICardsProps) {
   const theme = useTheme();
   const { loading } = useContext(ProfileContext);
   return (

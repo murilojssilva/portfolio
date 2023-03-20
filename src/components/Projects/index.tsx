@@ -5,14 +5,14 @@ import { Cards } from "../Cards";
 import { Loading } from "../Loading";
 
 import { ProjectsContainer, ProjectsContent } from "./styles";
-import { TitleContainer } from "../Title/styles";
+import { Title } from "../Title";
 
 export function Projects() {
   const { repositories, loading } = useContext(ProfileContext);
 
   return (
     <ProjectsContainer>
-      <TitleContainer type="projects" title="Projetos" />
+      <Title type="projects" title="Projetos" />
       <ProjectsContent>
         {loading ? (
           <Loading />
@@ -299,7 +299,7 @@ export function Projects() {
           </>
         )}
       </ProjectsContent>
-      <TitleContainer type="projects" title="/Projetos" />
+      <Title type="projects" title="/Projetos" />
     </ProjectsContainer>
   );
 }

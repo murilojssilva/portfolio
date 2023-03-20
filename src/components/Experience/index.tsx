@@ -1,12 +1,12 @@
-import { TitleContainer } from "../Title/styles";
 import { ExperienceContainer, ExperienceContent } from "./styles";
 
 import { Cards } from "../Cards";
+import { Title } from "../Title";
 
 export function Experience() {
   return (
     <ExperienceContainer>
-      <TitleContainer type="experiences" title="Experiências" />
+      <Title type="experiences" title="Experiências" />
       <ExperienceContent>
         <Cards
           colorTop="experiences"
@@ -41,7 +41,7 @@ export function Experience() {
           hasBootstrap
         />
       </ExperienceContent>
-      <TitleContainer type="experiences" title="/Experiências" />
+      <Title type="experiences" title="/Experiências" />
     </ExperienceContainer>
   );
 }

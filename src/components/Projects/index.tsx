@@ -114,7 +114,10 @@ export function Projects() {
                     (repository.name === "resolvelogo-backend" && true)
                   }
                   hasStripe={repository.name === "ignite-ignews" && true}
-                  hasFirebase={repository.name === "gopizza-native" && true}
+                  hasFirebase={
+                    repository.name === "masterclass-featuretoggle-native" ||
+                    (repository.name === "gopizza-native" && true)
+                  }
                   hasNextJS={
                     repository.name === "ignite-reactjs-04-dashgo" ||
                     repository.name === "ignite-upload-de-imagens" ||
@@ -174,6 +177,7 @@ export function Projects() {
                   }
                   hasExpo={
                     repository.name === "gopizza-native" ||
+                    repository.name === "masterclass-featuretoggle-native" ||
                     repository.name === "ignitegym-native" ||
                     repository.name === "masterclass-reanimated-native" ||
                     repository.name === "ignite-marketspace-native" ||
@@ -196,6 +200,7 @@ export function Projects() {
                   }
                   hasReactNative={
                     repository.name === "gopizza-native" ||
+                    repository.name === "masterclass-featuretoggle-native" ||
                     repository.name === "ignitegym-native" ||
                     repository.name === "ignite-marketspace-native" ||
                     repository.name === "masterclass-reanimated-native" ||

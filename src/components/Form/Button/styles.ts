@@ -1,12 +1,8 @@
 import styled, { css } from "styled-components";
 
-interface ButtonContainerProps {
-  hasLink?: boolean;
-  hasDeploy?: boolean;
-  deploy?: string;
-}
+import { IButtonContainerProps } from "@/interfaces/IButtonProps";
 
-export const ButtonContainer = styled.a<ButtonContainerProps>`
+export const ButtonContainer = styled.a<IButtonContainerProps>`
   border-radius: 8px;
   background-color: transparent;
   ${({ theme }) => css`

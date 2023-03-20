@@ -1,14 +1,12 @@
+import { useContext } from "react";
+
 import { ThemeContext, useTheme } from "styled-components";
 import { HeaderContainer, HeaderContent } from "./styles";
 import { FaEnvelope, FaHome, FaMoon, FaSun } from "react-icons/fa";
-import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { IHeaderProps } from "@/interfaces/IHeaderProps";
 
-interface HeaderProps {
-  toggleTheme(): void;
-}
-
-export function Header({ toggleTheme }: HeaderProps) {
+export function Header({ toggleTheme }: IHeaderProps) {
   const theme = useTheme();
 
   const { colors } = useContext(ThemeContext);

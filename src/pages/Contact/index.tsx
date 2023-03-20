@@ -7,12 +7,13 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { phoneNumber } from "../../utils/validations";
-import { normalizePhoneNumber } from "../../utils/masks";
+import { phoneNumber } from "@/utils/validations";
+import { normalizePhoneNumber } from "@/utils/masks";
+
 import { FaEnvelope } from "react-icons/fa";
 import { FiAlertCircle } from "react-icons/fi";
 
-import { IFormInputs } from "../../interfaces/IFormProps";
+import { IFormInputs } from "@/interfaces/IFormProps";
 
 let schema = yup.object().shape({
   firstName: yup.string().required("Insira seu nome."),

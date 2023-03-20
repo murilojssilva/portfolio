@@ -1,16 +1,6 @@
-import { ReactNode } from "react";
 import { ButtonContainer } from "./styles";
 
-interface ButtonProps extends React.HTMLAttributes<HTMLAnchorElement> {
-  content: string;
-  icon?: ReactNode;
-  target?: string;
-  type?: string;
-  hasLink?: boolean;
-  hasDeploy?: boolean;
-  href?: string;
-  deploy?: string;
-}
+import { IButtonProps } from "@/interfaces/IButtonProps";
 
 export function Button({
   content,
@@ -22,7 +12,7 @@ export function Button({
   hasLink = false,
   hasDeploy = false,
   ...rest
-}: ButtonProps) {
+}: IButtonProps) {
   return (
     <ButtonContainer
       href={href}

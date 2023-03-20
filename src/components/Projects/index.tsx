@@ -1,17 +1,18 @@
 import { useContext } from "react";
-import { ProfileContext } from "@contexts/ProfileContext";
-import { dateFormatter } from "@utils/formatter";
-import { Cards } from "@components/Cards";
-import { Loading } from "@components/Loading";
+import { ProfileContext } from "@/contexts/ProfileContext";
+import { dateFormatter } from "@/utils/formatter";
+import { Cards } from "../Cards";
+import { Loading } from "../Loading";
 
 import { ProjectsContainer, ProjectsContent } from "./styles";
+import { TitleContainer } from "../Title/styles";
 
 export function Projects() {
   const { repositories, loading } = useContext(ProfileContext);
 
   return (
     <ProjectsContainer>
-      <h1>{"<Projetos>"}</h1>
+      <TitleContainer type="projects" title="Projetos" />
       <ProjectsContent>
         {loading ? (
           <Loading />
@@ -298,7 +299,7 @@ export function Projects() {
           </>
         )}
       </ProjectsContent>
-      <h1>{"</Projetos>"}</h1>
+      <TitleContainer type="projects" title="/Projetos" />
     </ProjectsContainer>
   );
 }

@@ -1,24 +1,9 @@
 import styled, { css } from "styled-components";
-
-interface ICardsContainerProps {
-  type:
-    | "challenge"
-    | "personal"
-    | "academic"
-    | "bootcamp"
-    | "professional"
-    | "none";
-  colorTop: "projects" | "experiences" | "publications";
-}
-
-interface IInDevelopmentProps {
-  inDevelopment?: boolean;
-}
-
-interface ILinksProps {
-  hasDeploy?: boolean;
-  hasLink?: boolean;
-}
+import {
+  ICardsContainerProps,
+  IInDevelopmentProps,
+  ILinksProps,
+} from "@/interfaces/ICardProps";
 
 export const CardsContainer = styled.div<ICardsContainerProps>`
   ${({ colorTop, theme }) => css`

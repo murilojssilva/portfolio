@@ -1,10 +1,12 @@
-import { Cards } from "@components/Cards";
 import { PublicationsContainer } from "./styles";
+import { TitleContainer } from "../Title/styles";
 
-export function Publicatins() {
+import { Cards } from "../Cards";
+
+export function Publications() {
   return (
     <PublicationsContainer>
-      <h1>{"<Publicações>"}</h1>
+      <TitleContainer type="publications" title="Publicações" />
       <Cards
         colorTop="publications"
         stack="mobile"
@@ -27,7 +29,7 @@ export function Publicatins() {
         iconButton={"Paper"}
         href={"https://ieeexplore.ieee.org/document/9206220"}
       />
-      <h1>{"</Publicações>"}</h1>
+      <TitleContainer type="publications" title="/Publicações" />
     </PublicationsContainer>
   );
 }

@@ -1,4 +1,7 @@
 import { useContext } from "react";
+
+import { useTheme } from "styled-components";
+
 import {
   FaDatabase,
   FaCode,
@@ -10,9 +13,11 @@ import {
   FaClock,
 } from "react-icons/fa";
 import { FcDeployment } from "react-icons/fc";
-import { useTheme } from "styled-components";
-import { ProfileContext } from "@contexts/ProfileContext";
-import { Button } from "@components/Form/Button";
+
+import { Button } from "../Form/Button";
+import { ProfileContext } from "@/contexts/ProfileContext";
+
+import { ICardsProps } from "@/interfaces/ICardProps";
 
 import {
   ButtonContainerPosition,
@@ -23,28 +28,6 @@ import {
   CardsType,
 } from "./styles";
 import { Techs } from "./Techs";
-import { ITechsProps } from "@interfaces/ITechsProps";
-
-interface ICardsProps extends ITechsProps {
-  type?:
-    | "challenge"
-    | "personal"
-    | "academic"
-    | "bootcamp"
-    | "professional"
-    | "none";
-  stack?: "mobile" | "backend" | "frontend" | "fullstack";
-  colorTop: "projects" | "experiences" | "publications";
-  title: string;
-  hasLink?: boolean;
-  hasDeploy?: boolean;
-  subtitle?: string;
-  href?: string;
-  deploy?: string;
-  iconButton?: "GitHub" | "GitLab" | "Paper" | "Deploy";
-  inDevelopment?: boolean;
-  last_commit?: string;
-}
 
 export function Cards({
   title,

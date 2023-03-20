@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import { IHeaderProps } from "@/interfaces/IHeaderProps";
 
 export function Header({ toggleTheme }: IHeaderProps) {
-  const theme = useTheme();
+  const { title } = useTheme();
 
   const { colors } = useContext(ThemeContext);
   return (
@@ -22,7 +22,7 @@ export function Header({ toggleTheme }: IHeaderProps) {
           </NavLink>
         </nav>
         <button onClick={toggleTheme}>
-          {theme.title === "light" ? (
+          {title === "light" ? (
             <FaMoon size={20} color={colors.text} />
           ) : (
             <FaSun size={20} color={colors.text} />

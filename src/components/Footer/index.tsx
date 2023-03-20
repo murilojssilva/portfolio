@@ -6,7 +6,7 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
-import { FooterContacts } from "./styled";
+import { FooterContacts } from "./styles";
 
 export function Footer() {
   return (

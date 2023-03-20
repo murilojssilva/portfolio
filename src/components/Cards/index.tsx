@@ -1,7 +1,5 @@
 import { useContext } from "react";
 
-import { useTheme } from "styled-components";
-
 import {
   FaDatabase,
   FaCode,
@@ -78,7 +76,6 @@ export function Cards({
   hasRedux = false,
   hasExpress = false,
 }: ICardsProps) {
-  const theme = useTheme();
   const { loading } = useContext(ProfileContext);
   return (
     <CardsContainer colorTop={colorTop} type={type}>
@@ -88,25 +85,25 @@ export function Cards({
             {stack === "mobile" ? (
               <FaMobile
                 size={16}
-                color={theme.colors["primary"]}
+                color={"var(--blue-500)"}
                 data-tip={loading ? "Carregando" : "Mobile"}
               />
             ) : stack === "backend" ? (
               <FaDatabase
                 size={16}
-                color={theme.colors["primary"]}
+                color={"var(--purple-500)"}
                 data-tip={loading ? "Carregando" : "Backend"}
               />
             ) : stack === "frontend" ? (
               <FaCode
                 size={16}
-                color={theme.colors["primary"]}
+                color={"var(--green-500)"}
                 data-tip={loading ? "Carregando" : "Frontend"}
               />
             ) : stack === "fullstack" ? (
               <FaDesktop
                 size={16}
-                color={theme.colors["primary"]}
+                color={"var(--red-500)"}
                 data-tip={loading ? "Carregando" : "Fullstack"}
               />
             ) : null}

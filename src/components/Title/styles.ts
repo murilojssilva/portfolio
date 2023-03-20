@@ -18,15 +18,13 @@ export const TitleContainer = styled.h1<ITitleContainerProps>`
         : type === "experiences"
         ? "var(--blue-500)"
         : "var(--green-300)"},
-      ${({ type }) =>
-        type === "publications"
-          ? "var(--purple-700)"
-          : type === "experiences"
-          ? "var(--blue-900)"
-          : "var(--green-500)"}
-      )
-      ;
+    ${({ type }) =>
+      type === "publications"
+        ? "var(--purple-700)"
+        : type === "experiences"
+        ? "var(--blue-900)"
+        : "var(--green-500)"}
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; ;
+  -webkit-text-fill-color: transparent;
 `;

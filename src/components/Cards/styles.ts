@@ -36,8 +36,24 @@ export const CardsContainer = styled.div<ICardsContainerProps>`
     font-size: 1.5rem;
     background: linear-gradient(
       to right,
-      var(--blue-200) 0%,
-      var(--blue-700) 100%
+      ${({ colorTop }) =>
+        colorTop === "publications"
+          ? "var(--purple-200)"
+          : colorTop === "experiences"
+          ? "var(--blue-200)"
+          : "var(--green-200)"},
+      ${({ colorTop }) =>
+        colorTop === "publications"
+          ? "var(--purple-500)"
+          : colorTop === "experiences"
+          ? "var(--blue-500)"
+          : "var(--green-300)"},
+      ${({ colorTop }) =>
+        colorTop === "publications"
+          ? "var(--purple-700)"
+          : colorTop === "experiences"
+          ? "var(--blue-900)"
+          : "var(--green-500)"}
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

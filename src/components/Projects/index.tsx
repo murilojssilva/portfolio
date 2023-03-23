@@ -176,6 +176,10 @@ export function Projects() {
                     repository.name === "ignite-dt-money" ||
                     (repository.name === "ignite-github-blog" && true)
                   }
+                  hasNativeBase={
+                    repository.name === "ignite-marketspace-native" ||
+                    (repository.name === "ignitegym-native" && true)
+                  }
                   hasExpo={
                     repository.name === "gopizza-native" ||
                     repository.name === "masterclass-featuretoggle-native" ||
@@ -224,6 +228,7 @@ export function Projects() {
                   }
                   hasAxios={
                     repository.name === "ignite-upload-de-imagens" ||
+                    repository.name === "ignite-marketspace-native" ||
                     repository.name === "ignitegym-native" ||
                     repository.name === "ignite-otimizando-aplicacao" ||
                     repository.name === "desafio-truckpag" ||
@@ -245,12 +250,24 @@ export function Projects() {
                     repository.name === "ignitegym-native" ||
                     (repository.name === "resolvelogo-backend" && true)
                   }
+                  hasReactHookForm={
+                    repository.name === "ignitegym-native" ||
+                    repository.name === "ignite-react-native-gofinance" ||
+                    repository.name === "daily-diet-native" ||
+                    repository.name === "ignite-dt-money" ||
+                    repository.name === "desafio-pagcom" ||
+                    repository.name === "ignite-upload-de-imagens" ||
+                    repository.name ===
+                      "ignite-react-native-capter-ii-desafio-01" ||
+                    (repository.name === "ignite-marketspace-native" && true)
+                  }
                   hasFaunaDB={
                     repository.name === "ignite-upload-de-imagens" ||
                     (repository.name === "ignite-ignews" && true)
                   }
                   hasAsyncStorage={
                     repository.name === "ignitegym-native" ||
+                    repository.name === "ignite-marketspace-native" ||
                     repository.name === "gopizza-native" ||
                     repository.name === "daily-diet-native" ||
                     (repository.name === "todolist-native" && true)

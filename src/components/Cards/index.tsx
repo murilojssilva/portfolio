@@ -67,6 +67,8 @@ export function Cards({
   hasSASS = false,
   hasJest = false,
   hasVercel = false,
+  hasReactHookForm = false,
+  hasNativeBase = false,
   hasNextJS = false,
   hasVite = false,
   hasNodeJS = false,
@@ -159,6 +161,8 @@ export function Cards({
           hasStyledComponents={hasStyledComponents}
           hasTypescript={hasTypescript}
           hasVercel={hasVercel}
+          hasNativeBase={hasNativeBase}
+          hasReactHookForm={hasReactHookForm}
         />
         <ButtonContainerPosition>
           <Button

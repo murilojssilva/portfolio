@@ -27,6 +27,8 @@ import {
 import { TbBrandReactNative } from "react-icons/tb";
 
 import logoJWT from "@/assets/jwt.svg";
+import logoReactHookForm from "@/assets/reacthookform.svg";
+import logoNativeBase from "@/assets/nativebase.svg";
 import logoViteJS from "@/assets/vitejs.svg";
 import logoFaunaDB from "@/assets/faunadb.svg";
 import logoAxios from "@/assets/axios.svg";
@@ -59,6 +61,8 @@ export function Techs({
   hasSASS,
   hasJest,
   hasVercel,
+  hasReactHookForm,
+  hasNativeBase,
   hasNextJS,
   hasVite,
   hasPhosphor,
@@ -150,6 +154,9 @@ export function Techs({
       <TechContent hasPhosphor={hasPhosphor}>
         <img src={logoPhosphor} data-tip="Phosphor" />
       </TechContent>
+      <TechContent hasReactHookForm={hasReactHookForm}>
+        <img src={logoReactHookForm} data-tip="Phosphor" />
+      </TechContent>
       <TechContent hasZod={hasZod}>
         <img src={logoZod} data-tip="Zod" />
       </TechContent>
@@ -206,6 +213,9 @@ export function Techs({
       </TechContent>
       <TechContent hasJWT={hasJWT}>
         <img src={logoJWT} data-tip="JWT" />
+      </TechContent>
+      <TechContent hasNativeBase={hasNativeBase}>
+        <img src={logoNativeBase} data-tip="Native Base" />
       </TechContent>
       <TechContent hasHeroku={hasHeroku}>
         <SiHeroku color={"#3E0094"} data-tip="Heroku" />

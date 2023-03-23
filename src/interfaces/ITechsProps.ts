@@ -13,6 +13,8 @@ export interface ITechsProps {
   hasJest?: boolean;
   hasNodeJS?: boolean;
   hasVercel?: boolean;
+  hasNativeBase?: boolean;
+  hasReactHookForm?: boolean;
   hasMongoDB?: boolean;
   hasJWT?: boolean;
   hasNextJS?: boolean;

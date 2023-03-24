@@ -67,6 +67,7 @@ export function Cards({
   hasSASS = false,
   hasJest = false,
   hasVercel = false,
+  hasTailwind = false,
   hasReactHookForm = false,
   hasNativeBase = false,
   hasNextJS = false,
@@ -161,6 +162,7 @@ export function Cards({
           hasStyledComponents={hasStyledComponents}
           hasTypescript={hasTypescript}
           hasVercel={hasVercel}
+          hasTailwind={hasTailwind}
           hasNativeBase={hasNativeBase}
           hasReactHookForm={hasReactHookForm}
         />

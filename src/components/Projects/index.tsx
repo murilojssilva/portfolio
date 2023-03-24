@@ -120,6 +120,7 @@ export function Projects() {
                     (repository.name === "gopizza-native" && true)
                   }
                   hasNextJS={
+                    repository.name === "masterclass-ui-tailwind" ||
                     repository.name === "ignite-reactjs-04-dashgo" ||
                     repository.name === "ignite-upload-de-imagens" ||
                     (repository.name === "ignite-ignews" && true)
@@ -142,6 +143,7 @@ export function Projects() {
                     (repository.name === "rocketseat-nlw1" && true)
                   }
                   hasReact={
+                    repository.name === "masterclass-ui-tailwind" ||
                     repository.name === "ignite-reactjs-04-dashgo" ||
                     repository.name === "desafio-upnid-uprace" ||
                     repository.name === "rocketseat-nlw1" ||
@@ -256,6 +258,7 @@ export function Projects() {
                     repository.name === "daily-diet-native" ||
                     repository.name === "ignite-dt-money" ||
                     repository.name === "desafio-pagcom" ||
+                    repository.name === "portfolio" ||
                     repository.name === "ignite-upload-de-imagens" ||
                     repository.name ===
                       "ignite-react-native-capter-ii-desafio-01" ||
@@ -264,6 +267,9 @@ export function Projects() {
                   hasFaunaDB={
                     repository.name === "ignite-upload-de-imagens" ||
                     (repository.name === "ignite-ignews" && true)
+                  }
+                  hasTailwind={
+                    repository.name === "masterclass-ui-tailwind" && true
                   }
                   hasAsyncStorage={
                     repository.name === "ignitegym-native" ||

@@ -21,6 +21,7 @@ import {
   SiRubyonrails,
   SiSass,
   SiStyledcomponents,
+  SiTailwindcss,
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
@@ -61,6 +62,7 @@ export function Techs({
   hasSASS,
   hasJest,
   hasVercel,
+  hasTailwind,
   hasReactHookForm,
   hasNativeBase,
   hasNextJS,
@@ -168,6 +170,9 @@ export function Techs({
       </TechContent>
       <TechContent hasNetlify={hasNetlify}>
         <SiNetlify color={"#37A4B2"} data-tip="Netlify" />
+      </TechContent>
+      <TechContent hasTailwind={hasTailwind}>
+        <SiTailwindcss color={"#38BDF8"} data-tip="Tailwind" />
       </TechContent>
       <TechContent hasReactNative={hasReactNative}>
         <TbBrandReactNative color={"#01A0C8"} data-tip="React Native" />

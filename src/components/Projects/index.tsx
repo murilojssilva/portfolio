@@ -71,6 +71,7 @@ export function Projects() {
                   }
                   stack={
                     repository.name === "portfolio" ||
+                    repository.name === "masterclass-ui-tailwind" ||
                     repository.name === "ignite-github-blog" ||
                     repository.name === "ignite-dt-money" ||
                     repository.name === "murilojssilva" ||

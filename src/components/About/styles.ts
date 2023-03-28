@@ -2,6 +2,13 @@ import styled, { css } from "styled-components";
 
 import { LayoutContainer } from "@/pages/_layouts/default/styles";
 
+const CenterContainer = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+`;
+
 export const AboutContainer = styled(LayoutContainer)``;
 
 export const AboutContent = styled.header`
@@ -33,21 +40,12 @@ export const AboutContent = styled.header`
   }
 `;
 
-export const AboutProfileAnimation = styled.div`
-  display: flex;
+export const AboutProfileAnimation = styled(CenterContainer)`
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 
   @media (max-width: 768px) {
     display: none;
   }
 `;
 
-export const DevelopmentIcon = styled.div`
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-`;
+export const DevelopmentIcon = styled(CenterContainer)``;

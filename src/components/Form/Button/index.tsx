@@ -9,16 +9,12 @@ export function Button({
   type,
   href,
   deploy,
-  hasLink = false,
-  hasDeploy = false,
   ...rest
 }: IButtonProps) {
   return (
     <ButtonContainer
       href={href}
       deploy={deploy}
-      hasLink={hasLink}
-      hasDeploy={hasDeploy}
       target={target}
       type={type}
       {...rest}

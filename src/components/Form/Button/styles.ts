@@ -3,6 +3,9 @@ import styled, { css } from "styled-components";
 import { IButtonContainerProps } from "@/interfaces/IButtonProps";
 
 export const ButtonContainer = styled.a<IButtonContainerProps>`
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   background-color: transparent;
   ${({ theme }) => css`
@@ -16,19 +19,11 @@ export const ButtonContainer = styled.a<IButtonContainerProps>`
   padding: 1rem;
   font-weight: bold;
   display: block;
-
-  display: ${({ hasLink, hasDeploy }) =>
-    hasLink === false && hasDeploy === false ? "none" : "flex"};
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  display: ${({ href, deploy }) => (!href && !deploy ? "none" : "flex")};
 
   gap: 0.5rem;
-
   cursor: pointer;
-
   transition: background-color 0.1s, color 0.1s;
-
   &:hover {
     ${({ theme }) => css`
       background-color: ${theme.colors.primary};

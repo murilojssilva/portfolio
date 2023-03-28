@@ -1,8 +1,7 @@
 import { ReactNode } from "react";
 
 export interface IButtonContainerProps {
-  hasLink?: boolean;
-  hasDeploy?: boolean;
+  href?: string;
   deploy?: string;
 }
 
@@ -13,5 +12,4 @@ export interface IButtonProps
   icon?: ReactNode;
   target?: string;
   type?: string;
-  href?: string;
 }

@@ -9,6 +9,7 @@ import {
   FaNewspaper,
   FaDesktop,
   FaClock,
+  FaInfo,
 } from "react-icons/fa";
 import { FcDeployment } from "react-icons/fc";
 
@@ -32,8 +33,7 @@ export function Cards({
   subtitle,
   colorTop,
   stack,
-  hasLink = false,
-  hasDeploy = false,
+
   href,
   deploy,
   iconButton,
@@ -113,6 +113,11 @@ export function Cards({
             ) : null}
           </span>
           <h2>{`${title} `}</h2>
+          {inDevelopment && (
+            <strong data-tip="Em desenvolvimento">
+              <FaInfo />
+            </strong>
+          )}
         </CardsTitle>
 
         <CardsType>
@@ -170,7 +175,6 @@ export function Cards({
         />
         <ButtonContainerPosition>
           <Button
-            hasLink={hasLink}
             target="_blank"
             href={href}
             icon={
@@ -185,7 +189,6 @@ export function Cards({
             content={"Visualizar repositório"}
           />
           <Button
-            hasDeploy={hasDeploy}
             target="_blank"
             href={deploy}
             icon={<FcDeployment />}

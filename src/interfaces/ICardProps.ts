@@ -14,8 +14,6 @@ interface ITypeProps {
 export interface ICardsProps extends ITechsProps, ITypeProps {
   stack?: "mobile" | "backend" | "frontend" | "fullstack";
   title: string;
-  hasLink?: boolean;
-  hasDeploy?: boolean;
   subtitle?: string;
   href?: string;
   deploy?: string;
@@ -31,6 +29,6 @@ export interface IInDevelopmentProps {
 }
 
 export interface ILinksProps {
-  hasDeploy?: boolean;
-  hasLink?: boolean;
+  href?: string;
+  deploy?: string;
 }

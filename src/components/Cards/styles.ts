@@ -158,8 +158,8 @@ export const CardsFooter = styled.footer`
 `;
 
 export const ButtonContainerPosition = styled.footer<ILinksProps>`
-  display: flex;
-  flex-direction: ${({ hasDeploy, hasLink }) =>
-    hasDeploy && hasLink ? "column" : hasDeploy || hasLink ? "row" : "none"};
+  display: grid;
+  grid-template-rows: ${({ href, deploy }) =>
+    deploy && href ? "repeat(2, 1fr)" : "1fr"};
   gap: 0.5rem;
 `;

@@ -115,6 +115,10 @@ export function Projects() {
                     repository.name === "bossabox-vuttr" ||
                     repository.name === "resolvelogo-backend"
                   }
+                  hasVictoryNative={
+                    repository.name === "acesso" ||
+                    repository.name === "ignite-react-native-gofinance"
+                  }
                   hasStripe={repository.name === "ignite-ignews"}
                   hasFirebase={
                     repository.name === "acesso" ||
@@ -237,9 +241,6 @@ export function Projects() {
                     repository.name ===
                       "ignite-react-native-capter-ii-desafio-01"
                   }
-                  hasVictoryNative={
-                    repository.name === "ignite-react-native-gofinance"
-                  }
                   hasAxios={
                     repository.name === "ignite-upload-de-imagens" ||
                     repository.name === "ignite-marketspace-native" ||
@@ -323,7 +324,6 @@ export function Projects() {
                     repository.name === "codeleap-challenge"
                   }
                   last_commit={dateFormatter(new Date(repository.pushed_at))}
-                  hasLink
                   iconButton={"GitHub"}
                   href={repository.html_url}
                 />

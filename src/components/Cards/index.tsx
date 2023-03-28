@@ -33,7 +33,6 @@ export function Cards({
   subtitle,
   colorTop,
   stack,
-
   href,
   deploy,
   iconButton,

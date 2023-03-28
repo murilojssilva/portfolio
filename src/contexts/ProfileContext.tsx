@@ -8,6 +8,7 @@ import { IRepoProps } from "@/interfaces/IRepoProps";
 interface IProfileContextProps {
   data: IProfileProps;
   repositories: IRepoProps[];
+  readme: never[];
   loading: boolean;
 }
 
@@ -20,6 +21,7 @@ export const ProfileContext = createContext({} as IProfileContextProps);
 export function ProfileProvider({ children }: IProfileProviderProps) {
   const [data, setData] = useState<IProfileProps>({} as IProfileProps);
   const [repositories, setRepositories] = useState<IRepoProps[]>([]);
+  const [readme, setReadme] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const username = "murilojssilva";
@@ -38,9 +40,23 @@ export function ProfileProvider({ children }: IProfileProviderProps) {
     setLoading(false);
   }
 
+  async function fetchReadMe() {
+    const responseReadMe = await api.get(
+      `https://raw.githubusercontent.com/${username}/${username}/main/README.md`
+    );
+    setReadme(responseReadMe.data);
+  }
+
   useEffect(() => {
     fetchProfile();
+  }, []);
+
+  useEffect(() => {
     fetchPosts();
+  }, []);
+
+  useEffect(() => {
+    fetchReadMe();
   }, []);
 
   return (
@@ -48,6 +64,7 @@ export function ProfileProvider({ children }: IProfileProviderProps) {
       value={{
         data,
         repositories,
+        readme,
         loading,
       }}
     >

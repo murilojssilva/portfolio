@@ -7,7 +7,7 @@ import { Loading } from "../Loading";
 import { ProfileContext } from "@/contexts/ProfileContext";
 
 export function About() {
-  const { data, loading } = useContext(ProfileContext);
+  const { data, loading, readme } = useContext(ProfileContext);
   return (
     <AboutContainer>
       <AboutContent>
@@ -16,8 +16,9 @@ export function About() {
         ) : (
           <>
             <img src={`https://github.com/${data.login}.png`} />
+            <h3>{data.bio}</h3>
             <article>
-              <p>Olá 👋. Este é o portfólio do Murilo Silva.</p>
+              <p>Olá 👋. Este é o portfólio do {data.name}.</p>
               <p>
                 💻 Trabalhei na empresa Upnid Pagamentos como Front End
                 Developer, responsável pela manutenção do website,

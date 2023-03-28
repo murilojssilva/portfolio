@@ -38,6 +38,12 @@ export const AboutContent = styled.header`
 
     margin: 1rem 0;
   }
+
+  h3 {
+    text-align: center;
+    color: ${({ theme }) => theme.colors.text};
+    font-size: 1rem;
+  }
 `;
 
 export const AboutProfileAnimation = styled(CenterContainer)`

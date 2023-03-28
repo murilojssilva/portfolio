@@ -10,6 +10,15 @@ export function Experience() {
       <ExperienceContent>
         <Cards
           colorTop="experiences"
+          title="corre."
+          stack="mobile"
+          type="professional"
+          hasReactNative
+          hasTypescript
+          hasStyledComponents
+        />
+        <Cards
+          colorTop="experiences"
           title="Upnid Pagamentos"
           stack="frontend"
           type="professional"

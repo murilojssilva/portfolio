@@ -16,6 +16,8 @@ export function Experience() {
           hasReactNative
           hasTypescript
           hasStyledComponents
+          hasReactNavigation
+          hasFirebase
         />
         <Cards
           colorTop="experiences"

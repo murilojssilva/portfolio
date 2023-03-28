@@ -40,6 +40,7 @@ import logoYup from "@/assets/yup.svg";
 import logoStripe from "@/assets/stripe.svg";
 import logoVue from "@/assets/vue.svg";
 import logoAsyncStorage from "@/assets/AsyncStorage.png";
+import logoReactNavigation from "@/assets/spiro.svg";
 
 import { useTheme } from "styled-components";
 
@@ -62,6 +63,7 @@ export function Techs({
   hasSASS,
   hasJest,
   hasVercel,
+  hasReactNavigation,
   hasTailwind,
   hasReactHookForm,
   hasNativeBase,
@@ -155,6 +157,9 @@ export function Techs({
       </TechContent>
       <TechContent hasPhosphor={hasPhosphor}>
         <img src={logoPhosphor} data-tip="Phosphor" />
+      </TechContent>
+      <TechContent hasReactNavigation={hasReactNavigation}>
+        <img src={logoReactNavigation} data-tip="React Navigation" />
       </TechContent>
       <TechContent hasReactHookForm={hasReactHookForm}>
         <img src={logoReactHookForm} data-tip="Phosphor" />

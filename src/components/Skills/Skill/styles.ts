@@ -1,8 +1,5 @@
+import { ISkillContainerProps } from "@/interfaces/ISkillProps";
 import styled, { css } from "styled-components";
-
-interface ISkillContainerProps {
-  color: string;
-}
 
 export const SkillContainer = styled.div<ISkillContainerProps>`
   display: flex;

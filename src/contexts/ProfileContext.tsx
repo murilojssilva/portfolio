@@ -11,13 +11,13 @@ interface IProfileContextProps {
   loading: boolean;
 }
 
-interface ProfileProviderProps {
+interface IProfileProviderProps {
   children: ReactNode;
 }
 
 export const ProfileContext = createContext({} as IProfileContextProps);
 
-export function ProfileProvider({ children }: ProfileProviderProps) {
+export function ProfileProvider({ children }: IProfileProviderProps) {
   const [data, setData] = useState<IProfileProps>({} as IProfileProps);
   const [repositories, setRepositories] = useState<IRepoProps[]>([]);
   const [loading, setLoading] = useState(true);

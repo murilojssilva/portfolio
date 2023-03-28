@@ -99,49 +99,61 @@ export function Projects() {
                       ? "fullstack"
                       : "mobile"
                   }
-                  hasJavascript={repository.language === "JavaScript" && true}
+                  hasJavascript={repository.language === "JavaScript"}
                   hasTypescript={
                     repository.language === "TypeScript" ||
                     repository.name === "portfolio" ||
-                    (repository.name === "ignite-dt-money" && true)
+                    repository.name === "ignite-dt-money"
                   }
                   hasJest={
                     repository.name === "desafio-truckpag" ||
                     repository.name ===
                       "ignite-react-native-capter-ii-desafio-01" ||
-                    (repository.name === "workana-test" && true)
+                    repository.name === "workana-test"
                   }
                   hasMongoDB={
                     repository.name === "bossabox-vuttr" ||
-                    (repository.name === "resolvelogo-backend" && true)
+                    repository.name === "resolvelogo-backend"
                   }
-                  hasStripe={repository.name === "ignite-ignews" && true}
+                  hasStripe={repository.name === "ignite-ignews"}
                   hasFirebase={
+                    repository.name === "acesso" ||
                     repository.name === "masterclass-featuretoggle-native" ||
-                    (repository.name === "gopizza-native" && true)
+                    repository.name === "gopizza-native"
                   }
                   hasNextJS={
                     repository.name === "masterclass-ui-tailwind" ||
                     repository.name === "ignite-reactjs-04-dashgo" ||
                     repository.name === "ignite-upload-de-imagens" ||
-                    (repository.name === "ignite-ignews" && true)
+                    repository.name === "ignite-ignews"
                   }
                   hasSASS={
                     repository.name === "ignite-otimizando-aplicacao" ||
-                    (repository.name === "ignite-ignews" && true)
+                    repository.name === "ignite-ignews"
                   }
-                  hasChakra={
-                    repository.name === "ignite-upload-de-imagens" && true
+                  hasReactNavigation={
+                    repository.name === "acesso" ||
+                    repository.name === "rocketseat-react-native-nubank" ||
+                    repository.name === "rocketseat-omnistack-10" ||
+                    repository.name === "ignite-react-native-gofinance" ||
+                    repository.name === "ignite-marketspace-native" ||
+                    repository.name ===
+                      "ignite-react-native-capter-ii-desafio-01" ||
+                    repository.name === "daily-diet-native" ||
+                    repository.name === "igniteshoesapp" ||
+                    repository.name === "rocketseat-NLW5-ReactNative" ||
+                    repository.name === "ignitegym-native"
                   }
+                  hasChakra={repository.name === "ignite-upload-de-imagens"}
                   hasNodeJS={
                     repository.name === "bossabox-vuttr" ||
                     repository.name === "resolvelogo-backend" ||
-                    (repository.name === "rocketseat-nlw1" && true)
+                    repository.name === "rocketseat-nlw1"
                   }
                   hasExpress={
                     repository.name === "bossabox-vuttr" ||
                     repository.name === "resolvelogo-backend" ||
-                    (repository.name === "rocketseat-nlw1" && true)
+                    repository.name === "rocketseat-nlw1"
                   }
                   hasReact={
                     repository.name === "masterclass-ui-tailwind" ||
@@ -158,9 +170,9 @@ export function Projects() {
                     repository.name === "ignite-github-blog" ||
                     repository.name ===
                       "ignite-reactjs-challenge-2-coffee-delivery" ||
-                    (repository.name === "codeleap-challenge" && true)
+                    repository.name === "codeleap-challenge"
                   }
-                  hasVue={repository.language === "Vue" && true}
+                  hasVue={repository.language === "Vue"}
                   hasYup={
                     repository.name === "ignite-upload-de-imagens" ||
                     repository.name === "ignitegym-native" ||
@@ -173,15 +185,15 @@ export function Projects() {
                     repository.name === "daily-diet-native" ||
                     repository.name === "todolist-native" ||
                     repository.name === "igniteshoesapp" ||
-                    (repository.name === "desafio-pagcom" && true)
+                    repository.name === "desafio-pagcom"
                   }
                   hasPhosphor={
                     repository.name === "ignite-dt-money" ||
-                    (repository.name === "ignite-github-blog" && true)
+                    repository.name === "ignite-github-blog"
                   }
                   hasNativeBase={
                     repository.name === "ignite-marketspace-native" ||
-                    (repository.name === "ignitegym-native" && true)
+                    repository.name === "ignitegym-native"
                   }
                   hasExpo={
                     repository.name === "gopizza-native" ||
@@ -196,17 +208,17 @@ export function Projects() {
                     repository.name === "daily-diet-native" ||
                     repository.name === "todolist-native" ||
                     repository.name === "igniteshoesapp" ||
-                    (repository.name ===
-                      "ignite-react-native-chapter-ii-desafio-02" &&
-                      true)
+                    repository.name ===
+                      "ignite-react-native-chapter-ii-desafio-02"
                   }
                   hasElixir={
                     repository.name === "ignite-sumlist-elixir" ||
                     repository.name === "ignite-reports_generator-elixir" ||
                     repository.name === "ignite-listfilter-elixir" ||
-                    (repository.name === "ignite-lenghtlist-elixir" && true)
+                    repository.name === "ignite-lenghtlist-elixir"
                   }
                   hasReactNative={
+                    repository.name === "acesso" ||
                     repository.name === "gopizza-native" ||
                     repository.name === "masterclass-featuretoggle-native" ||
                     repository.name === "ignitegym-native" ||
@@ -222,12 +234,11 @@ export function Projects() {
                     repository.name === "igniteshoesapp" ||
                     repository.name ===
                       "ignite-react-native-chapter-ii-desafio-02" ||
-                    (repository.name ===
-                      "ignite-react-native-capter-ii-desafio-01" &&
-                      true)
+                    repository.name ===
+                      "ignite-react-native-capter-ii-desafio-01"
                   }
                   hasVictoryNative={
-                    repository.name === "ignite-react-native-gofinance" && true
+                    repository.name === "ignite-react-native-gofinance"
                   }
                   hasAxios={
                     repository.name === "ignite-upload-de-imagens" ||
@@ -245,13 +256,12 @@ export function Projects() {
                     repository.name === "rocketseat-omnistack-10" ||
                     repository.name === "ignite-dt-money" ||
                     repository.name === "ignite-github-blog" ||
-                    (repository.name ===
-                      "ignite-reactjs-challenge-2-coffee-delivery" &&
-                      true)
+                    repository.name ===
+                      "ignite-reactjs-challenge-2-coffee-delivery"
                   }
                   hasJWT={
                     repository.name === "ignitegym-native" ||
-                    (repository.name === "resolvelogo-backend" && true)
+                    repository.name === "resolvelogo-backend"
                   }
                   hasReactHookForm={
                     repository.name === "ignitegym-native" ||
@@ -263,23 +273,22 @@ export function Projects() {
                     repository.name === "ignite-upload-de-imagens" ||
                     repository.name ===
                       "ignite-react-native-capter-ii-desafio-01" ||
-                    (repository.name === "ignite-marketspace-native" && true)
+                    repository.name === "ignite-marketspace-native"
                   }
                   hasFaunaDB={
                     repository.name === "ignite-upload-de-imagens" ||
-                    (repository.name === "ignite-ignews" && true)
+                    repository.name === "ignite-ignews"
                   }
-                  hasTailwind={
-                    repository.name === "masterclass-ui-tailwind" && true
-                  }
+                  hasTailwind={repository.name === "masterclass-ui-tailwind"}
                   hasAsyncStorage={
                     repository.name === "ignitegym-native" ||
                     repository.name === "ignite-marketspace-native" ||
                     repository.name === "gopizza-native" ||
                     repository.name === "daily-diet-native" ||
-                    (repository.name === "todolist-native" && true)
+                    repository.name === "todolist-native"
                   }
                   hasStyledComponents={
+                    repository.name === "acesso" ||
                     repository.name === "gopizza-native" ||
                     repository.name === "desafio-upnid-uprace" ||
                     repository.name === "desafio-truckpag" ||
@@ -298,10 +307,10 @@ export function Projects() {
                     repository.name === "ignite-github-blog" ||
                     repository.name ===
                       "ignite-reactjs-challenge-2-coffee-delivery" ||
-                    (repository.name === "codeleap-challenge" && true)
+                    repository.name === "codeleap-challenge"
                   }
-                  hasZod={repository.name === "ignite-dt-money" && true}
-                  hasRadix={repository.name === "ignite-dt-money" && true}
+                  hasZod={repository.name === "ignite-dt-money"}
+                  hasRadix={repository.name === "ignite-dt-money"}
                   hasVite={
                     repository.name === "ignite-reactjs-01-fundamentos" ||
                     repository.name === "ignite-reactjs-desafio-01" ||
@@ -311,7 +320,7 @@ export function Projects() {
                     repository.name === "ignite-github-blog" ||
                     repository.name ===
                       "ignite-reactjs-challenge-2-coffee-delivery" ||
-                    (repository.name === "codeleap-challenge" && true)
+                    repository.name === "codeleap-challenge"
                   }
                   last_commit={dateFormatter(new Date(repository.pushed_at))}
                   hasLink

@@ -13,6 +13,7 @@ export interface ITechsProps {
   hasJest?: boolean;
   hasNodeJS?: boolean;
   hasVercel?: boolean;
+  hasReactNavigation?: boolean;
   hasTailwind?: boolean;
   hasNativeBase?: boolean;
   hasReactHookForm?: boolean;

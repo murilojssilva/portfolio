@@ -39,9 +39,14 @@ export function About() {
                 desenvolvendo um micro-serviço de envio de e-mails.
               </p>
               <p>
-                📱 Atualmente, desenvolvendo o Sistema ACESSO, responsável por
-                listar quais tipos de acessibilidade são atendidas nos
-                estabelecimentos cadastrados próximo à localização do usuário.
+                📱 Desenvolvi o Sistema ACESSO, responsável por listar quais
+                tipos de acessibilidade são atendidas nos estabelecimentos
+                cadastrados próximo à localização do usuário.
+              </p>
+              <p>
+                📱 Atualmente, faço parte de uma ONG que está desenvolvendo o
+                sistema corre, responsável por listar produtos, serviços, vagas
+                e iniciativas culturai e sociais disponíveis para a comunidade.
               </p>
             </article>
           </>

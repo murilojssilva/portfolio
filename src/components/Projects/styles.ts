@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { IProjectTitleProps } from "@/interfaces/IProjectTitleProps";
 
 export const ProjectsContainer = styled.section`
   border-top: 1px solid ${({ theme }) => theme.colors.background};

@@ -1,7 +1,10 @@
 import { ReactNode } from "react";
 
-export interface ISkillProps {
+export interface ISkillContainerProps {
   color: string;
+}
+
+export interface ISkillProps extends ISkillContainerProps {
   title: string;
   description: string;
   subtitle: string;

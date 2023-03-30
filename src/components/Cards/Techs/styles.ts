@@ -41,6 +41,8 @@ export const TechContent = styled.span<ITechsProps>`
     hasExpress,
     hasNextJS,
     hasVercel,
+    hasReanimated,
+    hasGestureHandler,
     hasReactNavigation,
     hasTailwind,
     hasReactHookForm,
@@ -59,6 +61,8 @@ export const TechContent = styled.span<ITechsProps>`
     hasMongoDB === false ||
     hasVercel === false ||
     hasReactNavigation === false ||
+    hasGestureHandler === false ||
+    hasReanimated === false ||
     hasReactHookForm === false ||
     hasNativeBase === false ||
     hasNextJS === false ||

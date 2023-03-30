@@ -191,7 +191,12 @@ export function Projects() {
                     repository.name === "igniteshoesapp" ||
                     repository.name === "desafio-pagcom"
                   }
+                  hasReanimated={repository.name === "ignite-ignitequiz-native"}
+                  hasGestureHandler={
+                    repository.name === "ignite-ignitequiz-native"
+                  }
                   hasPhosphor={
+                    repository.name === "ignite-ignitequiz-native" ||
                     repository.name === "ignite-dt-money" ||
                     repository.name === "ignite-github-blog"
                   }
@@ -200,6 +205,7 @@ export function Projects() {
                     repository.name === "ignitegym-native"
                   }
                   hasExpo={
+                    repository.name === "ignite-ignitequiz-native" ||
                     repository.name === "gopizza-native" ||
                     repository.name === "masterclass-featuretoggle-native" ||
                     repository.name === "ignitegym-native" ||
@@ -222,6 +228,7 @@ export function Projects() {
                     repository.name === "ignite-lenghtlist-elixir"
                   }
                   hasReactNative={
+                    repository.name === "ignite-ignitequiz-native" ||
                     repository.name === "acesso" ||
                     repository.name === "gopizza-native" ||
                     repository.name === "masterclass-featuretoggle-native" ||

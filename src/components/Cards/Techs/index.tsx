@@ -25,6 +25,8 @@ import {
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
+
+import { MdGesture, MdAnimation } from "react-icons/md";
 import { TbBrandReactNative } from "react-icons/tb";
 
 import logoJWT from "@/assets/jwt.svg";
@@ -63,6 +65,8 @@ export function Techs({
   hasSASS,
   hasJest,
   hasVercel,
+  hasGestureHandler,
+  hasReanimated,
   hasReactNavigation,
   hasTailwind,
   hasReactHookForm,
@@ -93,8 +97,14 @@ export function Techs({
       <TechContent hasJavascript={hasJavascript}>
         <SiJavascript color={"#EFD81D"} data-tip="Javascript" />
       </TechContent>
+      <TechContent hasTypescript={hasTypescript}>
+        <SiTypescript color={"#2F72BC"} data-tip="TypeScript" />
+      </TechContent>
       <TechContent hasReact={hasReact}>
         <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
+      </TechContent>
+      <TechContent hasReactNative={hasReactNative}>
+        <TbBrandReactNative color={"#01A0C8"} data-tip="React Native" />
       </TechContent>
       <TechContent hasVue={hasVue}>
         <img src={logoVue} data-tip="Vue.JS" />
@@ -167,6 +177,12 @@ export function Techs({
       <TechContent hasZod={hasZod}>
         <img src={logoZod} data-tip="Zod" />
       </TechContent>
+      <TechContent hasGestureHandler={hasGestureHandler}>
+        <MdGesture color="#001A71" data-tip="Gesture Handler" />
+      </TechContent>
+      <TechContent hasReanimated={hasReanimated}>
+        <MdAnimation color="#001A71" data-tip="Reanimated" />
+      </TechContent>
       <TechContent hasVercel={hasVercel}>
         <SiVercel
           color={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
@@ -178,12 +194,6 @@ export function Techs({
       </TechContent>
       <TechContent hasTailwind={hasTailwind}>
         <SiTailwindcss color={"#38BDF8"} data-tip="Tailwind" />
-      </TechContent>
-      <TechContent hasReactNative={hasReactNative}>
-        <TbBrandReactNative color={"#01A0C8"} data-tip="React Native" />
-      </TechContent>
-      <TechContent hasTypescript={hasTypescript}>
-        <SiTypescript color={"#2F72BC"} data-tip="TypeScript" />
       </TechContent>
       <TechContent hasStyledComponents={hasStyledComponents}>
         <SiStyledcomponents color={"#EBAC9D"} data-tip="Styled Components" />

@@ -13,6 +13,8 @@ export interface ITechsProps {
   hasJest?: boolean;
   hasNodeJS?: boolean;
   hasVercel?: boolean;
+  hasGestureHandler?: boolean;
+  hasReanimated?: boolean;
   hasReactNavigation?: boolean;
   hasTailwind?: boolean;
   hasNativeBase?: boolean;

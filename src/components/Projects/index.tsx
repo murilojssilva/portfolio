@@ -6,6 +6,7 @@ import { Loading } from "../Loading";
 
 import { ProjectsContainer, ProjectsContent } from "./styles";
 import { Title } from "../Title";
+import { Tooltip } from "../Tooltip";
 
 export function Projects() {
   const { repositories, loading } = useContext(ProfileContext);

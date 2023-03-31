@@ -352,6 +352,18 @@
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.14.53.tgz#251b4cd6760fadb4d68a05815e6dc5e432d69cd6"
   integrity sha512-W2dAL6Bnyn4xa/QRSU3ilIK4EzD5wgYXKXJiS1HDF5vU3675qc2bvFyLwbUcdmssDveyndy7FbitrCoiV/eMLg==
 
+"@floating-ui/core@^1.2.4":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.2.5.tgz#612f0d203e6f647490d572c7b798eebac9e3cf54"
+  integrity sha512-qrcbyfnRVziRlB6IYwjCopYhO7Vud750JlJyuljruIXcPxr22y8zdckcJGsuOdnQ639uVD1tTXddrcH3t3QYIQ==
+
+"@floating-ui/dom@^1.0.0":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.2.5.tgz#c9ec259a24ce0958b1ea29674df4eee4455361a9"
+  integrity sha512-+sAUfpQ3Frz+VCbPCqj+cZzvEESy3fjSeT/pDWkYCWOBXYNNKZfuVsHuv8/JO2zze8+Eb/Q7a6hZVgzS81fLbQ==
+  dependencies:
+    "@floating-ui/core" "^1.2.4"
+
 "@hookform/resolvers@^2.9.7":
   version "2.9.7"
   resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-2.9.7.tgz#8b257ae67234ce0270e6b044c1a61fb98ec02b4b"
@@ -602,6 +614,11 @@ chalk@^2.0.0:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
+
+classnames@^2.3.0:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -1236,13 +1253,13 @@ react-switch@^7.0.0:
   dependencies:
     prop-types "^15.7.2"
 
-react-tooltip@^4.2.21:
-  version "4.2.21"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.21.tgz#840123ed86cf33d50ddde8ec8813b2960bfded7f"
-  integrity sha512-zSLprMymBDowknr0KVDiJ05IjZn9mQhhg4PRsqln0OZtURAJ1snt1xi5daZfagsh6vfsziZrc9pErPTDY1ACig==
+react-tooltip@^5.10.4:
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.10.4.tgz#e4f5608ad1613ccb3dd929704254ebc2a2e36808"
+  integrity sha512-QUBX6k3+qjOyAy64ntV/NkwzZqaghjcEpZ6Q5pqVbYUYS8kGcmIgXznRc2syQDlffCtzeWJGGMz93JYKjGo2Pw==
   dependencies:
-    prop-types "^15.7.2"
-    uuid "^7.0.3"
+    "@floating-ui/dom" "^1.0.0"
+    classnames "^2.3.0"
 
 react-transition-group@^4.3.0:
   version "4.4.5"
@@ -1379,11 +1396,6 @@ update-browserslist-db@^1.0.5:
   dependencies:
     escalade "^3.1.1"
     picocolors "^1.0.0"
-
-uuid@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
-  integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
 
 vite@^3.0.0:
   version "3.0.4"

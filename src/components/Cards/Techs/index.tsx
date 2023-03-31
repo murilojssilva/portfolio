@@ -47,6 +47,7 @@ import logoReactNavigation from "@/assets/spiro.svg";
 import { useTheme } from "styled-components";
 
 import { ITechsProps } from "@/interfaces/ITechsProps";
+import { Tooltip } from "@/components/Tooltip";
 
 export function Techs({
   hasReact,
@@ -95,156 +96,183 @@ export function Techs({
   return (
     <TechsContainer>
       <TechContent hasJavascript={hasJavascript}>
-        <SiJavascript color={"#EFD81D"} data-tip="Javascript" />
+        <Tooltip name="Javascript" icon={<SiJavascript color={"#EFD81D"} />} />
       </TechContent>
       <TechContent hasTypescript={hasTypescript}>
-        <SiTypescript color={"#2F72BC"} data-tip="TypeScript" />
+        <Tooltip name="TypeScript" icon={<SiTypescript color={"#2F72BC"} />} />
       </TechContent>
       <TechContent hasReact={hasReact}>
-        <SiReact color={"#5CCFEE"} data-tip="ReactJS" />
+        <Tooltip name="ReactJS" icon={<SiReact color={"#5CCFEE"} />} />
       </TechContent>
       <TechContent hasReactNative={hasReactNative}>
-        <TbBrandReactNative color={"#01A0C8"} data-tip="React Native" />
+        <Tooltip
+          name="React Native"
+          icon={<TbBrandReactNative color={"#01A0C8"} />}
+        />
       </TechContent>
       <TechContent hasVue={hasVue}>
-        <img src={logoVue} data-tip="Vue.JS" />
+        <Tooltip name="Vue.JS" icon={<img src={logoVue} />} />
       </TechContent>
       <TechContent hasNextJS={hasNextJS}>
-        <SiNextdotjs
-          color={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
-          data-tip="NextJS"
+        <Tooltip
+          name="NextJS"
+          icon={
+            <SiNextdotjs
+              color={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+            />
+          }
         />
       </TechContent>
       <TechContent hasExpo={hasExpo}>
-        <SiExpo
-          color={title === "dark" ? "#BBC3CD" : "var(--gray-950)"}
-          data-tip="Expo"
+        <Tooltip
+          name="Expo"
+          icon={
+            <SiExpo color={title === "dark" ? "#BBC3CD" : "var(--gray-950)"} />
+          }
         />
       </TechContent>
       <TechContent hasChakra={hasChakra}>
-        <SiChakraui color={"#49C6C0"} data-tip="ChakraUI" />
+        <Tooltip name="ChakraUI" icon={<SiChakraui color={"#49C6C0"} />} />
       </TechContent>
       <TechContent hasYup={hasYup}>
-        <img src={logoYup} data-tip="Yup" />
+        <Tooltip name="Yup" icon={<img src={logoYup} />} />
       </TechContent>
       <TechContent hasVictoryNative={hasVictoryNative}>
-        <img src={logoVictory} data-tip="Victory Pie" />
+        <Tooltip name="Victory Pie" icon={<img src={logoVictory} />} />
       </TechContent>
       <TechContent hasVite={hasVite}>
-        <img src={logoViteJS} data-tip="ViteJS" />
+        <Tooltip name="ViteJS" icon={<img src={logoViteJS} />} />
       </TechContent>
       <TechContent hasFaunaDB={hasFaunaDB}>
-        <img src={logoFaunaDB} data-tip="FaunaDB" />
+        <Tooltip name="FaunaDB" icon={<img src={logoFaunaDB} />} />
       </TechContent>
       <TechContent hasAxios={hasAxios}>
-        <img src={logoAxios} data-tip="Axios" />
+        <Tooltip name="Axios" icon={<img src={logoAxios} />} />
       </TechContent>
       <TechContent hasAsyncStorage={hasAsyncStorage}>
-        <img src={logoAsyncStorage} data-tip="Async Storage" />
+        <Tooltip name="Async Storage" icon={<img src={logoAsyncStorage} />} />
       </TechContent>
       <TechContent hasRadix={hasRadix}>
-        <svg
-          data-tip="Radix UI"
-          xmlns="http://www.w3.org/2000/svg"
-          width="25"
-          height="25"
-          viewBox="0 0 25 25"
-          fill={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
-        >
-          <path
-            d="M12 25C7.58173 25 4 21.4183 4 17C4 12.5817 7.58173 9 12 9V25Z"
-            fill={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
-          ></path>
-          <path
-            d="M12 0H4V8H12V0Z"
-            fill={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
-          ></path>
-          <path
-            d="M17 8C19.2091 8 21 6.20914 21 4C21 1.79086 19.2091 0 17 0C14.7909 0 13 1.79086 13 4C13 6.20914 14.7909 8 17 8Z"
-            fill={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
-          ></path>
-        </svg>
+        <Tooltip
+          name="Radix"
+          icon={
+            <svg
+              data-tip="Radix UI"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+            >
+              <path
+                d="M12 25C7.58173 25 4 21.4183 4 17C4 12.5817 7.58173 9 12 9V25Z"
+                fill={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+              ></path>
+              <path
+                d="M12 0H4V8H12V0Z"
+                fill={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+              ></path>
+              <path
+                d="M17 8C19.2091 8 21 6.20914 21 4C21 1.79086 19.2091 0 17 0C14.7909 0 13 1.79086 13 4C13 6.20914 14.7909 8 17 8Z"
+                fill={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+              ></path>
+            </svg>
+          }
+        />
       </TechContent>
       <TechContent hasPhosphor={hasPhosphor}>
-        <img src={logoPhosphor} data-tip="Phosphor" />
+        <Tooltip name="Phosphor" icon={<img src={logoPhosphor} />} />
       </TechContent>
       <TechContent hasReactNavigation={hasReactNavigation}>
-        <img src={logoReactNavigation} data-tip="React Navigation" />
+        <Tooltip
+          name="React Navigation"
+          icon={<img src={logoReactNavigation} />}
+        />
       </TechContent>
       <TechContent hasReactHookForm={hasReactHookForm}>
-        <img src={logoReactHookForm} data-tip="Phosphor" />
+        <Tooltip name="Phosphor" icon={<img src={logoReactHookForm} />} />
       </TechContent>
       <TechContent hasZod={hasZod}>
-        <img src={logoZod} data-tip="Zod" />
+        <Tooltip name="Zod" icon={<img src={logoZod} />} />
       </TechContent>
       <TechContent hasGestureHandler={hasGestureHandler}>
-        <MdGesture color="#001A71" data-tip="Gesture Handler" />
+        <Tooltip name="Gesture Handler" icon={<MdGesture color="#001A71" />} />
       </TechContent>
       <TechContent hasReanimated={hasReanimated}>
-        <MdAnimation color="#001A71" data-tip="Reanimated" />
+        <Tooltip name="Reanimated" icon={<MdAnimation color="#001A71" />} />
       </TechContent>
       <TechContent hasVercel={hasVercel}>
-        <SiVercel
-          color={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
-          data-tip="Vercel"
+        <Tooltip
+          name="Vercel"
+          icon={
+            <SiVercel
+              color={title === "dark" ? "#F2F2F2" : "var(--gray-950)"}
+            />
+          }
         />
       </TechContent>
       <TechContent hasNetlify={hasNetlify}>
-        <SiNetlify color={"#37A4B2"} data-tip="Netlify" />
+        <Tooltip name="Netlify" icon={<SiNetlify color={"#37A4B2"} />} />
       </TechContent>
       <TechContent hasTailwind={hasTailwind}>
-        <SiTailwindcss color={"#38BDF8"} data-tip="Tailwind" />
+        <Tooltip name="Tailwind" icon={<SiTailwindcss color={"#38BDF8"} />} />
       </TechContent>
       <TechContent hasStyledComponents={hasStyledComponents}>
-        <SiStyledcomponents color={"#EBAC9D"} data-tip="Styled Components" />
+        <Tooltip
+          name="Styled Components"
+          icon={<SiStyledcomponents color={"#EBAC9D"} />}
+        />
       </TechContent>
       <TechContent hasElixir={hasElixir}>
-        <SiElixir color={"#AD38E9"} data-tip="Elixir" />
+        <Tooltip name="Elixir" icon={<SiElixir color={"#AD38E9"} />} />
       </TechContent>
       <TechContent hasSCSS={hasSCSS}>
-        <SiCss3 color={"#C26192"} data-tip="SCSS" />
+        <Tooltip name="SCSS" icon={<SiCss3 color={"#C26192"} />} />
       </TechContent>
       <TechContent hasSASS={hasSASS}>
-        <SiSass color={"#C26192"} data-tip="SASS" />
+        <Tooltip name="SASS" icon={<SiSass color={"#C26192"} />} />
       </TechContent>
       <TechContent hasGraphQL={hasGraphQL}>
-        <SiGraphql color={"#D932A2"} data-tip="GraphQL" />
+        <Tooltip name="GraphQL" icon={<SiGraphql color={"#D932A2"} />} />
       </TechContent>
       <TechContent hasStripe={hasStripe}>
-        <img src={logoStripe} data-tip="Stripe" />
+        <Tooltip name="Stripe" icon={<img src={logoStripe} />} />
       </TechContent>
       <TechContent hasRedux={hasRedux}>
-        <SiRedux color={"#7248B7"} data-tip="Redux" />
+        <Tooltip name="Redux" icon={<SiRedux color={"#7248B7"} />} />
       </TechContent>
       <TechContent hasFirebase={hasFirebase}>
-        <SiFirebase color={"#F7C52F"} data-tip="Firebase" />
+        <Tooltip name="Firebase" icon={<SiFirebase color={"#F7C52F"} />} />
       </TechContent>
       <TechContent hasJest={hasJest}>
-        <SiJest color={"#BC3A14"} data-tip="Jest" />
+        <Tooltip name="Jest" icon={<SiJest color={"#BC3A14"} />} />
       </TechContent>
       <TechContent hasNodeJS={hasNodeJS}>
-        <SiNodedotjs color={"#529F41"} data-tip="NodeJS" />
+        <Tooltip name="NodeJS" icon={<SiNodedotjs color={"#529F41"} />} />
       </TechContent>
       <TechContent hasExpress={hasExpress}>
-        <SiExpress color={"#7B7B7B"} data-tip="Express" />
+        <Tooltip name="Express" icon={<SiExpress color={"#7B7B7B"} />} />
       </TechContent>
       <TechContent hasMongoDB={hasMongoDB}>
-        <SiMongodb color={"#3E9738"} data-tip="MongoDB" />
+        <Tooltip name="MongoDB" icon={<SiMongodb color={"#3E9738"} />} />
       </TechContent>
       <TechContent hasJWT={hasJWT}>
-        <img src={logoJWT} data-tip="JWT" />
+        <Tooltip name="JWT" icon={<img src={logoJWT} />} />
       </TechContent>
       <TechContent hasNativeBase={hasNativeBase}>
-        <img src={logoNativeBase} data-tip="Native Base" />
+        <Tooltip name="Native Base" icon={<img src={logoNativeBase} />} />
       </TechContent>
       <TechContent hasHeroku={hasHeroku}>
-        <SiHeroku color={"#3E0094"} data-tip="Heroku" />
+        <Tooltip name="Heroku" icon={<SiHeroku color={"#3E0094"} />} />
       </TechContent>
       <TechContent hasRubyOnRails={hasRubyOnRails}>
-        <SiRubyonrails color={"#C20000"} data-tip="Ruby on Rails" />
+        <Tooltip
+          name="Ruby on Rails"
+          icon={<SiRubyonrails color={"#C20000"} />}
+        />
       </TechContent>
       <TechContent hasBootstrap={hasBootstrap}>
-        <SiBootstrap color={"#7011EB"} data-tip="BootStrap" />
+        <Tooltip name="BootStrap" icon={<SiBootstrap color={"#7011EB"} />} />
       </TechContent>
     </TechsContainer>
   );

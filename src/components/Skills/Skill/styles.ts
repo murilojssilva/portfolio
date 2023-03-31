@@ -1,5 +1,5 @@
-import { ISkillContainerProps } from "@/interfaces/ISkillProps";
-import styled, { css } from "styled-components";
+import { ISkillContainerProps } from '@/interfaces/ISkillProps'
+import styled, { css } from 'styled-components'
 
 export const SkillContainer = styled.div<ISkillContainerProps>`
   display: flex;
@@ -16,7 +16,7 @@ export const SkillContainer = styled.div<ISkillContainerProps>`
 
   &:hover {
     filter: ${({ theme }) =>
-      theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
+      theme.title === 'dark' ? 'brightness(1.1)' : 'brightness(0.9)'};
     transition: filter 0.2s;
   }
 
@@ -68,4 +68,4 @@ export const SkillContainer = styled.div<ISkillContainerProps>`
       line-height: 1.6;
     }
   }
-`;
+`

@@ -1,3 +1,3 @@
 export interface IHeaderProps {
-  toggleTheme(): void;
+  toggleTheme(): void
 }

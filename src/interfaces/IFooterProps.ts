@@ -1,10 +1,10 @@
 export interface IFooterIconProps {
-  href: string;
+  href: string
   dataTip:
-    | "Localização"
-    | "GitHub"
-    | "GitLab"
-    | "Linkedin"
-    | "Telefone"
-    | "E-mail";
+    | 'Localização'
+    | 'GitHub'
+    | 'GitLab'
+    | 'Linkedin'
+    | 'Telefone'
+    | 'E-mail'
 }

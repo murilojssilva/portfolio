@@ -1,3 +1,3 @@
 export interface IProjectTitleProps {
-  color: "challenge" | "personal" | "academic";
+  color: 'challenge' | 'personal' | 'academic'
 }

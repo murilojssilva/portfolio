@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ProjectsContainer = styled.section`
   border-top: 1px solid ${({ theme }) => theme.colors.background};
-`;
+`
 
 export const ProjectsContent = styled.div`
   display: grid;
@@ -15,4 +15,4 @@ export const ProjectsContent = styled.div`
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
   }
-`;
+`

@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
-import { IButtonContainerProps } from "@/interfaces/IButtonProps";
+import { IButtonContainerProps } from '@/interfaces/IButtonProps'
 
 export const ButtonContainer = styled.a<IButtonContainerProps>`
   text-align: center;
@@ -19,7 +19,7 @@ export const ButtonContainer = styled.a<IButtonContainerProps>`
   padding: 1rem;
   font-weight: bold;
   display: block;
-  display: ${({ href, deploy }) => (!href && !deploy ? "none" : "flex")};
+  display: ${({ href, deploy }) => (!href && !deploy ? 'none' : 'flex')};
 
   gap: 0.5rem;
   cursor: pointer;
@@ -36,4 +36,4 @@ export const ButtonContainer = styled.a<IButtonContainerProps>`
     }
   }
   width: 100%;
-`;
+`

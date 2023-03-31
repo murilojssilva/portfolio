@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
-import { TooltipContainer, TooltipContent, TooltipText } from "./styles";
+import { ReactNode } from 'react'
+import { TooltipContainer, TooltipContent, TooltipText } from './styles'
 
 interface ITooltipProps {
-  icon: ReactNode;
-  name: string;
+  icon: ReactNode
+  name: string
 }
 
 export function Tooltip({ icon, name }: ITooltipProps) {
@@ -16,5 +16,5 @@ export function Tooltip({ icon, name }: ITooltipProps) {
         <p>{name}</p>
       </TooltipContent>
     </TooltipContainer>
-  );
+  )
 }

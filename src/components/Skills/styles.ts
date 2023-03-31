@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SkillsContainer = styled.section`
   display: grid;
@@ -14,4 +14,4 @@ export const SkillsContainer = styled.section`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`;
+`

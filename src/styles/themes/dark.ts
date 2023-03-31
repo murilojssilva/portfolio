@@ -1,12 +1,12 @@
 export default {
-  title: "dark",
+  title: 'dark',
 
   colors: {
-    primary: "var(--blue-500)",
-    secundary: "var(--gray-300)",
+    primary: 'var(--blue-500)',
+    secundary: 'var(--gray-300)',
 
-    background: "var(--gray-950)",
-    backgroundItens: "var(--gray-900)",
-    text: "var(--gray-100)",
+    background: 'var(--gray-950)',
+    backgroundItens: 'var(--gray-900)',
+    text: 'var(--gray-100)',
   },
-} as const;
+} as const

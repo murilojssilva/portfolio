@@ -1,20 +1,20 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 import {
   ICardsContainerProps,
   IInDevelopmentProps,
   ILinksProps,
-} from "@/interfaces/ICardProps";
+} from '@/interfaces/ICardProps'
 
 export const CardsContainer = styled.div<ICardsContainerProps>`
   ${({ colorTop, theme }) => css`
     border-top: 5px solid
-      ${colorTop === "experiences"
-        ? "var(--blue-700)"
-        : colorTop === "projects"
-        ? "var(--green-500)"
-        : colorTop === "publications"
-        ? "var(--purple-700)"
-        : "var(--red-500)"};
+      ${colorTop === 'experiences'
+        ? 'var(--blue-700)'
+        : colorTop === 'projects'
+        ? 'var(--green-500)'
+        : colorTop === 'publications'
+        ? 'var(--purple-700)'
+        : 'var(--red-500)'};
     box-shadow: 0 0 1em ${theme.colors.backgroundItens};
   `};
 
@@ -28,7 +28,7 @@ export const CardsContainer = styled.div<ICardsContainerProps>`
 
   &:hover {
     filter: ${({ theme }) =>
-      theme.title === "dark" ? "brightness(1.1)" : "brightness(0.9)"};
+      theme.title === 'dark' ? 'brightness(1.1)' : 'brightness(0.9)'};
     transition: filter 0.2s;
   }
 
@@ -37,23 +37,23 @@ export const CardsContainer = styled.div<ICardsContainerProps>`
     background: linear-gradient(
       to right,
       ${({ colorTop }) =>
-        colorTop === "publications"
-          ? "var(--purple-200)"
-          : colorTop === "experiences"
-          ? "var(--blue-200)"
-          : "var(--green-200)"},
+        colorTop === 'publications'
+          ? 'var(--purple-200)'
+          : colorTop === 'experiences'
+          ? 'var(--blue-200)'
+          : 'var(--green-200)'},
       ${({ colorTop }) =>
-        colorTop === "publications"
-          ? "var(--purple-500)"
-          : colorTop === "experiences"
-          ? "var(--blue-500)"
-          : "var(--green-300)"},
+        colorTop === 'publications'
+          ? 'var(--purple-500)'
+          : colorTop === 'experiences'
+          ? 'var(--blue-500)'
+          : 'var(--green-300)'},
       ${({ colorTop }) =>
-        colorTop === "publications"
-          ? "var(--purple-700)"
-          : colorTop === "experiences"
-          ? "var(--blue-900)"
-          : "var(--green-500)"}
+        colorTop === 'publications'
+          ? 'var(--purple-700)'
+          : colorTop === 'experiences'
+          ? 'var(--blue-900)'
+          : 'var(--green-500)'}
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -65,26 +65,26 @@ export const CardsContainer = styled.div<ICardsContainerProps>`
 
   span {
     color: ${({ type }) =>
-      type === "challenge"
-        ? "var(--blue-500)"
-        : type === "personal"
-        ? "var(--green-500)"
-        : type === "bootcamp"
-        ? "var(--orange-500)"
-        : type === "professional"
-        ? "var(--red-500)"
-        : type === "academic"
-        ? "var(--purple-200)"
-        : "var(--yellow-500)"};
+      type === 'challenge'
+        ? 'var(--blue-500)'
+        : type === 'personal'
+        ? 'var(--green-500)'
+        : type === 'bootcamp'
+        ? 'var(--orange-500)'
+        : type === 'professional'
+        ? 'var(--red-500)'
+        : type === 'academic'
+        ? 'var(--purple-200)'
+        : 'var(--yellow-500)'};
     font-weight: bold;
   }
-`;
+`
 
 export const CardsHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`;
+`
 
 export const CardsTitle = styled.div<IInDevelopmentProps>`
   display: flex;
@@ -113,7 +113,7 @@ export const CardsTitle = styled.div<IInDevelopmentProps>`
     padding: 0.25rem;
 
     display: ${({ inDevelopment }) =>
-      inDevelopment === false ? "none" : "flex"};
+      inDevelopment === false ? 'none' : 'flex'};
     text-align: center;
     align-items: center;
     ${({ theme }) => css`
@@ -130,7 +130,7 @@ export const CardsTitle = styled.div<IInDevelopmentProps>`
       transition: background 0.2s, color 0.2s;
     }
   }
-`;
+`
 
 export const CardsType = styled.div`
   display: flex;
@@ -150,16 +150,16 @@ export const CardsType = styled.div`
 
     font-weight: bold;
   }
-`;
+`
 
 export const CardsFooter = styled.footer`
   width: 100%;
   align-self: flex-end;
-`;
+`
 
 export const ButtonContainerPosition = styled.footer<ILinksProps>`
   display: grid;
   grid-template-rows: ${({ href, deploy }) =>
-    deploy && href ? "repeat(2, 1fr)" : "1fr"};
+    deploy && href ? 'repeat(2, 1fr)' : '1fr'};
   gap: 0.5rem;
-`;
+`

@@ -1,12 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom'
 
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header'
 
-import { LayoutContainer } from "./styles";
+import { LayoutContainer } from './styles'
 
 interface DefaultLayoutProps {
-  toggleTheme(): void;
+  toggleTheme(): void
 }
 
 export function DefaultLayout({ toggleTheme }: DefaultLayoutProps) {
@@ -16,5 +16,5 @@ export function DefaultLayout({ toggleTheme }: DefaultLayoutProps) {
       <Outlet />
       <Footer />
     </LayoutContainer>
-  );
+  )
 }

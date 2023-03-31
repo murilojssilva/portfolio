@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const FooterContacts = styled.footer`
   display: flex;
@@ -7,4 +7,4 @@ export const FooterContacts = styled.footer`
   padding: 10px 0;
   margin-top: auto;
   width: 100%;
-`;
+`

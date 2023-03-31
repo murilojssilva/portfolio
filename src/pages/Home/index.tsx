@@ -1,11 +1,11 @@
-import { About } from "@/components/About";
-import { Experience } from "@/components/Experience";
+import { About } from '@/components/About'
+import { Experience } from '@/components/Experience'
 
-import { Projects } from "@/components/Projects";
-import { Publications } from "@/components/Publications";
-import { Skills } from "@/components/Skills";
+import { Projects } from '@/components/Projects'
+import { Publications } from '@/components/Publications'
+import { Skills } from '@/components/Skills'
 
-import { HomeContainer } from "./styles";
+import { HomeContainer } from './styles'
 
 export function Home() {
   return (
@@ -16,5 +16,5 @@ export function Home() {
       <Projects />
       <Publications />
     </HomeContainer>
-  );
+  )
 }

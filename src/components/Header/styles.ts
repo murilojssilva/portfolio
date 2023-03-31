@@ -1,10 +1,10 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const HeaderContainer = styled.header`
   display: flex;
   height: 5rem;
   border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundItens};
-`;
+`
 
 export const HeaderContent = styled.div`
   width: 100%;
@@ -47,4 +47,4 @@ export const HeaderContent = styled.div`
     border: none;
     background-color: transparent;
   }
-`;
+`

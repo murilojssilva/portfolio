@@ -1,15 +1,15 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
-import { LayoutContainer } from "@/pages/_layouts/default/styles";
+import { LayoutContainer } from '@/pages/_layouts/default/styles'
 
 const CenterContainer = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-`;
+`
 
-export const AboutContainer = styled(LayoutContainer)``;
+export const AboutContainer = styled(LayoutContainer)``
 
 export const AboutContent = styled.header`
   color: ${({ theme }) => theme.colors.text};
@@ -44,7 +44,7 @@ export const AboutContent = styled.header`
     color: ${({ theme }) => theme.colors.text};
     font-size: 1rem;
   }
-`;
+`
 
 export const AboutProfileAnimation = styled(CenterContainer)`
   flex-direction: column;
@@ -52,6 +52,6 @@ export const AboutProfileAnimation = styled(CenterContainer)`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`
 
-export const DevelopmentIcon = styled(CenterContainer)``;
+export const DevelopmentIcon = styled(CenterContainer)``

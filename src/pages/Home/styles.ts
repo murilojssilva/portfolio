@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HomeContainer = styled.main`
   height: 100%;
@@ -13,4 +13,4 @@ export const HomeContainer = styled.main`
   p {
     margin: 2rem;
   }
-`;
+`

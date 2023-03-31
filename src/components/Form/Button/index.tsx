@@ -1,6 +1,6 @@
-import { ButtonContainer } from "./styles";
+import { ButtonContainer } from './styles'
 
-import { IButtonProps } from "@/interfaces/IButtonProps";
+import { IButtonProps } from '@/interfaces/IButtonProps'
 
 export function Button({
   content,
@@ -21,5 +21,5 @@ export function Button({
     >
       {icon} {content}
     </ButtonContainer>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const LoadingContainer = styled.section`
   width: 100vw;
@@ -17,4 +17,4 @@ export const LoadingContainer = styled.section`
     animation: icon-spin 2s infinite linear;
     color: ${({ theme }) => theme.colors.secundary};
   }
-`;
+`

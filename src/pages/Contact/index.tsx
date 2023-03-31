@@ -1,34 +1,34 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react'
 
-import { ContactContainer } from "./styles";
+import { ContactContainer } from './styles'
 
-import { useForm } from "react-hook-form";
+import { useForm } from 'react-hook-form'
 
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from 'yup'
+import { yupResolver } from '@hookform/resolvers/yup'
 
-import { phoneNumber } from "@/utils/validations";
-import { normalizePhoneNumber } from "@/utils/masks";
+import { phoneNumber } from '@/utils/validations'
+import { normalizePhoneNumber } from '@/utils/masks'
 
-import { FaEnvelope } from "react-icons/fa";
-import { FiAlertCircle } from "react-icons/fi";
+import { FaEnvelope } from 'react-icons/fa'
+import { FiAlertCircle } from 'react-icons/fi'
 
-import { IFormInputs } from "@/interfaces/IFormProps";
+import { IFormInputs } from '@/interfaces/IFormProps'
 
 let schema = yup.object().shape({
-  firstName: yup.string().required("Insira seu nome."),
-  lastName: yup.string().required("Insira seu sobrenome."),
+  firstName: yup.string().required('Insira seu nome.'),
+  lastName: yup.string().required('Insira seu sobrenome.'),
   email: yup
     .string()
-    .email("Insira um e-mail válido.")
-    .required("Email é obrigatório."),
-  contactWay: yup.string().required("Selecione uma forma de contato."),
+    .email('Insira um e-mail válido.')
+    .required('Email é obrigatório.'),
+  contactWay: yup.string().required('Selecione uma forma de contato.'),
   phone: yup
     .string()
-    .matches(phoneNumber, "Insira um telefone válido")
-    .required("Telefone é obrigatório."),
-  message: yup.string().required("Mensagem é obrigatório."),
-});
+    .matches(phoneNumber, 'Insira um telefone válido')
+    .required('Telefone é obrigatório.'),
+  message: yup.string().required('Mensagem é obrigatório.'),
+})
 
 export function Contact() {
   const {
@@ -39,22 +39,22 @@ export function Contact() {
     formState: { errors },
   } = useForm<IFormInputs>({
     resolver: yupResolver(schema),
-  });
+  })
 
   const onSubmit = useCallback(() => {
-    alert("Dados inseridos com sucesso!");
-    console.log("Oi");
-  }, []);
+    alert('Dados inseridos com sucesso!')
+    console.log('Oi')
+  }, [])
 
-  const phoneValue = watch("phone");
+  const phoneValue = watch('phone')
 
   useEffect(() => {
-    setValue("phone", normalizePhoneNumber(phoneValue));
-  }, [phoneValue]);
+    setValue('phone', normalizePhoneNumber(phoneValue))
+  }, [phoneValue])
 
   return (
     <ContactContainer onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="firstName">
+      <label htmlFor='firstName'>
         <div>
           <p>Nome</p>
           {errors.firstName && (
@@ -66,13 +66,13 @@ export function Contact() {
         </div>
 
         <input
-          placeholder="Nome"
-          type="text"
-          id="firstName"
-          {...register("firstName")}
+          placeholder='Nome'
+          type='text'
+          id='firstName'
+          {...register('firstName')}
         />
       </label>
-      <label htmlFor="last_name">
+      <label htmlFor='last_name'>
         <div>
           <p>Sobrenome</p>
           {errors.lastName && (
@@ -83,14 +83,14 @@ export function Contact() {
           )}
         </div>
         <input
-          placeholder="Sobrenome"
-          type="text"
-          id="lastName"
-          {...register("lastName")}
+          placeholder='Sobrenome'
+          type='text'
+          id='lastName'
+          {...register('lastName')}
         />
       </label>
 
-      <label htmlFor="email">
+      <label htmlFor='email'>
         <div>
           <p>E-mail</p>
           {errors.email && (
@@ -100,14 +100,14 @@ export function Contact() {
           )}
         </div>
         <input
-          placeholder="email@contato.com"
-          type="text"
-          id="email"
-          {...register("email")}
-        />{" "}
+          placeholder='email@contato.com'
+          type='text'
+          id='email'
+          {...register('email')}
+        />{' '}
       </label>
 
-      <label htmlFor="phone">
+      <label htmlFor='phone'>
         <div>
           <p>Telefone</p>
           {errors.phone && (
@@ -117,14 +117,14 @@ export function Contact() {
           )}
         </div>
         <input
-          placeholder="( )_____-____"
-          type="text"
-          id="phone"
-          {...register("phone")}
+          placeholder='( )_____-____'
+          type='text'
+          id='phone'
+          {...register('phone')}
         />
       </label>
 
-      <label htmlFor="">
+      <label htmlFor=''>
         <div>
           <p>Forma de contato</p>
           {errors.contactWay && (
@@ -134,15 +134,15 @@ export function Contact() {
           )}
         </div>
 
-        <select {...register("contactWay")} id="contactWay">
-          <option value="" disabled selected>
+        <select {...register('contactWay')} id='contactWay'>
+          <option value='' disabled selected>
             Selecione uma opção
           </option>
-          <option value="E-mail">E-mail</option>
-          <option value="WhatsApp">WhatsApp</option>
+          <option value='E-mail'>E-mail</option>
+          <option value='WhatsApp'>WhatsApp</option>
         </select>
       </label>
-      <label htmlFor="message">
+      <label htmlFor='message'>
         <div>
           <p>Mensagem</p>
           {errors.message && (
@@ -153,9 +153,9 @@ export function Contact() {
         </div>
 
         <textarea
-          placeholder="Mensagem"
-          id="message"
-          {...register("message")}
+          placeholder='Mensagem'
+          id='message'
+          {...register('message')}
         />
       </label>
       <button>
@@ -163,5 +163,5 @@ export function Contact() {
         Enviar mensagem
       </button>
     </ContactContainer>
-  );
+  )
 }

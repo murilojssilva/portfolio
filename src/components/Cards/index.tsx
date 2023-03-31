@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext } from 'react'
 
 import {
   FaDatabase,
@@ -10,13 +10,13 @@ import {
   FaDesktop,
   FaClock,
   FaInfo,
-} from "react-icons/fa";
-import { FcDeployment } from "react-icons/fc";
+} from 'react-icons/fa'
+import { FcDeployment } from 'react-icons/fc'
 
-import { Button } from "../Form/Button";
-import { ProfileContext } from "@/contexts/ProfileContext";
+import { Button } from '../Form/Button'
+import { ProfileContext } from '@/contexts/ProfileContext'
 
-import { ICardsProps } from "@/interfaces/ICardProps";
+import { ICardsProps } from '@/interfaces/ICardProps'
 
 import {
   ButtonContainerPosition,
@@ -25,8 +25,8 @@ import {
   CardsHeader,
   CardsTitle,
   CardsType,
-} from "./styles";
-import { Techs } from "./Techs";
+} from './styles'
+import { Techs } from './Techs'
 
 export function Cards({
   title,
@@ -37,7 +37,7 @@ export function Cards({
   deploy,
   iconButton,
   last_commit,
-  type = "none",
+  type = 'none',
   inDevelopment = false,
   hasReact = false,
   hasVue = false,
@@ -81,41 +81,41 @@ export function Cards({
   hasRedux = false,
   hasExpress = false,
 }: ICardsProps) {
-  const { loading } = useContext(ProfileContext);
+  const { loading } = useContext(ProfileContext)
   return (
     <CardsContainer colorTop={colorTop} type={type}>
       <CardsHeader>
         <CardsTitle inDevelopment={inDevelopment}>
           <span>
-            {stack === "mobile" ? (
+            {stack === 'mobile' ? (
               <FaMobile
                 size={16}
-                color={"var(--blue-500)"}
-                data-tip={loading ? "Carregando" : "Mobile"}
+                color={'var(--blue-500)'}
+                data-tip={loading ? 'Carregando' : 'Mobile'}
               />
-            ) : stack === "backend" ? (
+            ) : stack === 'backend' ? (
               <FaDatabase
                 size={16}
-                color={"var(--purple-500)"}
-                data-tip={loading ? "Carregando" : "Backend"}
+                color={'var(--purple-500)'}
+                data-tip={loading ? 'Carregando' : 'Backend'}
               />
-            ) : stack === "frontend" ? (
+            ) : stack === 'frontend' ? (
               <FaCode
                 size={16}
-                color={"var(--green-500)"}
-                data-tip={loading ? "Carregando" : "Frontend"}
+                color={'var(--green-500)'}
+                data-tip={loading ? 'Carregando' : 'Frontend'}
               />
-            ) : stack === "fullstack" ? (
+            ) : stack === 'fullstack' ? (
               <FaDesktop
                 size={16}
-                color={"var(--red-500)"}
-                data-tip={loading ? "Carregando" : "Fullstack"}
+                color={'var(--red-500)'}
+                data-tip={loading ? 'Carregando' : 'Fullstack'}
               />
             ) : null}
           </span>
           <h2>{`${title} `}</h2>
           {inDevelopment && (
-            <strong data-tip="Em desenvolvimento">
+            <strong data-tip='Em desenvolvimento'>
               <FaInfo />
             </strong>
           )}
@@ -178,27 +178,27 @@ export function Cards({
         />
         <ButtonContainerPosition>
           <Button
-            target="_blank"
+            target='_blank'
             href={href}
             icon={
-              iconButton === "GitLab" ? (
+              iconButton === 'GitLab' ? (
                 <FaGitlab />
-              ) : iconButton === "GitHub" ? (
+              ) : iconButton === 'GitHub' ? (
                 <FaGithubAlt />
-              ) : iconButton === "Paper" ? (
+              ) : iconButton === 'Paper' ? (
                 <FaNewspaper />
               ) : null
             }
-            content={"Visualizar repositório"}
+            content={'Visualizar repositório'}
           />
           <Button
-            target="_blank"
+            target='_blank'
             href={deploy}
             icon={<FcDeployment />}
-            content={"Visualizar projeto"}
+            content={'Visualizar projeto'}
           />
         </ButtonContainerPosition>
       </CardsFooter>
     </CardsContainer>
-  );
+  )
 }

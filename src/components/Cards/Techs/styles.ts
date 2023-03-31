@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { ITechsProps } from "@/interfaces/ITechsProps";
+import styled from 'styled-components'
+import { ITechsProps } from '@/interfaces/ITechsProps'
 
 export const TechsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-`;
+`
 
 export const TechContent = styled.span<ITechsProps>`
   display: ${({
@@ -92,8 +92,8 @@ export const TechContent = styled.span<ITechsProps>`
     hasBootstrap === false ||
     hasRubyOnRails === false ||
     hasExpress === false
-      ? "none"
-      : "flex"};
+      ? 'none'
+      : 'flex'};
   padding: 1rem;
 
   color: ${({ theme }) => theme.colors.text};
@@ -111,4 +111,4 @@ export const TechContent = styled.span<ITechsProps>`
     width: 1.5rem;
     height: 1.5rem;
   }
-`;
+`

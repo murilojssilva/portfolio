@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const ContactContainer = styled.form`
   display: flex;
@@ -101,4 +101,4 @@ export const ContactContainer = styled.form`
       `};
     }
   }
-`;
+`

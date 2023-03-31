@@ -1,5 +1,5 @@
-import { FooterIconContainer } from "./styles";
-import { IFooterIconProps } from "@/interfaces/IFooterProps";
+import { FooterIconContainer } from './styles'
+import { IFooterIconProps } from '@/interfaces/IFooterProps'
 
 import {
   FaGithubAlt,
@@ -8,28 +8,28 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaWhatsapp,
-} from "react-icons/fa";
+} from 'react-icons/fa'
 
 export function FooterIcon({ href, dataTip }: IFooterIconProps) {
   return (
     <FooterIconContainer>
-      <a target="_blank" href={href}>
+      <a target='_blank' href={href}>
         <span>
-          {dataTip === "GitHub" ? (
+          {dataTip === 'GitHub' ? (
             <FaGithubAlt size={26} data-tip={dataTip} />
-          ) : dataTip === "GitLab" ? (
+          ) : dataTip === 'GitLab' ? (
             <FaGitlab size={26} data-tip={dataTip} />
-          ) : dataTip === "Linkedin" ? (
+          ) : dataTip === 'Linkedin' ? (
             <FaLinkedinIn size={26} data-tip={dataTip} />
-          ) : dataTip === "Telefone" ? (
+          ) : dataTip === 'Telefone' ? (
             <FaWhatsapp size={26} data-tip={dataTip} />
-          ) : dataTip === "E-mail" ? (
+          ) : dataTip === 'E-mail' ? (
             <FaEnvelope size={26} data-tip={dataTip} />
-          ) : dataTip === "Localização" ? (
+          ) : dataTip === 'Localização' ? (
             <FaMapMarkerAlt size={26} data-tip={dataTip} />
           ) : null}
         </span>
       </a>
     </FooterIconContainer>
-  );
+  )
 }

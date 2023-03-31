@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const ExperienceContainer = styled.section``;
+export const ExperienceContainer = styled.section``
 
 export const ExperienceContent = styled.div`
   display: grid;
@@ -8,4 +8,4 @@ export const ExperienceContent = styled.div`
   @media (max-width: 920px) {
     grid-template-columns: 1fr;
   }
-`;
+`

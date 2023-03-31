@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const FooterIconContainer = styled.div`
   padding: 1rem 0;
@@ -28,4 +28,4 @@ export const FooterIconContainer = styled.div`
       align-items: center;
     }
   }
-`;
+`

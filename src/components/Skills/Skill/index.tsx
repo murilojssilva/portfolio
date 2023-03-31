@@ -1,5 +1,5 @@
-import { SkillContainer } from "./styles";
-import { ISkillProps } from "@/interfaces/ISkillProps";
+import { SkillContainer } from './styles'
+import { ISkillProps } from '@/interfaces/ISkillProps'
 
 export function Skill({
   color,
@@ -25,5 +25,5 @@ export function Skill({
         ))}
       </ul>
     </SkillContainer>
-  );
+  )
 }

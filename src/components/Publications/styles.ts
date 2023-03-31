@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const PublicationsContainer = styled.main`
   border-top: 1px solid ${({ theme }) => theme.colors.background};
-`;
+`
 
 export const PublicationsContent = styled.main`
   display: grid;
@@ -11,4 +11,4 @@ export const PublicationsContent = styled.main`
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
   }
-`;
+`

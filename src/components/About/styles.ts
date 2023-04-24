@@ -44,6 +44,7 @@ export const AboutTitleContainer = styled.div`
     -webkit-animation: ${hue} 10s infinite linear;
     font-size: 8rem;
     text-align: center;
+    text-transform: uppercase;
   }
   
 `;
@@ -83,20 +84,17 @@ export const InformationsContainer = styled.div`
   }
 `;
 
-export const AboutContent = styled.header`
+export const AboutContent = styled.main`
   color: ${({ theme }) => theme.colors.text};
-  border-radius: 8px;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 3rem;
   gap: 2rem;
-
-  @media (max-width: 768px) {
-    display: flex;
+  
+  @media (max-width: 920px) {
     flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
   }
 
   img {
@@ -108,7 +106,7 @@ export const AboutContent = styled.header`
       outline: 2px solid ${theme.colors.text};
     `};
 
-    margin: 1rem 0;
+    
   }
 
   h3 {

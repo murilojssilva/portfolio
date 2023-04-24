@@ -12,7 +12,7 @@ export function About() {
   return (
     <AboutContainer>
       <AboutTitleContainer>
-        <h1>{`<Murilo Silva />`}</h1>
+        <h1>Murilo Silva</h1>
         
       </AboutTitleContainer>
       <AboutContent>

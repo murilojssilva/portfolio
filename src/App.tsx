@@ -1,7 +1,6 @@
 import { DefaultTheme, ThemeProvider } from 'styled-components'
 
 import { GlobalStyle } from './styles/global'
-import ReactTooltip from 'react-tooltip'
 import { Router } from './routes/Router'
 import { BrowserRouter } from 'react-router-dom'
 import light from './styles/themes/light'
@@ -23,7 +22,6 @@ export function App() {
         </ProfileProvider>
       </BrowserRouter>
       <GlobalStyle />
-      <ReactTooltip />
     </ThemeProvider>
   )
 }

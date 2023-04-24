@@ -2,7 +2,7 @@ import { useContext } from 'react'
 
 import { ThemeContext, useTheme } from 'styled-components'
 import { HeaderContainer, HeaderContent } from './styles'
-import { FaEnvelope, FaHome, FaMoon, FaSun } from 'react-icons/fa'
+import { FaEnvelope, FaHome, FaMoon, FaSun, FaUser } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 import { IHeaderProps } from '@/interfaces/IHeaderProps'
 
@@ -19,6 +19,9 @@ export function Header({ toggleTheme }: IHeaderProps) {
           </NavLink>
           <NavLink to='/contact'>
             <FaEnvelope size={20} /> <span>Contato</span>
+          </NavLink>
+          <NavLink to='/about'>
+            <FaUser size={20} /> <span>Sobre</span>
           </NavLink>
         </nav>
         <button onClick={toggleTheme}>

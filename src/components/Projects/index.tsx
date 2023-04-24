@@ -136,6 +136,7 @@ export function Projects() {
                     repository.name === 'ignite-otimizando-aplicacao' ||
                     repository.name === 'ignite-ignews'
                   }
+                  hasRedux={repository.name === 'codeleap-challenge-2'}
                   hasReactNavigation={
                     repository.name === 'acesso' ||
                     repository.name === 'rocketseat-react-native-nubank' ||
@@ -161,7 +162,7 @@ export function Projects() {
                     repository.name === 'rocketseat-nlw1'
                   }
                   hasReact={
-                    repository.name === 'masterclass-ui-tailwind' ||
+                    repository.name === 'masterclass-ui-tailwind' || 
                     repository.name === 'ignite-reactjs-04-dashgo' ||
                     repository.name === 'desafio-upnid-uprace' ||
                     repository.name === 'rocketseat-nlw1' ||
@@ -175,7 +176,8 @@ export function Projects() {
                     repository.name === 'ignite-github-blog' ||
                     repository.name ===
                       'ignite-reactjs-challenge-2-coffee-delivery' ||
-                    repository.name === 'codeleap-challenge'
+                    repository.name === 'codeleap-challenge' ||
+                    repository.name === 'codeleap-challenge-2'
                   }
                   hasVue={repository.language === 'Vue'}
                   hasYup={
@@ -190,7 +192,8 @@ export function Projects() {
                     repository.name === 'daily-diet-native' ||
                     repository.name === 'todolist-native' ||
                     repository.name === 'igniteshoesapp' ||
-                    repository.name === 'desafio-pagcom'
+                    repository.name === 'desafio-pagcom' ||
+                    repository.name === 'codeleap-challenge-2'
                   }
                   hasReanimated={repository.name === 'ignite-ignitequiz-native'}
                   hasGestureHandler={
@@ -280,15 +283,19 @@ export function Projects() {
                     repository.name === 'desafio-pagcom' ||
                     repository.name === 'portfolio' ||
                     repository.name === 'ignite-upload-de-imagens' ||
+                    
                     repository.name ===
                       'ignite-react-native-capter-ii-desafio-01' ||
-                    repository.name === 'ignite-marketspace-native'
+                    repository.name === 'ignite-marketspace-native' ||
+                    repository.name === 'codeleap-challenge-2'
                   }
                   hasFaunaDB={
                     repository.name === 'ignite-upload-de-imagens' ||
                     repository.name === 'ignite-ignews'
                   }
-                  hasTailwind={repository.name === 'masterclass-ui-tailwind'}
+                  hasTailwind={repository.name === 'masterclass-ui-tailwind'
+                    || repository.name === 'codeleap-challenge-2'
+                  }
                   hasAsyncStorage={
                     repository.name === 'ignitegym-native' ||
                     repository.name === 'ignite-marketspace-native' ||

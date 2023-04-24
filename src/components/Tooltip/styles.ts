@@ -18,7 +18,7 @@ export const TooltipContent = styled.div`
   }
   p {
     margin: 0 auto;
-    padding: 10px 15px;
+    padding: 5px 15px;
   }
 `
 

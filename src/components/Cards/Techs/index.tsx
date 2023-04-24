@@ -190,7 +190,7 @@ export function Techs({
         />
       </TechContent>
       <TechContent hasReactHookForm={hasReactHookForm}>
-        <Tooltip name='Phosphor' icon={<img src={logoReactHookForm} />} />
+        <Tooltip name='React Hook Form' icon={<img src={logoReactHookForm} />} />
       </TechContent>
       <TechContent hasZod={hasZod}>
         <Tooltip name='Zod' icon={<img src={logoZod} />} />
